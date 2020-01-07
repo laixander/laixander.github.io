@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Free bootstrap documentation template">
+
+    <title>Documentation</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="font/css/all.min.css">
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/sidebar-themes.css">
+    <link rel="stylesheet" href="css/prism-hopscotch.css">
+    <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
+
+    <style>
+        .sidebar-wrapper .sidebar-menu ul li a i {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="page-wrapper toggled light-theme">
+        <nav id="sidebar" class="sidebar-wrapper">
+            <div class="sidebar-content">
+                <!-- sidebar-brand  -->
+                <!-- <div class="sidebar-item sidebar-brand text-white font-weight-bold">&nbsp;</div> -->
+                <!-- sidebar-header  -->
+                <div class=" sidebar-item sidebar-menu pt-3">
+                    <ul>
+                        <li class="sidebar-dropdown">
+                            <a href="#"> <i class="fab fa-laravel"></i> <span class="menu-text">Laravel, Basic Setup</span> </a>
+                            <div class="sidebar-submenu">
+                                <ul>
+                                    <li> <a href="#creating-controller">Creating Controller</a> </li>
+                                    <li> <a href="#adding-bootstrap">Adding Bootstrap</a> </li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- <li>
+                            <a href="#"> <i class="fa fa-calendar"></i> <span class="menu-text">Customizing</span> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <i class="fa fa-folder"></i> <span class="menu-text">Troubleshooting</span> </a>
+                        </li> -->
+                    </ul>
+                </div>
+                <!-- sidebar-menu  -->
+            </div>
+            <!-- sidebar-footer  -->
+            <div class="sidebar-footer">
+                <div>
+                    <a id="pin-sidebar" href="#"> <i class="fa fa-arrows-alt-h"></i> </a>
+                </div>
+                <div class="pinned-footer">
+                    <a href="#"> <i class="fas fa-ellipsis-h"></i> </a>
+                </div>
+            </div>
+        </nav>
+        <!-- page-content  -->
+        <main class="page-content">
+            <div id="overlay" class="overlay"></div>
+            <div class="container-fluid">
+                <div class="row d-flex align-items-center p-3 border-bottom">
+                    <div class="col-md-1">
+                        <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#"> <i class="fas fa-bars"></i> </a>
+                    </div>
+                    <div class="col-md-8">
+                        <!-- <nav aria-label="breadcrumb" class="align-items-center">
+                            <a href="index.html" class="breadcrumb-back" title="Back"></a>
+                            <ol class="breadcrumb d-none d-lg-inline-flex m-0">
+                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Layout 2</li>
+                            </ol>
+                        </nav> -->
+                    </div>
+                    <div class="col-md-3 text-left">
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="row p-lg-4">
+                    <article class="main-content col-md-9 pr-lg-5">
+                        <!-- title -Add bootstrap helpers for spacing -->
+                        <h1 class="mb-2 mt-3">SETTING UP LARAVEL PROJECT</h1>
+                        <!--//title -->
+                        <p>In xampp htdocs folder, open (Git Bash). Write command line:</p>
+                        
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>laravel new name_of_project</span></code></pre></figure>
+
+                        <p>Inside the created project, open (Git Bash). Write command line:</p>
+                        
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>code .</span></code></pre></figure>
+
+                        <p>...it will open on code editor (Visual Code Editor)</p>
+
+                        <p>Open (Terminal) on Visual Code then write</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan serve</span></code></pre></figure>
+
+                        <p>...this will activate the IP address to be used on browser</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>http://127.0.0.1:8000/
+</span></code></pre></figure>
+
+                        <hr class="my-5">
+                        
+                        <h3 class="font-weight-bold mb-2" id="creating-controller">
+                            CREATING CONTROLLER
+                        </h3>
+
+                        <p>Open (Terminal) on Visual Code then write</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan make:controller name_of_controller</span></code></pre></figure>
+
+                        <hr class="my-5">
+                        
+                        <h3 class="font-weight-bold mb-2" id="adding-bootstrap">
+                            ADDING BOOTSTRAP
+                        </h3>
+
+                        <p>Open CMD, enter cd laravel_folder_path</p>
+
+                        <p>Write the following in order:</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>composer require laravel/ui --dev</span></code></pre></figure>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan ui bootstrap</span></code></pre></figure>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>npm install && npm run dev</span></code></pre></figure>
+
+                        
+                    </article>
+                    <aside class="col-md-3 d-none d-md-block border-left">
+                        <div class="widget widget-support-forum p-md-3 p-sm-2"> <span class="icon icon-forum"></span>
+                            <h4>Looking for help? Join Community</h4>
+                            <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p>
+                        <hr class="my-5">
+                    </aside>
+                </div>
+            </div>
+        </main>
+        <!-- page-content" -->
+    </div>
+    <!-- page-wrapper -->
+
+    <!-- scripts -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/prism.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
