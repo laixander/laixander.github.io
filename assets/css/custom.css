@@ -1,0 +1,23 @@
+body {
+    font-family: "Open Sans";
+}
+header.masthead h2 {
+    font-size: 1.65rem;
+    font-family: "Open Sans";
+}
+.lead {
+	font-size: 1.15rem;
+}
+/*.footer .btn {
+	border: 0;
+} 
+.footer .btn-outline-light, .footer .btn-outline-light:hover {
+	border-color: transparent;
+}
+.footer .btn-outline-light:hover, .footer .btn-outline-light:focus {
+    background-color: transparent;
+    color: #18bc9c;
+}
+.btn-social {
+    font-size: 1.55rem;
+}*/
