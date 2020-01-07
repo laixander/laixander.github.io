@@ -8306,7 +8306,7 @@ a.text-dark:hover, a.text-dark:focus {
         overflow: hidden;
         text-overflow: ellipsis; }
         .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
-          content: "\f111";
+          content: "\f192";
           font-family: "Font Awesome 5 Pro";
           font-weight: 400;
           font-style: normal;
