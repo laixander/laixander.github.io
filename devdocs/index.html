@@ -17,33 +17,6 @@
     <link rel="stylesheet" href="css/prism-hopscotch.css">
     <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
 
-    <style>
-        .sidebar-wrapper .sidebar-menu ul li a i {
-            font-size: 1.2em;
-        }
-        .aside-nav.nav.flex-column li a {
-            padding-left: 0;
-        }
-        .aside-nav.nav.flex-column li a:before {
-            content: "\f2d2";
-            font-family: "Font Awesome 5 Pro";
-            font-weight: 400;
-            font-style: normal;
-            display: inline-block;
-            text-align: center;
-            text-decoration: none;
-            -webkit-font-smoothing: antialiased;
-            -moz-osx-font-smoothing: grayscale;
-            margin-right: 10px;
-            font-size: 16px;
-        }
-        .aside-nav.nav.flex-column li a:hover {
-            color: #00a9fd!important;
-        }
-        .sidebar-wrapper .sidebar-menu .sidebar-dropdown > a:after {
-            transform: rotate(270deg);
-        }
-    </style>
 </head>
 
 <body>
@@ -76,8 +49,8 @@
             </div>
             <!-- sidebar-footer  -->
             <div class="sidebar-footer">
-                <div>
-                    <a id="pin-sidebar" href="#"> <i class="fa fa-arrows-alt-h"></i> </a>
+                <div class="text-right">
+                    <a id="pin-sidebar" href="#"> <i class="fas fa-chevron-left"></i> </a>
                 </div>
                 <div class="pinned-footer">
                     <a href="#"> <i class="fas fa-ellipsis-h"></i> </a>
@@ -89,20 +62,13 @@
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid">
                 <div class="row d-flex align-items-center p-3 border-bottom">
-                    <div class="col-md-1">
-                        <a id="toggle-sidebar" class="btn rounded-0 p-3" href="#"> <i class="fas fa-bars"></i> </a>
-                    </div>
-                    <div class="col-md-8">
-                        <!-- <nav aria-label="breadcrumb" class="align-items-center">
-                            <a href="index.html" class="breadcrumb-back" title="Back"></a>
-                            <ol class="breadcrumb d-none d-lg-inline-flex m-0">
-                                <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-                                <li class="breadcrumb-item active" aria-current="page">Layout 2</li>
-                            </ol>
-                        </nav> -->
-                    </div>
-                    <div class="col-md-3 text-left">
-                        &nbsp;
+                    <div class="col-md">
+                        <div id="toggle-sidebar" class="btn rounded-0 nav-icon"> 
+                            <!-- <i class="fas fa-bars"></i>  -->
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
                     </div>
                 </div>
                 <div class="row p-lg-4">
@@ -185,6 +151,15 @@
     <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
     <script src="js/prism.min.js"></script>
     <script src="js/main.js"></script>
+
+    <script>
+        // Hamburger Menu Icon Animation
+        $(document).ready(function(){
+            $('.nav-icon').click(function(){
+                $(this).toggleClass('open');
+            });
+        });
+    </script>
 </body>
 
 </html>
