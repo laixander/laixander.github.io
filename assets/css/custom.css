@@ -36,3 +36,8 @@ header.masthead h2 {
         opacity: 1; 
     } 
 } 
+
+
+nav, header, section, footer {
+	overflow: hidden;
+}
