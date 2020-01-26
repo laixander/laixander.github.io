@@ -83,11 +83,15 @@ hr.star-dark {
      color: #00adb5; 
 }
 
+a {
+	color: #00adb5!important;
+}
+
 a:active, a:focus, a:hover {
     color: #009299;
 }
 
-#mainNav .navbar-nav li.nav-item a.nav-link.active, a {
+#mainNav .navbar-nav li.nav-item a.nav-link.active {
     color: #00adb5;
 }
 
