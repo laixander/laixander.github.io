@@ -67,6 +67,15 @@ section#contact, section#contact hr.star-dark:after {
     background-color: #222831!important;
 }
 
+.footer a {
+    color: #fff;
+}
+
+.footer a:hover {
+    color: #fff;
+    background-color: #00adb5!important;
+}
+
 .text-secondary, hr.star-dark:after {
 	color: #222831!important;
 }
