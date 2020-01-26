@@ -49,6 +49,15 @@ nav, header, section, footer {
     background-color: #00adb5!important;
 }
 
+section#portfolio, section#portfolio hr.star-dark:after,
+section#contact, section#contact hr.star-dark:after {
+	background-color: #eee;
+}
+
+.floating-label-form-group {
+    border-bottom-color: #ddd;
+}
+
 .btn-primary, button.bg-primary:focus {
     background-color: #00adb5!important;
     border-color: #00adb5!important;
@@ -70,12 +79,25 @@ hr.star-dark {
     background-color: rgba(0,173,181,.9)!important;
 }
 
+.btn-outline-light:hover {
+     color: #00adb5; 
+}
+
+a:active, a:focus, a:hover {
+    color: #009299;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link.active, a {
+    color: #00adb5;
+}
+
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
     color: #00adb5!important;
 }
 
 @media (min-width: 992px){
 	#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+		color: #fff!important;
 	    background: #00adb5!important;
 	}
 }
