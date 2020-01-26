@@ -37,7 +37,52 @@ header.masthead h2 {
     } 
 } 
 
-
 nav, header, section, footer {
 	overflow: hidden;
 }
+
+.bg-secondary, .copyright {
+    background-color: #393e46!important;
+}
+
+.bg-primary, hr.star-light:after {
+    background-color: #00adb5!important;
+}
+
+.btn-primary, button.bg-primary:focus {
+    background-color: #00adb5!important;
+    border-color: #00adb5!important;
+}
+
+.footer {
+    background-color: #222831!important;
+}
+
+.text-secondary, hr.star-dark:after {
+	color: #222831!important;
+}
+
+hr.star-dark {
+	border-color: #222831!important;
+}
+
+.portfolio .portfolio-item .portfolio-item-caption {
+    background-color: rgba(0,173,181,.9)!important;
+}
+
+#mainNav .navbar-nav li.nav-item a.nav-link:hover {
+    color: #00adb5!important;
+}
+
+@media (min-width: 992px){
+	#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
+	    background: #00adb5!important;
+	}
+}
+
+@media (min-width: 992px){
+	#mainNav .navbar-nav>li.nav-item>a.nav-link.active:active, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:focus, #mainNav .navbar-nav>li.nav-item>a.nav-link.active:hover {
+	    background: #00adb5!important;
+	}
+}
+
