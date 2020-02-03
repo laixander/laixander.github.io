@@ -1,9 +1,0 @@
-<svg 
- xmlns="http://www.w3.org/2000/svg"
- xmlns:xlink="http://www.w3.org/1999/xlink"
- width="100%" height="100%" viewBox="0 0 500 500">
-<rect  x="0" y="0" width="500" height="500" fill="#947e6a" />
-<image  x="0px" y="0px" width="100%" height="100%"  xlink:href="data:img/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0AQMAAADxGE3JAAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAABlBMVEWUfmr///8xV4JBAAAAAWJLR0QB/wIt3gAAAAd0SU1FB+QBHAo1Ab4PRVUAAAA1SURBVHja7cExAQAAAMKg9U/tYQ2gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAG59AAABgyKozQAAAABJRU5ErkJggg==" />
-<path fill-rule="evenodd"  fill="rgb(16, 41, 66)"
- d="M212.730,383.651 L290.738,383.651 L290.738,169.720 L375.049,169.720 L375.049,107.866 L128.025,107.866 L128.025,169.720 L212.730,169.720 L212.730,383.651 Z"/>
-</svg>
