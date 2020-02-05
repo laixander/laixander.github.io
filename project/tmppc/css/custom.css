@@ -736,3 +736,48 @@ img.section-label-contact {
   padding: 20px;
   box-sizing: border-box;
 }
+
+
+/*ul.contact-info {
+    margin: 2rem 0;
+}*/
+
+ul.contact-info li {
+  /*margin: 1rem;
+  margin-left: 3rem;*/
+  padding: 10px;
+}
+
+ul.contact-info li.address:before {
+  content: '\f1ad';
+  font-family: 'Font Awesome 5 Pro';
+  margin-right: 20px;
+  color: #947e6a;
+  font-size: 2rem;
+}
+
+ul.contact-info li.email:before {
+  content: '\f0e0';
+  font-family: 'Font Awesome 5 Pro';
+  margin-right: 20px;
+  color: #947e6a;
+  font-size: 2rem;
+}
+
+ul.contact-info li.phone:before {
+  content: '\f095';
+  font-family: 'Font Awesome 5 Pro';
+  margin-right: 20px;
+  color: #947e6a;
+  font-size: 2rem;
+}
+
+ul.contact-info li.email a {
+    color: #947e6a;
+    text-decoration: none;
+    transition: 0.4s;
+}
+
+ul.contact-info li.email a:hover {
+    padding-left: 20px;
+}
