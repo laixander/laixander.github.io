@@ -4,6 +4,14 @@ h1, h2, h3, h4, h5, h6, .navbar-brand {
     color: #102942;
 }
 
+h2 {
+    font-size: 3rem;
+}
+
+h3 {
+    font-size: 2rem;
+}
+
 p, section>a, li, button, label, input {
     font-family: 'Raleway', sans-serif;
     font-size: 0.9rem !important;
@@ -81,7 +89,7 @@ section.copyright {
 }*/
 
 .parallax-window h2 {
-    font-size: 5rem;
+    font-size: 4rem;
     text-align: center;
 }
 
