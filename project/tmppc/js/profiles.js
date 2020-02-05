@@ -26,7 +26,7 @@
             name: 'Matoshi Del Mundo',
             description: 'Junior Manager',
             image: 'images/profile.png',
-            motto: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.'
+            motto: '<em>&quot;Practice makes everything perfect but nobody is perfect, So practice makes you better.&quot;</em'
         },
 
         // UI/UX DESIGNER
