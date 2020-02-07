@@ -26,7 +26,7 @@
 
 </head>
 
-<body id="home" ng-controller="StoreController as store">
+<body id="home" ng-app="tmppc">
 
     <nav class="navbar navbar-expand-md fixed-top navbar-dark bg-dark" id="navWrapper">
         <a class="navbar-brand" href="#home">
@@ -91,7 +91,7 @@
                             <img src="images/icon-mission.png" width="80" class="mb-4" alt="">
                             <h3 class="card-title text-uppercase mt-2 mb-5">Why Choose Us</h3>
                             <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content. Lorem ipsum dolor sit amet, consectetur.</p> -->
-                            <a href="#" id="" class="btn btn-primary" data-toggle="modal" data-target="#ourmission">Learn More</a>
+                            <a href="#" id="" class="btn btn-primary" data-toggle="modal" data-target="#whychooseus">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -366,11 +366,11 @@
                             </div>
                         </div>
 
-                        <div class="row" ng-app="ourTeam" ng-controller="ourTeamCtrl as ourTeam">
+                        <div class="row" ng-controller="ourTeamCtrl as tmppc">
 
                             <!-- ANGULAR TEST -->
 
-                            <div class="col-sm-4 text-center t-profile" ng-repeat="profile in ourTeam.profiles">
+                            <div class="col-sm-4 text-center t-profile" ng-repeat="profile in tmppc.profiles">
                                 <div class="flip-box">
                                     <div class="flip-box-inner">
                                         <div class="flip-box-front">
@@ -407,7 +407,7 @@
 
 
     <!-- Modal -->
-    <div class="modal fade pr-0" id="ourmission" tabindex="-1" role="dialog" aria-labelledby="why-choose-us" aria-hidden="true">
+    <div class="modal fade pr-0" id="whychooseus" tabindex="-1" role="dialog" aria-labelledby="why-choose-us" aria-hidden="true">
         <div class="modal-dialog modal-fluid" role="document">
             <div class="modal-content border-0">
                 <div class="modal-header border-0">
@@ -497,7 +497,7 @@
                                         <img src="images/icons/homepage.png" width="100" class="" alt="">
                                         <h5>Homepage Works</h5>
                                         <p>From customers who do not have a homepage yet to customers who want to renew their homepage ...</p>
-                                        <a href="#" id="" class="btn btn-primary" data-toggle="modal" data-target="#offshore">Learn More</a>
+                                        <a href="#" id="" class="btn btn-primary" data-toggle="modal" data-target="#homepage" data-dismiss="modal">Learn More</a>
                                     </div>
                                 </div>
                             </div>
@@ -564,7 +564,7 @@
 
 
     <!-- Modal -->
-     <div class="modal fade px-0" id="offshore" tabindex="-1" role="dialog" aria-labelledby="our-services" aria-hidden="true">
+    <div class="modal fade px-0" id="offshore" tabindex="-1" role="dialog" aria-labelledby="offshore-development" aria-hidden="true">
         <div class="modal-dialog modal-fluid modal-dialog-scrollable" role="document">
             <div class="modal-content border-0">
                 <div class="modal-header border-0">
@@ -574,15 +574,161 @@
                 </div>
                 <div class="modal-body custom-scollbar">
                     <div class="container">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat atque similique veritatis, delectus quasi nesciunt dolorum placeat rem sint non dignissimos dolorem eum nisi dolor earum molestias adipisci officia architecto? Ipsum, eos, veritatis! Voluptatem molestiae quos, itaque distinctio earum officia ea eius mollitia tenetur. Quidem itaque sequi, pariatur vel eum porro quae rerum nisi, voluptate fugit eos quas suscipit ut ducimus, eius accusantium facilis excepturi aliquam quis. Facilis rerum, ratione incidunt distinctio alias, sit officia. Enim odit similique illo suscipit quaerat doloremque, id voluptas neque dignissimos at molestiae sint maxime ab vel error, eos repellendus rem officiis porro assumenda quod.</p>
+                        <h2 id="our-services" class="modal-title mb-5 text-center text-uppercase">Offshore Development</h2>
+                        <div class="row">
+                            <div class="col-md-12">
+
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="row">
+
+                                            <div class="col-md-6">
+                                                <img src="images/icons/offshore.png" width="100" class=""  alt="">
+                                                <h5>We conduct offshore development at overseas development bases.</h5>
+                                                <p>Offshore development refers to outsourcing software development, Web system development, smartphone application development, Facebook application development, social game   development, and operation and maintenance management to overseas development companies and overseas subsidiaries. <br><br>
+                                                This method is used to secure resources and reduce development costs. In recent years, it has been adopted as a base for securing resources and R & D. <br><br>
+                                                In addition to the usual manufacturing contracts, there are lab contracts that can secure and secure excellent human resources.
+                                                </p>
+                                            </div>
+
+                                            <div class="col-md-6">
+                                                <img src="images/phils.jpg" width="512px" height="400px" class=""  align="Center" alt="">
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="headingsjas">
+                                                    <h5 class="titlejas">Our unique strength</h5>
+                                                    <span class="hrjas"></span>        
+                                                </div>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <ul class="list-group">
+                                                    <li class="list-group-item">Japanese SE can be selected as a contact</li>
+                                                    <li class="list-group-item">Actively employs excellent engineers who can speak Japanese</li>
+                                                    <li class="list-group-item">Appropriate human resources can be assigned in cooperation with each of our bases (our bases: Tokyo, Vietnam, Myanmar, Philippines)</li>
+                                                </ul> 
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="headingsjas">
+                                                    <h5 class="titlejas">Available Tasks</h5>
+                                                    <span class="hrjas"></span>        
+                                                </div>
+                                            </div>
+
+                                            <div class ="col-md-6">
+                                                <div class="headingsjas">
+                                                    Website creation (consistent support from front end to back end), WordPress customization, iOS / android application development
+                                                    Supported languages: PHP, C # (.net), objective-C, Perl, Ruby, Java,
+                                                    etc. 
+                                                </div>
+                                            </div>
+
+                                            <div class ="col-md-6">
+                                                <img src="images/img_offshore03.png" width="350px" height="150px" style="margin-left: 80px;"  alt="">
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="headingsjas">
+                                                    <h5 class="titlejas">Base Guidance</h5>
+                                                    <span class="hrjas"></span>        
+                                                </div>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <h6 class="">Japan</h6>
+                                                Location: 13F, Odakyu Dai-ichi Life Building, 2-7-1 Nishi-Shinjuku, Shinjuku-ku, Tokyo 163-0713
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="gmap_canvas">
+                                                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=13F%2C%20Odakyu%20Dai-ichi%20Life%20Building%2C%202-7-1%20Nishi-Shinjuku%2C%20Shinjuku-ku%2C%20Tokyo%20163-0713&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                                </div>
+                                                <span class="hrjas2"></span>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <h6 class="">Vietnam</h6>
+                                                Location: 4F, 520 Cách Mạng Tháng 8, Phường 11, Quận 3, Hồ Chí Minh, Vietnam
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="gmap_canvas">
+                                                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=520%20C%C3%A1ch%20M%E1%BA%A1ng%20Th%C3%A1ng%208%2C%20Ph%C6%B0%E1%BB%9Dng%2011%2C%20Qu%E1%BA%ADn%203%2C%20H%E1%BB%93%20Ch%C3%AD%20Minh%2C%20Vietnam&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
+                                                    </iframe>
+                                                </div>
+                                                <span class="hrjas2"></span>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <h6 class="">Myanmar</h6>
+                                                Location: No. (5-05), Crystal Office Tower, Kyuntaw Street ,5th Floor, Kamayut Township, Yangon, Myanmar
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="gmap_canvas">
+                                                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Crystal%20Office%20Tower%2C%20Kyuntaw%20Street%20%2C5th%20Floor%2C%20Kamayut%20Township%2C%20Yangon%2C%20Myanmar&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                                </div>
+                                                <span class="hrjas2"></span>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <h6 class="">Philippines</h6>
+                                                Location: Unit 1206, 12th Floor, Antel 2000 Corporate Center, 121 Valero St., Salcedo Village, Makati City, Philippines
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="gmap_canvas">
+                                                    <iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Unit%201206%2C%2012th%20Floor%2C%20Antel%202000%20Corporate%20Center%2C%20121%20Valero%20St.%2C%20Salcedo%20Village%2C%20Makati%20City%2C%20Philippines&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+                                                </div>
+                                                <span class="hrjas2"></span>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="headingsjas">
+                                                    <h5 class="titlejas">Inquiries about offshore development</h5>
+                                                    <span class="hrjas"></span>        
+                                                </div>
+                                                <div>
+                                                    Free consultation on offshore development is available. <br>
+                                                    Please feel free to contact us if you have any inquiries, questions, or requests for a quote
+                                                 </div>
+                                            </div>
+
+                                            <div class ="col-md-12">
+                                                <div class="card bg-primary-jas text-white h-50 px-2 pb-4 pt-1">
+                                                    <p class="card-text">+95 1 933925    |    Reception hours / Weekdays 8: 00-17: 00 (Closed on weekends and  Philippine holidays )</p>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer border-0 py-5">
+                    <!-- <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade px-0" id="homepage" tabindex="-1" role="dialog" aria-labelledby="homepage-works" aria-hidden="true">
+        <div class="modal-dialog modal-fluid modal-dialog-scrollable" role="document">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times fa-2x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body custom-scollbar">
+                    <div class="container">
+                        <h2>homepage</h2>
                     </div>
                 </div>
                 <div class="modal-footer border-0 py-5">
@@ -612,12 +758,17 @@
     <script src="js/aos.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/profiles.js"></script>
-<!--<script>
-        $('#ourmission').modal('show');
-    </script> -->
+    <script>
+        $('#offshore').modal('show');
+    </script> 
     <script>
         $('#offshore').modal('hide')
         $('#offshore').on('hidden.bs.modal', function (e) {
+            // do something...
+            $('#ourservices').modal('show')
+        })
+        $('#homepage').modal('hide')
+        $('#homepage').on('hidden.bs.modal', function (e) {
             // do something...
             $('#ourservices').modal('show')
         })

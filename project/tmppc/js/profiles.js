@@ -1,6 +1,6 @@
 // ANGULAR
 (function() {
-    var app = angular.module('ourTeam', ['ngSanitize']);
+    var app = angular.module('tmppc', ['ngSanitize']);
 
     app.controller('ourTeamCtrl', function(){
         this.profiles = staff;

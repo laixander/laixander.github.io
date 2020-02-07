@@ -616,25 +616,25 @@ img.section-label-contact {
     opacity: 0;
 }*/
 
-#ourteam .modal-dialog, #ourmission .modal-dialog, #ourservices .modal-dialog, #offshore .modal-dialog {
+#ourteam .modal-dialog, #whychooseus .modal-dialog, #ourservices .modal-dialog, #offshore .modal-dialog, #homepage .modal-dialog {
     top: 80px;
 }
 
-/*#ourmission, #ourvision {
+/*#whychooseus, #ourvision {
     overflow-y: hidden;
 }*/
 
-/*#ourmission div.modal-dialog.modal-fluid .modal-content,
+/*#whychooseus div.modal-dialog.modal-fluid .modal-content,
 #ourvision div.modal-dialog.modal-fluid .modal-content {
     min-height: calc(100% - 80px)!important;
 }*/
 
-#ourmission .card, #ourservices .card {
+#whychooseus .card, #ourservices .card {
     transition: 0.25s;
     margin-bottom: 75px;
 }
 
-#ourmission .card:hover, #ourservices .card:hover {
+#whychooseus .card:hover, #ourservices .card:hover {
     transform: scale(1.05);
     -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.25);
     -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.25);
@@ -642,15 +642,15 @@ img.section-label-contact {
     z-index: 1;
 }
 
-#ourmission .card .card-body, #ourservices .card .card-body {
+#whychooseus .card .card-body, #ourservices .card .card-body {
     padding-top: 0;
 }
 
-#ourmission .card h5, #ourservices .card h5 {
+#whychooseus .card h5, #ourservices .card h5 {
     margin-top: -40px;
 }
 
-#ourmission .card img, #ourservices .card img {
+#whychooseus .card img, #ourservices .card img {
     position: relative;
     top: -45px;
     /*background-color: #fff;
@@ -853,4 +853,38 @@ ul.contact-info li.email a:hover {
 {
     border-radius: 50px;
     background-color: #947e6a;
+}
+
+
+/*jasmin styles*/
+
+.headingsjas {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 2em 0;
+  }
+  
+  .titlejas {
+    margin: 0;
+  }
+  
+  .hrjas {
+    display: block;
+    flex: 1;
+    margin: 0 10px;
+    height: 3px;
+    background: #947e6a;
+  }
+
+  .hrjas2 {
+    display: block;
+    flex: 1;
+    margin: 10px 10px;
+    height: 3px;
+    background: #ffffff;
+  }
+
+  .bg-primary-jas {
+    background-color: #947e6a!important;
 }
