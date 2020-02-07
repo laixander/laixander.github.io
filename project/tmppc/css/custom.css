@@ -616,18 +616,71 @@ img.section-label-contact {
     opacity: 0;
 }*/
 
-#ourteam .modal-dialog, #ourmission .modal-dialog, #ourvision .modal-dialog {
+#ourteam .modal-dialog, #ourmission .modal-dialog, #ourservices .modal-dialog, #offshore .modal-dialog {
     top: 80px;
-    
 }
 
-#ourmission, #ourvision {
+/*#ourmission, #ourvision {
     overflow-y: hidden;
-}
+}*/
 
-#ourmission div.modal-dialog.modal-fluid .modal-content,
+/*#ourmission div.modal-dialog.modal-fluid .modal-content,
 #ourvision div.modal-dialog.modal-fluid .modal-content {
     min-height: calc(100% - 80px)!important;
+}*/
+
+#ourmission .card, #ourservices .card {
+    transition: 0.25s;
+    margin-bottom: 75px;
+}
+
+#ourmission .card:hover, #ourservices .card:hover {
+    transform: scale(1.05);
+    -webkit-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.25);
+    -moz-box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.25);
+    box-shadow: 0px 0px 32px 0px rgba(0,0,0,0.25);
+    z-index: 1;
+}
+
+#ourmission .card .card-body, #ourservices .card .card-body {
+    padding-top: 0;
+}
+
+#ourmission .card h5, #ourservices .card h5 {
+    margin-top: -40px;
+}
+
+#ourmission .card img, #ourservices .card img {
+    position: relative;
+    top: -45px;
+/*    background-color: #fff;
+    border-radius: 50px;
+    padding: 15px;*/
+}
+
+.custom-hr {
+    background-color: #947e6a;
+    height: 6px;
+    width: 60px;
+    margin: 0 auto;
+    margin-bottom:60px;
+}
+
+.custom-hr-left-align {
+    background-color: #947e6a;
+    height: 6px;
+    width: 60px;
+    margin-bottom:60px;
+}
+
+@media only screen and (max-width: 767px) {
+    #contact h2 {
+        text-align: center;
+    }
+    .custom-hr-left-align {
+        margin: 0 auto;
+        margin-bottom:60px;
+    }
 }
 
 .profile {
