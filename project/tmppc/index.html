@@ -24,6 +24,85 @@
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/custom.css">
 
+    <style>
+        .themeum-latest-post.themeum-latest-post-v2 {
+    margin-bottom: 30px;
+    background-color: #fff;
+    -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1);
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+}
+
+.themeum-latest-post.themeum-latest-post-v2 .themeum-latest-post-content {
+    padding: 30px;
+}
+
+.themeum-latest-post.themeum-latest-post-v2 .meta-user, .themeum-latest-post.themeum-latest-post-v2 .meta-date {
+    font-size: 14px;
+    margin-right: 15px;
+    color: #959595;
+}
+
+.themeum-latest-post.themeum-latest-post-v2 .themeum-latest-post-content .entry-title {
+    font-size: 20px;
+    font-weight: normal;
+    margin-top: 7px;
+}
+
+.themeum-latest-post.themeum-latest-post-v2 p {
+    margin-bottom: 30px;
+}
+
+.mc4wp-form-fields input[type=submit], .common-menu-wrap .nav>li.online-booking-button a, .error-page-inner a.btn.btn-primary.btn-lg, .btn.btn-primary, .package-list-button {
+    background-color: #a28c74;
+    border-color: #a28c74;
+    color: #fff !important;
+}
+
+
+.themeum-latest-post.themeum-latest-post-v2 .latest-post-comments {
+    margin-top: 8px;
+}
+
+.btn {
+    border-radius: 2px;
+    padding: 10px 20px;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    -webkit-transition: color 400ms, background-color 400ms;
+    transition: color 400ms, background-color 400ms;
+    text-transform: uppercase;
+}
+
+
+.themeum-latest-post.themeum-latest-post-v2 .latest-post-comments i {
+    font-size: 24px;
+    color: #ccc;
+}
+
+.carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.latest-news {
+    max-width:  1100px;
+    margin: 0 auto;
+}
+
+h3.entry-title a {
+    color: #34495e;
+}
+
+.themeum-latest-post.themeum-latest-post-v2:hover {
+    -webkit-box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+    </style>
+
 </head>
 
 <body id="home" ng-app="tmppc">
@@ -115,16 +194,55 @@
 
             <div class="row">
                 <div class="col-md">
-                    <h2 class="text-uppercase text-center mb-5" data-aos="fade-down">News</h2>
+                    <h2 class="text-uppercase text-center mb-5" data-aos="fade-down">LATEST NEWS</h2>
                     <!-- <div class="custom-hr" data-aos="zoom-in"></div> -->
                 </div>
             </div>
 
-            <div class="row justify-content-md-center">
+<!--             <div class="row justify-content-md-center">
                 <div class="col col-lg-8">
-                    <div class="container">
+                    <div class="container"> -->
 
-                        <div class="row news-item">
+
+                        <!-- <div class="addon-themeum-title " style="text-align:center;">
+        <div class="themeum-title title-normal normal">
+            <h2 class="text-uppercase text-center mb-5 aos-init aos-animate">LATEST NEWS</h2>
+            </div>
+    </div> -->
+
+<div class="row latest-news">
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="themeum-latest-post themeum-latest-post-v2" data-aos="fade-right">
+            <a class="review-item-image " data-toggle="modal" data-target="#exampleNews"> <img width="570" height="360" src="images/lunch_out.jpg" class="img-responsive wp-post-image" alt=""></a>
+            <div class="themeum-latest-post-content clearfix" data-toggle="modal" data-target="#exampleNews"> <span class="meta-date"><i class="fa fa-clock-o"></i> December 26, 2016</span>
+                <h3 class="entry-title"><a href="#" class="title" data-toggle="modal" data-target="#exampleNews">The Quickest &amp; Easiest Way To idea dolor sit</a></h3>
+                <p>Lorem ipsum dolor sit amet, quem suscipit ullamcorper nec cu, quot minimum has te, </p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleNews">Read More </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="themeum-latest-post themeum-latest-post-v2" data-aos="fade-up">
+            <a class="review-item-image " data-toggle="modal" data-target="#exampleNews1"> <img width="570" height="360" src="images/with_ms.stef.jpg" class="img-responsive wp-post-image" alt=""></a>
+            <div class="themeum-latest-post-content clearfix" data-toggle="modal" data-target="#exampleNews1"> <span class="meta-date"><i class="fa fa-clock-o"></i> December 26, 2016</span>
+                <h3 class="entry-title"><a href="#" class="title" data-toggle="modal" data-target="#exampleNews1">The Quickest &amp; Easiest Way To idea dolor sit</a></h3>
+                <p>Lorem ipsum dolor sit amet, quem suscipit ullamcorper nec cu, quot minimum has te, </p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleNews1">Read More </a>
+            </div>
+        </div>
+    </div>
+
+     <div class="col-xs-12 col-sm-6 col-md-4">
+        <div class="themeum-latest-post themeum-latest-post-v2" data-aos="fade-left">
+            <a class="review-item-image " data-toggle="modal" data-target="#exampleNews2"> <img width="570" height="360" src="images/with_sachou.jpg" class="img-responsive wp-post-image" alt=""></a>
+            <div class="themeum-latest-post-content clearfix" data-toggle="modal" data-target="#exampleNews2"> <span class="meta-date"><i class="fa fa-clock-o"></i> December 26, 2016</span>
+                <h3 class="entry-title"><a href="#" class="title" data-toggle="modal" data-target="#exampleNews2">The Quickest &amp; Easiest Way To idea dolor sit</a></h3>
+                <p>Lorem ipsum dolor sit amet, quem suscipit ullamcorper nec cu, quot minimum has te, </p><a href="#" class="btn btn-primary" data-toggle="modal" data-target="#exampleNews2">Read More </a>
+            </div>
+        </div>
+    </div>
+</div>
+
+                        <!-- <div class="row news-item">
                             <div class="col-3 col-md-2 text-center" data-aos="fade-right">
                                 <div class="news-date">
                                     <span class="ndate">01</span>
@@ -207,11 +325,11 @@
                                     </div>
                                 </a>
                             </div>
-                        </div>
-
+                        </div> -->
+<!-- 
                     </div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
@@ -742,6 +860,91 @@
 
 
 
+    <!-- Modal -->
+    <div class="modal fade pr-0" id="exampleNews" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-title">
+                        <h5 id="exampleModalCenterTitle" class="mb-1">Lunch out with the team</h5>
+                        <div class="news-item-date">
+                            Dec 13, 2019 | Written by Arlohn Kun
+                        </div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times fa-2x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/lunch_out.jpg" class="img-fluid mb-4" alt="">
+                    
+                    <p>We took some time out and spent lunch together at Ramen Ipudon to spark those all important conversations!</p>
+                    <p>Let’s break the silence and get people around you talking! 🍜. #teamlunch</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade pr-0" id="exampleNews1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-title">
+                        <h5 id="exampleModalCenterTitle" class="mb-1">Lunch out with the team</h5>
+                        <div class="news-item-date">
+                            Dec 13, 2019 | Written by Arlohn Kun
+                        </div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times fa-2x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/with_ms.stef.jpg" class="img-fluid mb-4" alt="">
+                    
+                    <p>We took some time out and spent lunch together at Ramen Ipudon to spark those all important conversations!</p>
+                    <p>Let’s break the silence and get people around you talking! 🍜. #teamlunch</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade pr-0" id="exampleNews2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header border-0">
+                    <div class="modal-title">
+                        <h5 id="exampleModalCenterTitle" class="mb-1">Lunch out with the team</h5>
+                        <div class="news-item-date">
+                            Dec 13, 2019 | Written by Arlohn Kun
+                        </div>
+                    </div>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true"><i class="far fa-times fa-2x"></i></span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <img src="images/with_sachou.jpg" class="img-fluid mb-4" alt="">
+                    
+                    <p>We took some time out and spent lunch together at Ramen Ipudon to spark those all important conversations!</p>
+                    <p>Let’s break the silence and get people around you talking! 🍜. #teamlunch</p>
+                </div>
+                <div class="modal-footer border-0">
+                    <button type="button" class="btn btn-primary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -758,9 +961,9 @@
     <script src="js/aos.js"></script>
     <script src="js/custom.js"></script>
     <script src="js/profiles.js"></script>
-    <script>
+    <!-- <script>
         $('#offshore').modal('show');
-    </script> 
+    </script>  -->
     <script>
         $('#offshore').modal('hide')
         $('#offshore').on('hidden.bs.modal', function (e) {
