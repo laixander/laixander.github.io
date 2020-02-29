@@ -121,3 +121,6 @@ a:active, a:focus, a:hover {
 	}
 }
 
+.form-control:focus {
+    background-color: transparent;
+}
