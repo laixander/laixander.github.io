@@ -1,9 +1,9 @@
 body {
-    font-family: "Open Sans";
+    font-family: 'Quicksand', sans-serif;
 }
 header.masthead h2 {
     font-size: 1.65rem;
-    font-family: "Open Sans";
+    font-family: 'Quicksand', sans-serif;
 }
 .lead {
 	font-size: 1.15rem;
@@ -89,7 +89,7 @@ hr.star-dark {
 }
 
 .btn-outline-light:hover {
-     color: #00adb5; 
+     color: #009299; 
 }
 
 a {
@@ -98,6 +98,10 @@ a {
 
 a:active, a:focus, a:hover {
     color: #009299;
+}
+
+#about .btn-outline-light:focus {
+    color: #212529;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
