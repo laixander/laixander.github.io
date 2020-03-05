@@ -265,3 +265,25 @@ nav .main-nav a:hover {
 #footer .links a:hover {
 	color: #0C4A9F;
 }
+
+#contact-us {
+	padding: 80px 0;
+}
+
+#contact-us h2 {
+	text-align: center;
+}
+
+#contact-us .photo {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+#contact-us .photo img {
+	width: 100%;
+	max-width: 300px;
+}
+
+#contact-us .col {
+	text-align: left;
+}
