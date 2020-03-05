@@ -266,6 +266,10 @@ nav .main-nav a:hover {
 	color: #0C4A9F;
 }
 
+#footer .ipa-logo {
+	margin-bottom: 20px;
+}
+
 #contact-us {
 	padding: 80px 0;
 }
@@ -276,14 +280,36 @@ nav .main-nav a:hover {
 
 #contact-us .photo {
 	text-align: center;
-	margin-bottom: 40px;
+	/*margin-bottom: 40px;*/
 }
 
 #contact-us .photo img {
 	width: 100%;
-	max-width: 300px;
+	max-width: 180px;
 }
 
 #contact-us .col {
 	text-align: left;
+}
+
+#contact-us .profile {
+	margin-bottom: 40px;
+	border-bottom: 1px solid #ececec;
+}
+
+#contact-us .profile ul {
+	line-height: 1.8rem;
+	list-style-image: url(../img/checkmark.svg);
+}
+
+#contact-us .profile .callout-button {
+	margin-bottom: 0;
+}
+
+#contact.inner-page {
+	background-color: #ececec;
+}
+
+#contact.inner-page form {
+	margin-top: 0;
 }
