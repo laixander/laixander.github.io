@@ -1,0 +1,100 @@
+.row {
+	/*background-color: #795548;*/
+	padding: 20px;
+}
+[class*='col'], .callout-text, .callout-button {
+	/*background-color: #FFEB3B;*/
+	padding: 12px 24px;
+	margin-bottom: 20px;
+}
+[class*='col']:last-of-type {
+	margin-bottom: 0;
+}
+@media only screen and (min-width: 959px) {
+	.wpr-85 {
+		width: 85%;
+		margin: 0 auto;
+	}
+	.row {
+		display: flex;
+		padding: 20px 0;
+	}
+	[class*='col'] {
+		flex: 1;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	[class*='col']:last-of-type {
+		margin-right: 0;
+	}
+	.callout-text {
+		width: 65%;
+		margin-right: 20px;
+		margin-bottom: 0;
+	}
+	.callout-button {
+		width: 35%;
+		margin-right: 0;
+	}
+}
+
+/**RUSSEL**/
+.accordion {
+    background-color: #0C4A9F;
+    color: #fff;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+.active, .accordion:hover {
+  background-color: #09346e;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #f1f1f1;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  height: auto;
+}
+
+.wrapper h2 {
+    padding-bottom: 100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.panel p {
+    text-align: left;
+    font-size: 16px;
+    color: #333333;
+    line-height: 1.6em;
+    padding: 10px;
+}
+
+
+p.achievements {
+    list-style-type: none;
+    text-align: left;
+    color: #333333;
+    line-height: 1.8em;
+    font-size: 16px;
+}
