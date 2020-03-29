@@ -112,11 +112,13 @@ a:active, a:focus, a:hover {
 }
 
 #mainNav {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Quicksand', sans-serif;
 }
 
 #mainNav .navbar-brand {
-    font-weight: 800;
+    font-family: 'Nunito', sans-serif;
+    font-size: 1.7rem;
+    font-weight: 900;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
