@@ -18,11 +18,13 @@
 	<link href="assets/css/custom.css" rel="stylesheet">
 </head>
 
-<body id="page-top">
+<body id="page-top" onload="preloader()">
+	<div class="loader-bg">
+        <div class="loader"></div>
+    </div>
 	<nav class="navbar navbar-expand-lg bg-secondary fixed-top text-uppercase" id="mainNav">
 		<div class="container">
-			<img class="img-fluid mr-3" src="assets/images/logo.png" alt="Logo" style="max-width:45px;">
-			<a class="navbar-brand js-scroll-trigger" href="#page-top">Laixander</a>
+			<a class="navbar-brand js-scroll-trigger" href="#page-top"><img class="img-fluid mr-3" src="assets/images/logo.png" alt="Logo" style="max-width:50px; margin-bottom: 5px;">Laixander</a>
 			<button class="navbar-toggler navbar-toggler-right text-uppercase bg-primary text-white rounded" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
 				<i class="fa fa-bars"></i>
 			</button>
@@ -378,6 +380,7 @@
 	<script src="assets/js/jqBootstrapValidation.js"></script>
 	<script src="assets/js/contact_me.js"></script>
 	<script src="assets/js/scripts.min.js"></script>
+	<script src="assets/js/custom.js"></script>
 </body>
 
 </html>
