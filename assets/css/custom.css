@@ -168,11 +168,16 @@ a:active, a:focus, a:hover {
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
+    border-radius: 50px;
     color: #00adb5;
 }
 
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
     color: #00adb5!important;
+}
+
+.btn {
+    border-radius: 50px;
 }
 
 @media (min-width: 992px){
