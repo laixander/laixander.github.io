@@ -180,6 +180,28 @@ a:active, a:focus, a:hover {
     border-radius: 50px;
 }
 
+.animated {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes up-down {
+  0% {
+    transform: translateY(10px);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
 @media (min-width: 992px){
 	#mainNav .navbar-nav>li.nav-item>a.nav-link.active {
 		color: #fff!important;
