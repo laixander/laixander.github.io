@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700;800&display=swap');
 @import url('../lib/bs/css/bootstrap.css');
 @import url('../lib/fa/css/all.css');
-@import url('../lib/hl/css/atom-one-dark.css');
 
 html, body {
 	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
@@ -61,12 +60,20 @@ html, body {
     content: "\f078";
     border: none;
     vertical-align: 0.55em;
-    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+         -o-transition: all 0.3s ease;
+            transition: all 0.3s ease;
 }
 .nav-item.show .dropdown-toggle::after {
+	-webkit-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
 	transition: all 0.3s ease;
-	transform: rotate(-180deg);
-	transform-origin: center center;
+	-webkit-transform: rotate(-180deg);
+	    -ms-transform: rotate(-180deg);
+	        transform: rotate(-180deg);
+	-webkit-transform-origin: center center;
+	    -ms-transform-origin: center center;
+	        transform-origin: center center;
 }
 .dropdown-menu {
 	font-size: 0.8rem;
@@ -163,7 +170,9 @@ html, body {
 	background-color: tomato;
 	top: -8px;
 	right: -8px;
-	transform: scale(0.65);
+	-webkit-transform: scale(0.65);
+	    -ms-transform: scale(0.65);
+	        transform: scale(0.65);
 }
 .top-bar a .notification {
 	font-size: 65%;
@@ -212,13 +221,11 @@ html, body {
 	position: relative;
 	margin: 10px auto;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
 	-webkit-transition: .5s ease-in-out;
-	-moz-transition: .5s ease-in-out;
-	-o-transition: .5s ease-in-out;
-	transition: .5s ease-in-out;
+	     -o-transition: .5s ease-in-out;
+	        transition: .5s ease-in-out;
 	cursor: pointer;
 }
 #nav-icon span {
@@ -231,13 +238,11 @@ html, body {
 	opacity: 1;
 	left: 0;
 	-webkit-transform: rotate(0deg);
-	-moz-transform: rotate(0deg);
-	-o-transform: rotate(0deg);
-	transform: rotate(0deg);
+	    -ms-transform: rotate(0deg);
+	        transform: rotate(0deg);
 	-webkit-transition: .15s ease-in-out;
-	-moz-transition: .15s ease-in-out;
-	-o-transition: .15s ease-in-out;
-	transition: .15s ease-in-out;
+	     -o-transition: .15s ease-in-out;
+	        transition: .15s ease-in-out;
 }
 #nav-icon span:nth-child(1) {
 	top: 0px;
@@ -256,15 +261,13 @@ html, body {
 }
 #nav-icon.open span:nth-child(2) {
 	-webkit-transform: rotate(45deg);
-	-moz-transform: rotate(45deg);
-	-o-transform: rotate(45deg);
-	transform: rotate(45deg);
+	    -ms-transform: rotate(45deg);
+	        transform: rotate(45deg);
 }
 #nav-icon.open span:nth-child(3) {
 	-webkit-transform: rotate(-45deg);
-	-moz-transform: rotate(-45deg);
-	-o-transform: rotate(-45deg);
-	transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
 }
 #nav-icon.open span:nth-child(4) {
 	top: 16px;
@@ -279,15 +282,23 @@ html, body {
 		display: block;
 		visibility: hidden;
 		opacity: 0;
-		transform: translateY(50px);
+		-webkit-transform: translateY(50px);
+		    -ms-transform: translateY(50px);
+		        transform: translateY(50px);
+		-webkit-transition:.5s ease all;
+		-o-transition:.5s ease all;
 		transition:.5s ease all;
 	}
 	.dropdown-menu.show {
 		display: block;
 		visibility: visible;
 		opacity: 1;
-		transform: translateY(0px);
-		transition:.5s ease all;
+		-webkit-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+		        transform: translateY(0px);
+		-webkit-transition: .5s ease all;
+		     -o-transition: .5s ease all;
+		        transition: .5s ease all;
 	}
 }
 
@@ -301,15 +312,23 @@ html, body {
 		display: block;
 		visibility: hidden;
 		opacity: 0;
-		transform: translateY(50px);
-		transition:.5s ease all;
+		-webkit-transform: translateY(50px);
+		    -ms-transform: translateY(50px);
+		        transform: translateY(50px);
+		-webkit-transition: .5s ease all;
+		     -o-transition: .5s ease all;
+		        transition: .5s ease all;
 	}
 	.top-bar .dropdown-menu.show {
 		display: block;
 		visibility: visible;
 		opacity: 1;
-		transform: translateY(0px);
-		transition:.5s ease all;
+		-webkit-transform: translateY(0px);
+		    -ms-transform: translateY(0px);
+		        transform: translateY(0px);
+		-webkit-transition: .5s ease all;
+		     -o-transition: .5s ease all;
+		        transition: .5s ease all;
 	}
 
 	.navbar-nav .dropdown-menu {
@@ -343,7 +362,8 @@ html, body {
 	    background: transparent;
 	}
 	.bg-teal .dropdown-menu.shadow {
-		box-shadow: none!important;
+		-webkit-box-shadow: none!important;
+		        box-shadow: none!important;
 	}
 	.navbar {
 		background-color: transparent;
@@ -379,9 +399,15 @@ html, body {
 		overflow-y: auto;
 		visibility: hidden;
 		background-color: #40bdd0;
-		transition-timing-function: ease;
-		transition-duration: .3s;
-		transition-property: left, visibility;
+		-webkit-transition-timing-function: ease;
+		     -o-transition-timing-function: ease;
+		        transition-timing-function: ease;
+		-webkit-transition-duration: .3s;
+		     -o-transition-duration: .3s;
+		        transition-duration: .3s;
+		-webkit-transition-property: left, visibility;
+		     -o-transition-property: left, visibility;
+		        transition-property: left, visibility;
 	}
 	.offcanvas-collapse.open {
 		left: 30%;
@@ -403,13 +429,4 @@ html, body {
 	.top-bar .chat .dropdown-menu {
 		min-width: 12.5rem;
 	}
-}
-
-
-
-
-
-
-.pointer { 
-	cursor: pointer; 
 }
