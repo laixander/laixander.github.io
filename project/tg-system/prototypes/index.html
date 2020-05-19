@@ -303,7 +303,13 @@
     	$(function () {
     		// Mobile Sidebar
     		$('[data-toggle="offcanvas"]').on('click', function () {
-    			$('.offcanvas-collapse').toggleClass('open')
+    			$('.offcanvas-collapse').toggleClass('open');
+    			$('main').toggleClass('offcanvas-overlay');
+    		})
+    		$('body').on('click', 'main', function () {
+    			$('.offcanvas-collapse').removeClass('open');
+    			$('main').removeClass('offcanvas-overlay');
+    			$('#nav-icon').removeClass('open');
     		})
     		// Hamburger Menu Animation
     		$('#nav-icon').click(function(){

@@ -413,6 +413,19 @@ html, body {
 		left: 30%;
 		visibility: visible;
 	}
+	main.offcanvas-overlay::before {
+		content: '';
+		display: block;
+		position: absolute;
+		z-index: 2;
+		top: 86px;
+		left: 0;
+		width: 100%;
+		height: 100vh;
+		background-color: #000;
+		opacity: 0.75;
+		animation: fadeInOverlay 0.5s ease;
+	}
 }
 
 @media (max-width: 392px) {
