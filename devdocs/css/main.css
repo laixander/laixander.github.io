@@ -8792,7 +8792,7 @@ body {
 }
 
 .nav-icon span:nth-child(1) {
-    top: 0px;
+    top: 2px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -8800,7 +8800,7 @@ body {
 }
 
 .nav-icon span:nth-child(2) {
-    top: 9px;
+    top: 11px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -8808,7 +8808,7 @@ body {
 }
 
 .nav-icon span:nth-child(3) {
-    top: 18px;
+    top: 20px;
     -webkit-transform-origin: left center;
     -moz-transform-origin: left center;
     -o-transform-origin: left center;
@@ -8820,8 +8820,8 @@ body {
     -moz-transform: rotate(45deg);
     -o-transform: rotate(45deg);
     transform: rotate(45deg);
-    top: -3px;
-    left: 8px;
+    top: 1px;
+    left: 4px;
 }
 
 .nav-icon.open span:nth-child(2) {
@@ -8834,6 +8834,11 @@ body {
     -moz-transform: rotate(-45deg);
     -o-transform: rotate(-45deg);
     transform: rotate(-45deg);
-    top: 17px;
-    left: 8px;
+    top: 21px;
+    left: 4px;
+}
+
+.sidebar-dropdown a {
+    overflow: hidden;
+    white-space: nowrap;
 }
