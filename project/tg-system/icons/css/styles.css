@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;400;700&display=swap');
+@import url('../lib/bs/css/bootstrap.css');
+@import url('../lib/fa/css/all.css');
+@import url('../lib/hl/css/atom-one-light.css');
+
+html, body {
+	font-family: 'Quicksand', 'Noto Sans JP', sans-serif;
+}
+
+.pointer { 
+	cursor: pointer; 
+}
+
+.table-hover tbody tr {
+    transition: all 0.5s;
+}
+
+.table-hover tbody tr:hover {
+    background-color: rgba(255, 193, 7, 0.4);
+}

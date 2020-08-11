@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Prototype</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<section class="top-bar container-fluid">
+			<div class="row">
+				<div class="col brand text-uppercase d-flex align-items-center">
+					Trust Growth
+				</div>
+				<div class="col title text-center text-uppercase d-flex align-items-center justify-content-center">
+					Dashboard
+				</div>
+				<div class="col d-flex align-items-center justify-content-end">
+					<div class="notif dropdown">
+						<a class="text-white" href="#" id="notif-alert" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-bell fa-lg"></i>
+							<span class="badge badge-pill badge-warning notification">1</span>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="notif-alert">
+							<span class="dropdown-item-text text-muted">1 新着通知</span>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">1 New Notification</a>
+						</div>
+					</div>
+					<div class="chat dropdown">
+						<a class="text-white" href="#" id="chat-alert" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-comment fa-lg"></i>
+							<!-- <span class="badge badge-pill badge-warning notification">1</span> -->
+						</a>
+						<div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="chat-alert">
+							<span class="dropdown-item-text text-muted">0 新着メッセージ</span>
+							<div class="dropdown-divider"></div>
+							<span class="dropdown-item-text text-muted">新着通知がありません</span>
+						</div>
+					</div>
+					<div class="user dropdown">
+						<a class="text-white" href="#" id="user-settings" data-display="static" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-user-circle fa-2x"></i>
+						</a>
+						<div class="dropdown-menu dropdown-menu-right shadow" aria-labelledby="user-settings">
+							<a class="dropdown-item" href="#">管理者の編集</a>
+							<a class="dropdown-item" href="#">登録情報の編集</a>
+							<a class="dropdown-item" href="#">管理者プロファイル</a>
+							<div class="dropdown-item">
+								<button type="button" class="btn btn-primary btn-block">ログアウト <i class="fas fa-sign-out-alt"></i></button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<nav class="navbar navbar-expand-md navbar-dark bg-teal">
+			<button class="navbar-toggler p-0 border-0" type="button" data-toggle="offcanvas" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+				<div id="nav-icon">
+					<span></span>
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+			</button>
+			<div class="navbar-collapse offcanvas-collapse" id="navbarText">
+				<ul class="navbar-nav mr-auto nav-fill w-100">
+					<li class="nav-item active">
+						<a class="nav-link" href="#">
+							<i class="fas fa-calendar-alt fa-lg"></i>
+							<div class="nav-label">
+								カレンダーイベント<br>
+								Calendar Events
+							</div>
+						</a>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="staff-management" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-id-badge fa-lg"></i>
+							<div class="nav-label">
+								スタッフ管理<br>
+								Staff Management
+							</div>
+						</a>
+						<div class="dropdown-menu shadow" aria-labelledby="staff-management">
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									スタッフ新規登録<br>
+									New Staff Registration
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									スタッフ検索<br>
+									Staff Search
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									タイムシート検索<br>
+									Timesheet Search
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									勤怠関係ダウンロード<br>
+									Attendance Download
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" href="#" id="sale-history" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-chart-bar fa-lg"></i>
+							<div class="nav-label">
+								営業履歴<br>
+								Sale History
+							</div>
+						</a>
+						<div class="dropdown-menu shadow" aria-labelledby="sale-history">
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									営業先新規登録<br>
+									New Business Registration
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									営業先検索<br>
+									Business Search
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									営業履歴集計<br>
+									Total Sales History
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" href="#" href="#" id="daily-report" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-chart-pie fa-lg"></i>
+							<div class="nav-label">
+								日報報告<br>
+								Daily Report
+							</div>
+						</a>
+						<div class="dropdown-menu shadow" aria-labelledby="daily-report">
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									日報を入力<br>
+									Input Daily Report
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									日報を確認<br>
+									Check Daily Report
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									目標の設定<br>
+									Goal Setting
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									ダウンロード<br>
+									Download
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" href="#" href="#" id="portal" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-laptop fa-lg"></i>
+							<div class="nav-label">
+								ポータル<br>
+								Portal
+							</div>
+						</a>
+						<div class="dropdown-menu shadow" aria-labelledby="portal">
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									企業新規登録<br>
+									New Company Registration
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									企業検索<br>
+									Company Search
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									案件新規登録<br>
+									New Job Registration
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									案件検索<br>
+									Job Search
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									案件一括登録<br>
+									Job Batch Registration
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" href="#" href="#" id="document-approval" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+							<i class="fas fa-certificate fa-lg"></i>
+							<div class="nav-label">
+								文書承認<br>
+								Document Approval
+							</div>
+						</a>
+						<div class="dropdown-menu shadow" aria-labelledby="document-approval">
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									承認状況<br>
+									Approval Status
+								</div>
+							</a>
+							<div class="dropdown-divider"></div>
+							<a class="dropdown-item" href="#">
+								<div class="d-inline-block text-left">
+									承認設定<br>
+									Approval Settings
+								</div>
+							</a>
+						</div>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-file-signature fa-lg"></i>
+							<div class="nav-label">
+								スタッフ契約<br>
+								Staff Contract
+							</div>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">
+							<i class="fas fa-comments fa-lg"></i>
+							<div class="nav-label">
+								チャット<br>
+								Chat
+							</div>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<nav class="breadcrumb-wrapper" aria-label="breadcrumb">
+			<ol class="breadcrumb m-0 bg-transparent">
+				<li class="breadcrumb-item"><a href="#">コントロールパネル</a></li>
+				<li class="breadcrumb-item active" aria-current="page">カレンダー</li>
+			</ol>
+		</nav>
+	</header>
+	<main>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col">
+					<section class="shadow-lg" style="background-color: #fff; border-top: 5px solid #40bdd0;">
+						<div class="row p-4">
+							<div class="col">
+								<h4 class="font-weight-bolder">New Navigation Menu Prototype</h4>
+								<p>18.05.2020<br>Prepared by Laix</p>
+							</div>
+						</div>
+					</section>
+				</div>
+			</div>
+		</div>
+	</main>
+
+	<script src="lib/js/jquery-3.5.1.slim.min.js"></script>
+    <script src="lib/js/popper.min.js"></script>
+    <script src="lib/bs/js/bootstrap.min.js"></script>
+    <script>
+    	$(function () {
+    		// Mobile Sidebar
+    		$('[data-toggle="offcanvas"]').on('click', function () {
+    			$('.offcanvas-collapse').toggleClass('open');
+    			$('main').toggleClass('offcanvas-overlay');
+    		})
+    		$('body').on('click', 'main', function () {
+    			$('.offcanvas-collapse').removeClass('open');
+    			$('main').removeClass('offcanvas-overlay');
+    			$('#nav-icon').removeClass('open');
+    		})
+    		// Hamburger Menu Animation
+    		$('#nav-icon').click(function(){
+    			$(this).toggleClass('open')
+    		})
+		})
+    </script>
+
+</body>
+</html>
