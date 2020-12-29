@@ -16,7 +16,38 @@
     <link rel="stylesheet" href="css/sidebar-themes.css">
     <link rel="stylesheet" href="css/prism-hopscotch.css">
     <!-- <link rel="shortcut icon" type="image/png" href="img/favicon.png" /> -->
-
+    <style>
+        .light-theme .sidebar-wrapper {
+            z-index: 1070;
+            background-color: rgb(249 249 249 / 0.90);
+            backdrop-filter: blur(15px);
+        }
+        .light-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown .sidebar-submenu li a:before {
+            content: "\f054";
+            font-size: 9px;
+        }
+        .light-theme .sidebar-wrapper .sidebar-menu ul li a i, .light-theme .sidebar-wrapper .sidebar-menu .sidebar-dropdown div {
+            background-color: transparent;
+        }
+        .light-theme .sidebar-wrapper a:not(.dropdown-item):hover, .light-theme .sidebar-wrapper .sidebar-menu li.active > a {
+            box-shadow: none;
+        }
+        .light-theme .sidebar-wrapper .sidebar-footer {
+            box-shadow: none;
+            background-color: transparent;
+        }
+        .custom-fixed-top {
+            position: fixed;
+            top: 0;
+            z-index: 1030;
+            width: 100%;
+            background-color: rgb(255 255 255 / 0.90);
+            backdrop-filter: blur(15px);
+        }
+        .custom-fixed-top + div{
+            margin-top: 63px;
+        }
+    </style>
 </head>
 
 <body>
@@ -29,9 +60,10 @@
                 <div class=" sidebar-item sidebar-menu pt-3">
                     <ul>
                         <li class="sidebar-dropdown">
-                            <a href="#"> <i class="fab fa-laravel"></i> <span class="menu-text">Laravel, Basic Setup</span> </a>
+                            <a href="#"> <i class="fab fa-laravel"></i> <span class="menu-text">Laravel</span> </a>
                             <div class="sidebar-submenu">
                                 <ul>
+                                    <li> <a href="#new-laravel-project">Setting Up New Project</a> </li>
                                     <li> <a href="#creating-controller">Creating Controller</a> </li>
                                     <li> <a href="#adding-bootstrap">Adding Bootstrap</a> </li>
                                 </ul>
@@ -50,18 +82,20 @@
             <!-- sidebar-footer  -->
             <div class="sidebar-footer">
                 <div>
-                    <a id="pin-sidebar" href="#"> <i class="fas fa-arrow-to-left"></i> </a>
+                    <!-- <a id="pin-sidebar" href="#"> <i class="fas fa-arrow-to-left"></i> </a> -->
+                    <a id="pin-sidebar" href="#"> <i class="fas fa-arrows-alt-h"></i> </a>
                 </div>
                 <div class="pinned-footer">
-                    <a href="#"> <i class="fas fa-arrows-alt-h"></i> </a>
+                    <!-- <a href="#"> <i class="fas fa-arrows-alt-h"></i> </a> -->
+                    <a href="#"> <i class="fas fa-arrow-to-left"></i> </a>
                 </div>
             </div>
         </nav>
         <!-- page-content  -->
-        <main class="page-content">
+        <main class="page-content" id="new-laravel-project">
             <div id="overlay" class="overlay"></div>
             <div class="container-fluid">
-                <div class="row d-flex align-items-center p-3 border-bottom">
+                <div class="row d-flex align-items-center p-3 border-bottom custom-fixed-top">
                     <div class="col-md">
                         <div id="toggle-sidebar" class="btn rounded-0 nav-icon open"> 
                             <!-- <i class="fas fa-bars"></i>  -->
@@ -71,26 +105,24 @@
                         </div>
                     </div>
                 </div>
-                <div class="row p-lg-4">
+                <div class="row p-lg-4 custom-margin-top">
                     <article class="main-content col-md-9 pr-lg-5">
                         <!-- title -Add bootstrap helpers for spacing -->
-                        <h1 class="mb-2 mt-3">SETTING UP LARAVEL PROJECT</h1>
+                        <h3 class="font-weight-bold mb-2">Setting Up New Project</h3>
                         <!--//title -->
-                        <p>In xampp htdocs folder, open (Git Bash). Write command line:</p>
+                        <p>Inside xampp htdocs folder, open (Git Bash). Write command line:</p>
                         
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>laravel new name_of_project</span></code></pre></figure>
 
-                        <p>Inside the created project, open (Git Bash). Write command line:</p>
+                        <p>To open the new project on (Visual Code Editor), use command line:</p>
                         
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>code .</span></code></pre></figure>
 
-                        <p>...it will open on code editor (Visual Code Editor)</p>
-
-                        <p>Open (Terminal) on Visual Code then write</p>
+                        <p>To open on (Browser), use command line:</p>
 
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan serve</span></code></pre></figure>
 
-                        <p>...this will activate the IP address to be used on browser</p>
+                        <p>...it will activate the (IP address)</p>
 
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>http://127.0.0.1:8000/
 </span></code></pre></figure>
@@ -98,22 +130,20 @@
                         <hr class="my-5">
                         
                         <h3 class="font-weight-bold mb-2" id="creating-controller">
-                            CREATING CONTROLLER
+                            Creating Controller
                         </h3>
 
-                        <p>Open (Terminal) on Visual Code then write</p>
+                        <p>Open (Git Bash). Write command line:</p>
 
-                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan make:controller name_of_controller</span></code></pre></figure>
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan make:controller NameOfController</span></code></pre></figure>
 
                         <hr class="my-5">
                         
                         <h3 class="font-weight-bold mb-2" id="adding-bootstrap">
-                            ADDING BOOTSTRAP
+                            Adding Bootstrap
                         </h3>
 
-                        <p>Open CMD, enter cd laravel_folder_path</p>
-
-                        <p>Write the following in order:</p>
+                        <p>Open (Git Bash). Write the following in order:</p>
 
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>composer require laravel/ui --dev</span></code></pre></figure>
 
@@ -125,8 +155,10 @@
                     </article>
                     <aside class="col-md-3 d-none d-md-block border-left">
                         <div class="widget widget-support-forum p-md-3 p-sm-2">
-                            <h4>Looking for help? Join Community</h4>
-                            <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p>
+                            <!-- <h4>Looking for help? Join Community</h4>
+                            <p>Couldn’t find what your are looking for ? Why not join out support forums and let us help you.</p> -->
+                            <h4>About The Page</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet et dolorem ipsa illum hic a fuga, rerum distinctio veniam, sapiente.</p>
                         </div>
                         <hr class="my-5">
                         <div class="widget widget-support-forum p-md-3 p-sm-2">
