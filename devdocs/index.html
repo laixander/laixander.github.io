@@ -114,7 +114,16 @@
                         
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>laravel new name_of_project</span></code></pre></figure>
 
-                        <p>To open the new project on (Visual Code Editor), use command line:</p>
+                        <p>or via Composer Create-Project</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>composer create-project --prefer-dist laravel/laravel blog "6.*"</span></code></pre></figure>
+
+                        <p>If you get error, try re-install Laravel</p>
+
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>composer global remove laravel/installer</span></code></pre></figure>
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>composer global require laravel/installer</span></code></pre></figure>
+
+                        <p>To open the project on (Visual Code Editor), use command line:</p>
                         
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>code .</span></code></pre></figure>
 
@@ -150,6 +159,10 @@
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>php artisan ui bootstrap</span></code></pre></figure>
 
                         <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>npm install && npm run dev</span></code></pre></figure>
+
+                        <p>Please run Mix again</p>
+                        
+                        <figure class="highlight"><pre><code class="language-html" data-lang="html"><span>npm run dev</span></code></pre></figure>
 
                         
                     </article>
