@@ -133,8 +133,8 @@ hr.star-dark {
     background-color: rgba(0,173,181,.9)!important;
 }
 
-.btn-outline-light:hover {
-     color: #009299; 
+.btn-outline-light:hover, .btn-outline-light:active {
+     color: #00adb5!important; 
 }
 
 a {
