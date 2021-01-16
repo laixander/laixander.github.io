@@ -122,6 +122,10 @@ section#contact, section#contact hr.star-dark:after {
 	color: #222831!important;
 }
 
+hr.star-light { 
+    border-color: #fff!important;
+}
+
 hr.star-dark {
 	border-color: #222831!important;
 }
