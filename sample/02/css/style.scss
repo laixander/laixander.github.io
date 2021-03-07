@@ -1,0 +1,295 @@
+$primary: #f05454;
+$hover: #dd3434;
+$base: #30475e;
+$white: #fff;
+$black: #000;
+$light: #f5f5f5;
+
+body {
+    height: 100vh;
+}
+
+header {
+    & > .navbar {
+        background-color: $base;
+        .nav-link {
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+    }
+    & > .jumbotron {
+        height: 70vh;
+        margin-top: 56px;
+        color: $white;
+        background-color: $base;
+        display: flex;
+        align-items: center;
+        .display-4 {
+            font-size: 2.7rem;
+        }
+        .hero-img {
+            position: relative;
+            // background: url('/img/halftone.png') 80% no-repeat;
+            // background-size: 100%;
+            // overflow: visible;
+            img {
+                position: absolute;
+                &.char {
+                    // z-index: 1;
+                    width: 110%;
+                    top: 0%;
+                    left: -25px;
+                }
+                // &.halftone {
+                //     z-index: 0;
+                //     opacity: 0.05;
+                //     width: 85%;
+                //     top: 20%;
+                //     left: 20%;
+                // }
+            }
+        }
+        hr {
+            border-color: rgba($white, 0.1);
+        }
+    }
+}
+
+main {
+    background-image: url('../img/dot-ver.png'), 
+                      url('../img/dot-hor.png'), 
+                      url('../img/dot-ver.png'),
+                      url('../img/dot-hor.png');
+    background-position: left top, right bottom, 80% 72%, 20% 29%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    section {
+        &.info {
+            margin-top: 80px;
+            margin-bottom: 160px;
+            [class|="col"] {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                .btn {
+                    margin-top: auto;
+                }
+            }
+            .row:first-child {
+                margin-bottom: 80px;
+            }
+        }
+        &.cta, &.plan, &.contact {
+            .card {
+                border-radius: 20px;
+                border-color: transparent;
+                // background-color: $light;
+                padding: 10px;
+                transition: all 0.4s ease-in-out;
+                &.shadow-lg {
+                    box-shadow: 0 1rem 3rem rgba($black, .05)!important;
+                }
+            }
+        }
+        &.clients, &.plan, &.contact {
+            margin-top: 160px;
+            margin-bottom: 160px;
+        }
+    }
+}
+
+.footer {
+    background-color: $light;
+    & > .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        .link-secondary {
+            transition: all 0.2s ease-in-out;
+            &:hover {
+                text-decoration: none;
+                padding-left: 10px;
+            }
+        }
+    }
+}
+
+.btn {
+    border-radius: 50px;
+    padding: .575rem 1.125rem;
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    &.text-link {
+        color: $primary;
+        padding: 0;
+        transition: all 0.2s linear;
+        svg {
+            stroke: $primary;
+            transition: all 0.2s linear;
+        }
+        &:hover {
+            color: $hover;
+            svg {
+                stroke: $hover;
+                transform: translateX(10px);
+            }
+        }
+        &:active {
+            border-color: transparent !important;
+        }
+        &:focus {
+            box-shadow: none !important;
+        }
+    }
+    &.btn-primary {
+        background-color: $primary;
+        border-color: transparent;
+        transition: all 0.2s linear;
+        &:hover,
+        &:active {
+            background-color: $hover !important;
+            border-color: transparent !important;
+        }
+        &:focus {
+            box-shadow: 0 0 0 0.2rem rgba($hover, 0.5) !important;
+        }
+    }
+    svg {
+        margin-left: 0.2rem;
+    }
+}
+
+.color-accent {
+    color: $primary;
+}
+
+.accordion {
+    background-color: $white;
+    border-radius: 20px;
+    .card {
+        border-radius: 20px;
+        border-color: transparent;
+        .card-header {
+            background-color: transparent;
+            border-bottom: transparent;
+            padding-top: 0;
+            padding-bottom: 0;
+            .btn-link {
+                transition: all 0.2s linear;
+                &:hover {
+                    color: $hover;
+                    text-decoration: none;
+                }
+                &:focus {
+                    text-decoration: none;
+                }
+            }
+        }
+        .card-body {
+            padding: 0 2.5rem 1rem 2.5rem;
+        }
+    }
+    &.shadow-lg {
+        box-shadow: 0 1rem 3rem rgba($black,.05)!important;
+    }
+}
+
+a {
+    color: $primary;
+    &:hover {
+        color: $hover;
+    }
+}
+
+.testimonials {
+    .user-slides {
+        .slick-list {
+            padding: 2.25rem 0.25rem 2.95rem;
+        }
+        .card {
+            background: $white url(../img/quote.svg) 95% 5% no-repeat;
+            border-radius: 20px;
+            border-color: transparent;
+            &.shadow-lg {
+                box-shadow: 0 1rem 3rem rgba($black,.05)!important;
+            }
+            p {
+                font-style: italic;
+            }
+        }
+    }
+}
+
+svg {
+    &.wave {
+        fill: $base;
+    }
+    &.circle-check {
+        stroke: $primary;
+    }
+}
+
+.form-group {
+    .col-form-label {
+        line-height: 2;
+    }
+    input, textarea {
+        border-radius: 0;
+        border-width: 0 0 1px 0;
+    }
+    .form-control {
+        &:focus {
+            border-color: $white;
+            box-shadow: 0 0 0 0.2rem rgba($base, 0.5) !important;
+        }
+    }
+}
+
+.icon-social {
+    background-color: $primary;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20rem;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    transition: all 0.2s linear;
+    &:hover {
+        background-color: $hover;
+    }
+    img {
+        width: 18px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    header {
+        & > .jumbotron {
+            .display-4 {
+                font-size: 3.5rem;
+            }
+            .hero-img {
+                img {
+                    &.char {
+                        width: 75%;
+                        top: -10%;
+                        left: 30%;
+                    }
+                }
+            }
+        }
+    }
+    main {
+        section {
+            &.cta, &.plan, &.contact {
+                .card {
+                    padding: 40px;
+                }
+            }
+        }
+    }
+}
