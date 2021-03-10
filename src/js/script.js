@@ -83,6 +83,11 @@ $(function () {
     }).on("blur", ".floating-label-form-group", function() {
         $(this).removeClass("floating-label-form-group-with-focus");
     });
+
+    // Close Modal when Visit button click
+    $('.modal').on('click', '.btn-visit', function () {
+        $(this).parents().find('.close').trigger('click');
+    });
 })
   
 // $('.portfolio-item-caption').hover(function () {
@@ -122,22 +127,22 @@ var samples = new Vue({
         samples: [
             {
                 targetID: 'portfolio01Modal',
-                imgSrc: '01.png',
-                imgSrcFull: '01-full.png',
+                imgSrc: '01.jpg',
+                imgSrcFull: '01-full.jpg',
                 imgAlt: 'Sample 01',
                 visit: '01'
             },
             {
                 targetID: 'portfolio02Modal',
-                imgSrc: '02.png',
-                imgSrcFull: '02-full.png',
+                imgSrc: '02.jpg',
+                imgSrcFull: '02-full.jpg',
                 imgAlt: 'Sample 02',
                 visit: '02'
             },
             {
                 targetID: 'portfolio03Modal',
-                imgSrc: '03.png',
-                imgSrcFull: '03-full.png',
+                imgSrc: '03.jpg',
+                imgSrcFull: '03-full.jpg',
                 imgAlt: 'Sample 03',
                 visit: '03'
             },
