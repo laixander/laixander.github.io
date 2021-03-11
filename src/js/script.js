@@ -180,6 +180,11 @@ var skills = new Vue({
                 imgTitle: 'Sass'
             },
             {
+                imgSrc: 'vue.svg',
+                imgAlt: 'Vue JS Logo',
+                imgTitle: 'Vue JS'
+            },
+            {
                 imgSrc: 'git.svg',
                 imgAlt: 'Git Logo',
                 imgTitle: 'Git'
@@ -198,11 +203,6 @@ var skills = new Vue({
                 imgSrc: 'illustrator.svg',
                 imgAlt: 'Illustrator Logo',
                 imgTitle: 'Illustrator'
-            },
-            {
-                imgSrc: 'sublime.svg',
-                imgAlt: 'Sublime Text Logo',
-                imgTitle: 'Sublime Text'
             },
         ]
     }
