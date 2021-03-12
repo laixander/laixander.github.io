@@ -23,11 +23,17 @@ $(document).ready(function () {
                 }
             },
             {
-                breakpoint: 768,
+                breakpoint: 800,
                 settings: {
                   slidesToShow: 2
                 }
-            }
+            },
+            {
+                breakpoint: 525,
+                settings: {
+                  slidesToShow: 1
+                }
+            },
         ]
     })
 

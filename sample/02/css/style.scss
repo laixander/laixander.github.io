@@ -75,9 +75,9 @@ main {
                     margin-top: auto;
                 }
             }
-            .row:first-child {
-                margin-bottom: 80px;
-            }
+            // .row:first-child {
+            //     margin-bottom: 80px;
+            // }
         }
         &.cta, &.plan, &.contact {
             .card {
@@ -277,7 +277,7 @@ svg {
                     &.char {
                         width: 75%;
                         top: -10%;
-                        left: 30%;
+                        left: 25%;
                     }
                 }
             }
