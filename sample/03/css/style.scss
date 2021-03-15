@@ -630,6 +630,14 @@ section {
         animation: 0.4s ease-in-out 0s normal none 1 running fadeInDown;
         background: #343a40;
     }
+    &.hide-bar {
+        transition: all 0.4s ease-in-out;
+        transform: translate3d(0, -100%, 0);
+    }
+    &.no-transform {
+        transform: none;
+        transition: none;
+    }
 }
 
 @keyframes fadeInDown {
@@ -640,6 +648,17 @@ section {
     100% {
         // opacity: 1;
         transform: translateZ(0);
+    }
+}
+
+@keyframes fadeInUp {
+    0% {
+        // opacity: 0;
+        transform: translateZ(0);
+    }
+    100% {
+        // opacity: 1;
+        transform: translate3d(0,-100%,0);
     }
 }
 

@@ -22,10 +22,16 @@ $window.scroll(function () {
     //     $('.navbar').removeClass('bg-dark');
     // }
 
-    if($window.scrollTop() < 500) {
+    if ($window.scrollTop() == 0) {
+        $('.navbar').addClass('no-transform');
         $('.navbar').removeClass('sticky-bar');
+    }
+    if ($window.scrollTop() < 800) {
+        $('.navbar').addClass('hide-bar');
     } else {
         $('.navbar').addClass('sticky-bar');
+        $('.navbar').removeClass('no-transform');
+        $('.navbar').removeClass('hide-bar');
         $('#navbarsDefault').removeClass('show');
     }
 });
