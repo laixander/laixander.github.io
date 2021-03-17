@@ -41,14 +41,12 @@
         <section class="jumbotron jumbotron-fluid d-flex align-items-center mb-0">
             <div class="container">
                 <div class="row align-items-center">
-                    <div class="col">
-                        <h1 class="display-4 text-uppercase text-white">I'm a Web Developer</h1>
-                        <p class="lead mb-5 text-white">Welcome to My Website! I'm glad you stopped by. Take a moment to
-                            browse through my works. If you like what you see and think that I may be a good match for
-                            your project, feel free to contact me.</p>
+                    <div class="col-12 col-lg order-1 order-lg-0 text-white text-center text-lg-left">
+                        <h1 class="display-4 text-uppercase">I'm a Web Developer</h1>
+                        <p class="lead mb-5">Welcome to My Website! I'm glad you stopped by. Take a moment to browse through my works. If you like what you see and think that I may be a good match for your project, feel free to contact me.</p>
                         <a href="#contact" class="btn btn-xl btn-outline-light cta">Contact Me</a>
                     </div>
-                    <div class="col-md-4 d-none d-md-block">
+                    <div class="col-6 col-lg-4 d-none d-md-block mx-auto mb-5 mb-lg-0 order-0 order-lg-1">
                         <img src="src/img/profile.png" alt="" class="img-fluid up-down">
                     </div>
                 </div>
@@ -101,27 +99,22 @@
                 <div class="row mb-5">
                     <div class="col-md">
                         <img src="src/img/user.svg" alt="info" class="mb-4">
-                        <p>Hi! I'm Laixander. I'm a Web Developer based in the Philippines. I specialize in web mainly
-                            designing clean, accessible and intuitive websites using the latest web standards and
-                            technology.</p>
+                        <p>Hi! I'm Laixander. I'm a Web Developer based in the Philippines. I specialize in web mainly designing clean, accessible and intuitive websites using the latest web standards and technology.</p>
                     </div>
                     <div class="col-md">
                         <img src="src/img/braces.svg" alt="skills" class="mb-4">
-                        <p>Adobe Creative Suite and VSCode are some of the tools I use for creating graphics and
-                            websites, making these live and functional through HTML, CSS and Javascript.</p>
+                        <p>Adobe Creative Suite and VSCode are some of the tools I use for creating graphics and websites, making these live and functional through HTML, CSS and Javascript.</p>
                     </div>
                     <div class="col-md">
                         <img src="src/img/mug.svg" alt="hobbies" class="mb-4">
-                        <p>When I'm not working, I spend most of my time reading, listening to music, travelling, and
-                            taking pictures. But sometimes I just sit and relax, drink a lot of coffee and learn
-                            something new.</p>
+                        <p>When I'm not working, I spend most of my time reading, listening to music, travelling, and taking pictures. But sometimes I just sit and relax, drink a lot of coffee and learn something new.</p>
                     </div>
 
                 </div>
 
                 <!-- Vue : Skills -->
                 <div id="skills" class="row justify-content-center mb-5 skills">
-                    <div v-for="skill in skills" class="col-4 col-md text-center">
+                    <div v-for="skill in skills" class="col-4 col-md-3 col-lg-2 col-xl text-center">
                         <img :src="'src/img/skills/' + skill.imgSrc" :alt="skill.imgAlt" class="img-fluid" loading="lazy"
                             data-toggle="tooltip" data-placement="top" :title="skill.imgTitle">
                     </div>
@@ -178,7 +171,7 @@
                         </div>
                         <br>
                         <div id="success"></div>
-                        <div class="form-group">
+                        <div class="form-group text-center text-lg-left">
                             <input name="user" type="hidden" id="user" value="laix" />
                             <input name="formid" type="hidden" id="formid" value="450443" />
                             <input name="subject" type="hidden" id="subject"
