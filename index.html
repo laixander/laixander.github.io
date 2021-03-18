@@ -55,12 +55,11 @@
     </header>
 
     <main>
-        <section id="portfolio" class="container">
+        <section id="portfolio" class="container spacing">
             <h2 class="text-center text-uppercase mb-5">Portfolio</h2>
-
             <!-- VUE : Samples -->
             <div id="samples" class="row">
-                <div v-for="sample in samples" class="col-md-6 col-lg-4 mb-5">
+                <div v-for="sample in samples" class="col-md-6 col-lg-4 mb-5 mb-lg-0">
                     <a href="" class="portfolio-item d-block mx-auto hover-shadow" data-toggle="modal"
                     :data-target="'#' + sample.targetID">
                         <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
@@ -91,9 +90,8 @@
                     </div>
                 </div>
             </div>
-
         </section>
-        <section id="about">
+        <section id="about" class="spacing">
             <div class="container">
                 <h2 class="text-center text-uppercase mb-5">About</h2>
                 <div class="row mb-5">
@@ -125,7 +123,7 @@
                 </div>
             </div>
         </section>
-        <section id="contact" class="container">
+        <section id="contact" class="container spacing">
             <h2 class="text-center text-uppercase mb-5">Contact</h2>
             <div class="row justify-content-center">
                 <div class="col-md-10">

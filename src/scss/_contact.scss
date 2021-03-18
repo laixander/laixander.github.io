@@ -1,0 +1,48 @@
+#contact {
+    form {
+        .floating-label-form-group {
+            position: relative;
+            border-bottom: 1px solid $color-light;
+            input,
+            textarea {
+                font-size: 1.2rem;
+                position: relative;
+                z-index: 1;
+                padding-right: 0;
+                padding-left: 0;
+                resize: none;
+                border: none;
+                border-radius: 0;
+                background: 0 0;
+                box-shadow: none !important;
+            }
+            label {
+                font-size: .85rem;
+                line-height: 1.75em;
+                position: relative;
+                z-index: 0;
+                top: 2em;
+                display: block;
+                margin: 0;
+                transition: top .3s ease, opacity .3s ease;
+                opacity: 0;
+            }
+            &:not(:first-child) {
+                padding-left: 14px;
+                border-left: 1px solid $color-light;
+            }
+            &-with-value label {
+                top: 0;
+                opacity: 1;
+            }
+            &-with-focus label {
+                color: $color-primary;
+            }
+        }
+        .row:first-child {
+            .floating-label-form-group {
+                border-top: 1px solid $color-light;
+            }
+        }
+    }
+}

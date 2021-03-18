@@ -1,5 +1,13 @@
 @import 'mixins';
-@import 'variables';
-@import 'helper';
+@import 'color';
 @import 'animation';
 @import 'global';
+
+@import 'navbar';
+@import 'hero';
+@import 'portfolio';
+@import 'about';
+@import 'contact';
+@import 'footer';
+
+@import 'custom';

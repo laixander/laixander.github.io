@@ -1,0 +1,22 @@
+#portfolio {
+    .portfolio-item {
+        position: relative;
+        max-width: 25rem;
+        transition: all 0.2s ease-in-out;
+        .portfolio-item-caption {
+            background: linear-gradient(rgba($color-primary, 0.8), $color-secondary);
+            transition: all 0.2s ease-in-out;
+            opacity: 0;
+            .portfolio-item-caption-content {
+                font-size: 1.5rem;
+            }
+        }
+        &:hover {
+            transform: translateY(-.5rem);
+            box-shadow: 0 10px 30px 0 rgba($color-primary, 0.8);
+            .portfolio-item-caption {
+                opacity: 1;
+            }
+        }
+    }
+}
