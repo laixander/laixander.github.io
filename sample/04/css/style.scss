@@ -1,0 +1,403 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400;500;600&display=swap');
+
+$primary: #4c97ac;
+$secondary: #26627e;
+$light: #e4e8f4;
+$dark: #222631;
+$white: #fff;
+$black: #000;
+
+html, body {
+	font-family: 'Open Sans', sans-serif;
+	color: $dark;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Jost', sans-serif;
+}
+
+h2 {
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+p, small, .team li {
+    opacity: 0.75;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.fancy-link {
+    color: $primary;
+    display: inline-block;
+    &:after {
+        content: '';
+        display: block;
+        height: 2px;
+        width: 0;
+        margin: 0 auto;
+        background-color: $primary;
+        transition: all 0.2s linear;
+    }
+    &:hover {
+        color: $primary;
+        text-decoration: none;
+        &:after {
+            width: 100%;
+        }
+    }
+}
+
+.fancy-heading {
+    margin-bottom: 2.2rem;
+    &:after {
+        content: '';
+        display: block;
+        height: 4px;
+        width: 15%;
+        margin: 0 auto;
+        background-color: $primary;
+        transform: translateY(15px);
+    }
+}
+
+.brand-name {
+    font-family: 'Jost', sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: inline-block;
+    margin-left: 0.5rem;
+    transition: all 0.2s linear;
+}
+
+.btn-primary {
+    background-color: $primary;
+    border-color: $primary;
+    border-radius: 0;
+    text-transform: uppercase;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 1rem 2rem;
+    &:hover {
+        background-color: $secondary !important;
+        border-color: transparent !important;
+    }
+    &:focus, &:active {
+        background-color: $secondary !important;
+        border-color: transparent !important;
+        box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
+    }
+}
+
+.jumbotron {
+    background: $light url('../img/hero.jpg') left top no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    min-height: 100vh;
+    margin-bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    h1 {
+        font-weight: 800;
+        text-transform: uppercase;
+    }
+    .lead {
+        margin-bottom: 2em;
+    }
+}
+
+.navbar {
+    transition: all 0.2s linear;
+    img {
+        transition: all 0.2s linear;
+    }
+    &.navbar-shrink {
+        background-color: $white;
+        // -webkit-backdrop-filter: blur(10px);
+        //         backdrop-filter: blur(10px);
+        // background-color: rgba($white, 0.65);
+        box-shadow: 0 1rem 3rem rgba($secondary, 0.175);
+        .navbar-brand {
+            img{
+                width: 52px;
+            }
+            .brand-name {
+                font-size: 1.2rem;
+            }
+        }
+    }
+}
+
+%overlay {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+section {
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    &.about {
+        color: $white;
+        position: relative;
+        background: $secondary url('../img/about-bg.jpg') center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        &:before {
+            @extend %overlay;
+            background-color: rgba($secondary, 0.9);
+        }
+    }
+    &.services {
+        background: url('../img/worldmap-bg.svg') center no-repeat;
+        .card {
+            background-color: transparent;
+            border-color: transparent;
+            border-radius: 0;
+            // border-radius: 1rem;
+            transition: all 0.2s linear;
+            &:hover {
+                transform: translateY(-10px);
+                background-color: $white;
+                box-shadow: 0 1rem 3rem rgba($secondary, 0.175);
+            }
+            .card-body {
+                padding: 2rem;
+            }
+            &.cta {
+                color: $white;
+                background-color: $secondary;
+                .card-body {
+                    padding: 3rem;
+                    .btn-primary:hover {
+                        border-color: $primary !important;
+                    }
+                }
+                &:hover {
+                    transform: none;
+                    box-shadow: none;
+                }
+            }
+        }
+    }
+    &.team {
+        position: relative;
+        background: $light url('../img/team-bg.jpg') center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        &:before {
+            @extend %overlay;
+            background-color: rgba($light, 0.9);
+        }
+        .team_member {
+            background: $white;
+            width: 100%;
+            padding: 20px;
+            box-shadow: 0 25px 50px -12px rgba($secondary, 0.375);
+            position: relative;
+            h3{
+                margin: 50px 0 30px;
+            }
+            .team_img{
+                position: absolute;
+                top: -50px;
+                left: 50%;
+                transform: translateX(-50%);
+                border-radius: 50%;
+                background-color: $white;
+                img{
+                    width: 100px;
+                    height: 100px;
+                    padding: 5px;
+                }
+            }
+            .accordion {
+                // background-color: $primary;
+                // color: $white;
+                background-color: transparent;
+                cursor: pointer;
+                padding: 18px;
+                width: 100%;
+                border: none;
+                text-align: left;
+                outline: none;
+                transition: 0.4s;
+                border-bottom: 1px solid $light;
+                &:after {
+                    content: '\002B';
+                    font-weight: bold;
+                    float: right;
+                    margin-left: 5px;
+                }
+                &:hover {
+                    // color: $white;
+                    background-color: $light;
+                }
+                &.active {
+                    &:after {
+                        content: "\2212";
+                    }
+                    color: $white;
+                    background-color: $primary;
+                }
+                &:last-of-type {
+                    border-bottom: none;
+                }
+            }
+        }
+        .panel {
+            padding: 0 18px;
+            // background-color: $light;
+            max-height: 0;
+            overflow: hidden;
+            transition: all 0.2s ease-out;
+            height: auto;
+            p {
+                font-size: 0.9rem;
+                text-align: left;
+                margin-top: 1rem;
+            }
+            .achievements {
+                margin-top: 1rem;
+                %list-icon {
+                    background-position: top left;
+                    background-repeat: no-repeat;
+                    background-size: 8%;
+                    font-size: 0.9rem;
+                    margin-bottom: 0.5rem;
+                    padding-left: 1.8rem;
+                }
+                li {
+                    background-image: url('../img/check.svg');
+                    @extend %list-icon;
+                    &.mobile {
+                        background-image: url('../img/mobile.svg');
+                        @extend %list-icon;
+                    }
+                    &.email {
+                        background-image: url('../img/email.svg');
+                        @extend %list-icon;
+                    }
+                    &.website {
+                        background-image: url('../img/website.svg');
+                        @extend %list-icon;
+                    }
+                }
+            }
+        }
+    }
+    &.contact {
+        background: $light url('../img/map-bg.png') center no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .card {
+            border-radius: 0;
+            border-color: transparent;
+            color: $white;
+            background-color: rgba($secondary, 0.85);
+            box-shadow: 0 1rem 3rem rgba($secondary, 0.575);
+            .card-body {
+                padding: 2.5rem;
+                .form-group {
+                    .col-form-label {
+                        line-height: 2;
+                    }
+                    input, textarea {
+                        border-radius: 0;
+                        border-width: 0 0 1px 0;
+                    }
+                    .form-control {
+                        &:focus {
+                            border-color: $white;
+                            box-shadow: 0 0 0 0.2rem rgba(255, 255, 255, 0.5) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+footer {
+    color: $white;
+    background: $secondary url('../img/footer-bg.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    position: relative;
+    &:before {
+        @extend %overlay;
+        background-color: rgba($secondary, 0.95);
+        backdrop-filter: grayscale(1);
+    }
+    ul {
+        &.link {
+            column-count: 2;
+            a {
+                color: $primary;
+                &:hover {
+                    color: $primary;
+                }
+            }
+        }
+        &.social {
+            .social-icon {
+                padding: 10px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 20rem;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                transition: all 0.2s linear;
+                &:hover {
+                    background-color: $primary;
+                }
+                img {
+                    width: 18px;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 992px) {
+    .navbar-expand-lg {
+        .navbar-nav {
+            .nav-link {
+                font-size: 0.9rem;
+                text-transform: uppercase;
+                padding-right: 1.4rem;
+                padding-left: 1.4rem;
+            }
+            .active {
+                font-weight: 600;
+            }
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .navbar-light {
+        .navbar-toggler {
+            border-color: transparent;
+        }
+    }
+    .navbar-nav {
+        background-color: #fff;
+        padding: 1rem 1.8rem;
+        margin-top: 1rem;
+        text-align: center;
+    }
+}

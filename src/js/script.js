@@ -146,6 +146,13 @@ var samples = new Vue({
                 imgAlt: 'Sample 03',
                 visit: '03'
             },
+            {
+                targetID: 'portfolio04Modal',
+                imgSrc: '04.jpg',
+                imgSrcFull: '04-full.jpg',
+                imgAlt: 'Sample 04',
+                visit: '04'
+            },
         ]
     }
 });
