@@ -1,4 +1,4 @@
-var myFeature = {
+var siteFeature = {
     shrinknav: function () {
         $(window).scroll(function () {
             if ($(window).scrollTop() > 10) {
@@ -45,7 +45,7 @@ var myFeature = {
     }
 }
 
-myFeature.shrinknav();
-myFeature.accordion();
-myFeature.scrollnav();
-myFeature.closednav();
+siteFeature.shrinknav();
+siteFeature.accordion();
+siteFeature.scrollnav();
+siteFeature.closednav();

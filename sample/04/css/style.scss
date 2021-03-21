@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h2 {
-    font-weight: 600;
+    font-weight: 500;
     font-size: 3rem;
 }
 
@@ -83,11 +83,11 @@ p {
     padding: 1rem 2rem;
     &:hover {
         background-color: $secondary !important;
-        border-color: transparent !important;
+        border-color: $primary !important;
     }
     &:focus, &:active {
         background-color: $secondary !important;
-        border-color: transparent !important;
+        border-color: $primary !important;
         box-shadow: 0 0 0 0.2rem rgba($primary, 0.5) !important;
     }
 }
@@ -330,17 +330,18 @@ section {
 
 footer {
     color: $white;
-    background: $secondary url('../img/footer-bg.jpg') center no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
+    background-color: $secondary;
+    // background: $secondary url('../img/footer-bg.jpg') center no-repeat;
+    // background-attachment: fixed;
+    // background-size: cover;
     padding-top: 8rem;
     padding-bottom: 8rem;
-    position: relative;
-    &:before {
-        @extend %overlay;
-        background-color: rgba($secondary, 0.95);
-        backdrop-filter: grayscale(1);
-    }
+    // position: relative;
+    // &:before {
+    //     @extend %overlay;
+    //     background-color: rgba($secondary, 0.95);
+    //     backdrop-filter: grayscale(1);
+    // }
     ul {
         &.link {
             column-count: 2;
