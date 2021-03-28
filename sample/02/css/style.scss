@@ -162,6 +162,7 @@ main {
         color: $primary;
         background-color: transparent;
         border-color: $primary;
+        border-width: 2px;
         transition: all 0.2s linear;
         &:hover,
         &:active {
