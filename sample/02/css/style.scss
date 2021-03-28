@@ -18,7 +18,8 @@ header {
         }
     }
     & > .jumbotron {
-        height: 70vh;
+        min-height: calc(100vh - 56px);
+        // height: 100vh;
         margin-top: 56px;
         color: $white;
         background-color: $base;
@@ -27,19 +28,19 @@ header {
         .display-4 {
             font-size: 2.7rem;
         }
-        .hero-img {
-            position: relative;
+        // .hero-img {
+        //     position: relative;
             // background: url('/img/halftone.png') 80% no-repeat;
             // background-size: 100%;
             // overflow: visible;
-            img {
-                position: absolute;
-                &.char {
-                    // z-index: 1;
-                    width: 110%;
-                    top: 0%;
-                    left: -25px;
-                }
+            // img {
+            //     position: absolute;
+            //     &.char {
+            //         // z-index: 1;
+            //         width: 110%;
+            //         top: 0%;
+            //         left: -25px;
+            //     }
                 // &.halftone {
                 //     z-index: 0;
                 //     opacity: 0.05;
@@ -47,8 +48,8 @@ header {
                 //     top: 20%;
                 //     left: 20%;
                 // }
-            }
-        }
+        //     }
+        // }
         hr {
             border-color: rgba($white, 0.1);
         }
@@ -272,15 +273,15 @@ svg {
             .display-4 {
                 font-size: 3.5rem;
             }
-            .hero-img {
-                img {
-                    &.char {
-                        width: 75%;
-                        top: -10%;
-                        left: 25%;
-                    }
-                }
-            }
+            // .hero-img {
+            //     img {
+            //         &.char {
+            //             width: 75%;
+            //             top: -10%;
+            //             left: 25%;
+            //         }
+            //     }
+            // }
         }
     }
     main {
