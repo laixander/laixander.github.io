@@ -186,21 +186,21 @@ var skills = new Vue({
                 imgAlt: 'Sass Logo',
                 imgTitle: 'Sass'
             },
-            {
-                imgSrc: 'vue.svg',
-                imgAlt: 'Vue JS Logo',
-                imgTitle: 'Vue JS'
-            },
+            // {
+            //     imgSrc: 'vue.svg',
+            //     imgAlt: 'Vue JS Logo',
+            //     imgTitle: 'Vue JS'
+            // },
             {
                 imgSrc: 'git.svg',
                 imgAlt: 'Git Logo',
                 imgTitle: 'Git'
             },
-            {
-                imgSrc: 'wordpress.svg',
-                imgAlt: 'Wordpress Logo',
-                imgTitle: 'Wordpress'
-            },
+            // {
+            //     imgSrc: 'wordpress.svg',
+            //     imgAlt: 'Wordpress Logo',
+            //     imgTitle: 'Wordpress'
+            // },
             {
                 imgSrc: 'photoshop.svg',
                 imgAlt: 'Photoshop Logo',
