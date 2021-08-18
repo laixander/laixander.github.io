@@ -171,11 +171,11 @@ var skills = new Vue({
                 imgAlt: 'CSS Logo',
                 imgTitle: 'CSS'
             },
-            {
-                imgSrc: 'js.svg',
-                imgAlt: 'JS Logo',
-                imgTitle: 'JS'
-            },
+            // {
+            //     imgSrc: 'js.svg',
+            //     imgAlt: 'JS Logo',
+            //     imgTitle: 'JS'
+            // },
             {
                 imgSrc: 'jquery.svg',
                 imgAlt: 'jQuery Logo',
