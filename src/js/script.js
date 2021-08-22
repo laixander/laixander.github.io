@@ -153,6 +153,13 @@ var samples = new Vue({
                 imgAlt: 'Sample 04',
                 visit: '04'
             },
+            {
+                targetID: 'portfolio05Modal',
+                imgSrc: '05.jpg',
+                imgSrcFull: '05-full.jpg',
+                imgAlt: 'Sample 05',
+                visit: '05'
+            },
         ]
     }
 });
@@ -171,11 +178,11 @@ var skills = new Vue({
                 imgAlt: 'CSS Logo',
                 imgTitle: 'CSS'
             },
-            // {
-            //     imgSrc: 'js.svg',
-            //     imgAlt: 'JS Logo',
-            //     imgTitle: 'JS'
-            // },
+            {
+                imgSrc: 'js.svg',
+                imgAlt: 'JS Logo',
+                imgTitle: 'JS'
+            },
             {
                 imgSrc: 'jquery.svg',
                 imgAlt: 'jQuery Logo',
@@ -210,6 +217,11 @@ var skills = new Vue({
                 imgSrc: 'illustrator.svg',
                 imgAlt: 'Illustrator Logo',
                 imgTitle: 'Illustrator'
+            },
+            {
+                imgSrc: 'figma.svg',
+                imgAlt: 'Figma Logo',
+                imgTitle: 'Figma'
             },
         ]
     }

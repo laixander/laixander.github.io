@@ -1,7 +1,8 @@
 #portfolio {
     .portfolio-item {
         position: relative;
-        max-width: 25rem;
+        // max-width: 25rem;
+        max-width: 100%;
         transition: all 0.2s ease-in-out;
         .portfolio-item-caption {
             background: linear-gradient(rgba($color-primary, 0.8), $color-secondary);
