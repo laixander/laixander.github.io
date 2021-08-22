@@ -57,37 +57,92 @@
     <main>
         <section id="portfolio" class="container spacing">
             <h2 class="text-center text-uppercase mb-5">Portfolio</h2>
-            <!-- VUE : Samples -->
-            <div id="samples" class="row">
-                <div v-for="sample in samples" class="col-md-6 mb-4">
-                    <a href="" class="portfolio-item d-block mx-auto hover-shadow" data-toggle="modal"
-                    :data-target="'#' + sample.targetID">
-                        <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
-                            <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
-                                <img src="src/img/search.svg" alt="review">
-                            </div>
-                        </div>
-                        <img :src="'src/img/portfolio/' + sample.imgSrc" :alt="sample.imgAlt" class="img-fluid" loading="lazy">
-                    </a>
-                    <!-- Modal -->
-                    <div class="modal fade" :id="sample.targetID" tabindex="-1" :aria-labelledby="sample.targetID + 'Label'" aria-hidden="true">
-                        <div class="modal-dialog modal-dialog-scrollable modal-lg shadow-lg">
-                            <div class="modal-content border-0">
-                                <div class="modal-header border-0">
-                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                                        <span aria-hidden="true">&times;</span>
-                                    </button>
+            <ul class="nav nav-tabs mb-5" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link active" id="webdesign-tab" data-toggle="tab" data-target="#webdesign" role="tab" aria-controls="webdesign"
+                        aria-selected="true">Web Design</a>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <a class="nav-link" id="emaildesign-tab" data-toggle="tab" data-target="#emaildesign" role="tab" aria-controls="emaildesign"
+                        aria-selected="false">Email Design</a>
+                </li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="webdesign" role="tabpanel" aria-labelledby="webdesign-tab">
+
+                    <!-- VUE : Samples -->
+                    <div id="samples" class="row">
+                        <div v-for="sample in samples" class="col-md-6 mb-4">
+                            <a href="" class="portfolio-item d-block mx-auto hover-shadow" data-toggle="modal"
+                            :data-target="'#' + sample.targetID">
+                                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <img src="src/img/search.svg" alt="review">
+                                    </div>
                                 </div>
-                                <div class="modal-body scroll-bar">
-                                    <img :src="'src/img/portfolio/' + sample.imgSrcFull" :alt="sample.imgAlt" class="img-fluid" loading="lazy">
-                                </div>
-                                <div class="modal-footer justify-content-center border-0">
-                                    <!-- <button type="button" class="btn btn-md btn-outline-dark" data-dismiss="modal">Close</button> -->
-                                    <a :href="'sample/' + sample.visit" class="btn btn-md btn-outline-dark btn-visit" target="_blank">Visit</a>
+                                <img :src="'src/img/portfolio/' + sample.imgSrc" :alt="sample.imgAlt" class="img-fluid" loading="lazy">
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" :id="sample.targetID" tabindex="-1" :aria-labelledby="sample.targetID + 'Label'" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg shadow-lg">
+                                    <div class="modal-content border-0">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body scroll-bar">
+                                            <img :src="'src/img/portfolio/' + sample.imgSrcFull" :alt="sample.imgAlt" class="img-fluid" loading="lazy">
+                                        </div>
+                                        <div class="modal-footer justify-content-center border-0">
+                                            <!-- <button type="button" class="btn btn-md btn-outline-dark" data-dismiss="modal">Close</button> -->
+                                            <a :href="'sample/' + sample.visit" class="btn btn-md btn-outline-dark btn-visit" target="_blank">Visit</a>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
+
+                </div>
+                <div class="tab-pane fade" id="emaildesign" role="tabpanel" aria-labelledby="emaildesign-tab">
+
+
+                    <!-- VUE : Samples -->
+                    <div id="emails" class="row">
+                        <div v-for="email in emails" class="col-md-6 mb-4">
+                            <a href="" class="portfolio-item d-block mx-auto hover-shadow border" data-toggle="modal"
+                            :data-target="'#' + email.targetID">
+                                <div class="portfolio-item-caption d-flex position-absolute h-100 w-100">
+                                    <div class="portfolio-item-caption-content my-auto w-100 text-center text-white">
+                                        <img src="src/img/search.svg" alt="review">
+                                    </div>
+                                </div>
+                                <img :src="'src/img/portfolio/email/' + email.imgSrc" :alt="email.imgAlt" class="img-fluid" loading="lazy">
+                            </a>
+                            <!-- Modal -->
+                            <div class="modal fade" :id="email.targetID" tabindex="-1" :aria-labelledby="email.targetID + 'Label'" aria-hidden="true">
+                                <div class="modal-dialog modal-dialog-scrollable modal-lg shadow-lg">
+                                    <div class="modal-content border-0">
+                                        <div class="modal-header border-0">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body text-center scroll-bar">
+                                            <img :src="'src/img/portfolio/email/' + email.imgSrcFull" :alt="email.imgAlt" class="img-fluid" loading="lazy">
+                                        </div>
+                                        <div class="modal-footer justify-content-center border-0">
+                                            <!-- <button type="button" class="btn btn-md btn-outline-dark" data-dismiss="modal">Close</button> -->
+                                            <a :href="'sample/email/' + email.visit" class="btn btn-md btn-outline-dark btn-visit" target="_blank">Visit</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
                 </div>
             </div>
         </section>

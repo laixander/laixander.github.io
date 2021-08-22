@@ -1,0 +1,22 @@
+#portfolio {
+    .nav-tabs {
+        .nav-link {
+            color: $color-dark;
+            opacity: 0.75;
+            text-transform: uppercase;
+            border-width: 1px 1px 4px 1px;
+            border-color: none;
+            &.active {
+                color: $color-primary;
+                border: none;
+                border-bottom: 4px solid $color-primary;
+                pointer-events: none;
+            }
+            &:hover {
+                cursor: pointer;
+                border-color: transparent;
+                opacity: 1;
+            }
+        }
+    }
+}

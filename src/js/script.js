@@ -164,6 +164,42 @@ var samples = new Vue({
     }
 });
 
+var emails = new Vue({
+    el: '#emails',
+    data: {
+        emails: [
+            {
+                targetID: 'email01Modal',
+                imgSrc: '01.jpg',
+                imgSrcFull: '01-full.jpg',
+                imgAlt: 'Sample 01',
+                visit: '01'
+            },
+            {
+                targetID: 'email02Modal',
+                imgSrc: '02.jpg',
+                imgSrcFull: '02-full.jpg',
+                imgAlt: 'Sample 02',
+                visit: '02'
+            },
+            {
+                targetID: 'email03Modal',
+                imgSrc: '03.jpg',
+                imgSrcFull: '03-full.jpg',
+                imgAlt: 'Sample 03',
+                visit: '03'
+            },
+            {
+                targetID: 'email04Modal',
+                imgSrc: '04.jpg',
+                imgSrcFull: '04-full.jpg',
+                imgAlt: 'Sample 04',
+                visit: '04'
+            },
+        ]
+    }
+});
+
 var skills = new Vue({
     el: '#skills',
     data: {
