@@ -1,0 +1,185 @@
+html, body {
+  height: 100%;
+}
+
+main h1 {
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+main p {
+  font-size: 1.2rem;
+  text-align: center;
+}
+main .p-wrapper {
+  width: 75%;
+}
+main.full-height {
+  height: 100%;
+}
+main .bg-red {
+  background: #cc0000;
+  background: linear-gradient(145deg, #cc0000 0%, #700000 100%);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+main .btn-outline-primary {
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #fff;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  padding: 0.9rem 2.5rem;
+  margin-bottom: 2rem;
+}
+main .btn-outline-primary:hover {
+  background-color: #fff;
+  color: #CC0000;
+  border-color: #fff;
+}
+main .promo-wrapper {
+  color: #CC0000;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  font-weight: bold;
+  font-size: 1.4rem;
+}
+main .promo-wrapper .amount {
+  font-size: 5rem;
+  line-height: 45px;
+}
+main .promo-wrapper span {
+  line-height: 1;
+}
+main .subpromo-wrapper {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid #fff;
+  font-size: 1.2rem;
+  line-height: 1.2;
+  top: -80px;
+  right: -40px;
+}
+main .alert-light {
+  background-color: #CC0000;
+  border-color: transparent;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  margin-top: 1rem;
+  border-radius: 50px;
+}
+main .logo-wrapper {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+main .logo-wrapper img {
+  width: 280px;
+}
+main .loc-date-wrapper {
+  background-color: #efefef;
+  text-align: center;
+  width: fit-content;
+  margin: 0 auto;
+  padding: 0.5rem 1rem;
+  border-radius: 50px;
+  margin-bottom: 2rem;
+}
+main .loc-date-wrapper .flag {
+  margin-right: 0.5rem;
+}
+main .loc-date-wrapper .date {
+  font-size: 0.8rem;
+}
+main .fa-star, main .fa-star-half-alt {
+  color: #FFB100;
+}
+main #comment-page p {
+  font-size: 14px;
+}
+main .comment p {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  line-height: 1.6;
+  max-height: 62px;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  cursor: pointer;
+  text-align: left;
+}
+main .addOverflowP {
+  max-height: 62;
+  -webkit-line-clamp: 3;
+}
+main .removeOverflowP {
+  max-height: 100% !important;
+  -webkit-line-clamp: initial !important;
+}
+main .vicon {
+  width: 16px;
+  margin: 7px;
+}
+main .vtext {
+  font-size: 10px;
+  font-style: italic;
+  color: #38BD36;
+}
+main .comment-rating {
+  display: block;
+  margin-bottom: 15px;
+}
+main .comment-time {
+  font-size: 12px;
+  margin-left: 10px;
+}
+main .img-col {
+  float: left;
+  width: 70px;
+  margin-top: 5px;
+}
+main .img-col .comment-img {
+  display: inline-block;
+  border-radius: 50%;
+  vertical-align: top;
+  max-width: 40px;
+}
+main .footer {
+  margin-top: 2rem;
+  text-align: center;
+  font-size: 10px;
+}
+main .footer .copyright {
+  font-size: 13px;
+}
+main .footer #policy-btn, main .footer #terms-btn {
+  cursor: pointer;
+  text-decoration: underline;
+}
+main .offer_expires {
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+@media (max-width: 991px) {
+  main .circle-wrapper {
+    margin-top: 8rem;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

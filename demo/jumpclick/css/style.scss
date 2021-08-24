@@ -1,0 +1,184 @@
+html, body {
+    height: 100%;
+}
+main {
+    h1  {
+        font-size: 4rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    .p-wrapper {
+        width: 75%;
+    }
+    &.full-height {
+        height: 100%;
+    }
+    .bg-red {
+        background: rgb(204,0,0);
+        background: linear-gradient(145deg, rgba(204,0,0,1) 0%, rgba(112,0,0,1) 100%);
+        color: #fff;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .btn-outline-primary {
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 1.2rem;
+        color: #fff;
+        border-radius: 50px;
+        border: 2px solid #fff;
+        padding: 0.9rem 2.5rem;
+        margin-bottom: 2rem;
+        &:hover {
+            background-color: #fff;
+            color: #CC0000;
+            border-color: #fff;
+        }
+    }
+    .promo-wrapper {
+        color: #CC0000;
+        width: 180px;
+        height: 180px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        font-weight: bold;
+        font-size: 1.4rem;
+        .amount {
+            font-size: 5rem;
+            line-height: 45px;
+        }
+        span {
+            line-height: 1;
+        }
+    }
+    .subpromo-wrapper {
+        width: 120px;
+        height: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 100%;
+        border: 2px solid #fff;
+        font-size: 1.2rem;
+        line-height: 1.2;
+        top: -80px;
+        right: -40px;
+    }
+    .alert-light {
+        background-color: #CC0000;
+        border-color: transparent;
+        color: #fff;
+        width: 100%;
+        text-align: center;
+        margin-top: 1rem;
+        border-radius: 50px;
+    }
+    .logo-wrapper {
+        text-align: center;
+        margin-bottom: 1rem;
+        img {
+            width: 280px;
+        }
+    }
+    .loc-date-wrapper {
+        background-color: #efefef;
+        text-align: center;
+        width: fit-content;
+        margin: 0 auto;
+        padding: 0.5rem 1rem;
+        border-radius: 50px;
+        margin-bottom: 2rem;
+        .flag {
+            margin-right: 0.5rem;
+        }
+        .date {
+            font-size: 0.8rem;
+        }
+    }
+    .fa-star, .fa-star-half-alt {
+        color: #FFB100;
+    }
+    #comment-page p {
+        font-size: 14px;
+    }
+    .comment p {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        line-height: 1.6;
+        max-height: 62px;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        cursor: pointer;
+        text-align: left;
+    }
+    .addOverflowP {
+        max-height: 62;
+        -webkit-line-clamp: 3;
+    }
+    .removeOverflowP {
+        max-height: 100%!important;
+        -webkit-line-clamp: initial!important;
+    }
+    .vicon {
+        width: 16px;
+        margin: 7px;
+    }
+    .vtext {
+        font-size: 10px;
+        font-style: italic;
+        color: #38BD36;
+    }
+    .comment-rating {
+        display: block;
+        margin-bottom: 15px;
+    }
+    .comment-time {
+        font-size: 12px;
+        margin-left: 10px;
+    }
+    .img-col {
+        float: left;
+        width: 70px;
+        margin-top: 5px;
+        .comment-img {
+            display: inline-block;
+            border-radius: 50%;
+            vertical-align: top;
+            max-width: 40px;
+        }
+    }
+    .footer {
+        margin-top: 2rem;
+        text-align: center;
+        font-size: 10px;
+        .copyright {
+            font-size: 13px;
+        }
+        #policy-btn, #terms-btn {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+    .offer_expires {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 2rem;
+    }
+    .circle-wrapper {
+        @media (max-width: 991px) {
+            margin-top: 8rem;
+        }
+    }
+}
