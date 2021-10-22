@@ -153,13 +153,13 @@ var samples = new Vue({
                 imgAlt: 'Sample 04',
                 visit: '04'
             },
-            {
-                targetID: 'portfolio05Modal',
-                imgSrc: '05.jpg',
-                imgSrcFull: '05-full.jpg',
-                imgAlt: 'Sample 05',
-                visit: '05'
-            },
+            // {
+            //     targetID: 'portfolio05Modal',
+            //     imgSrc: '05.jpg',
+            //     imgSrcFull: '05-full.jpg',
+            //     imgAlt: 'Sample 05',
+            //     visit: '05'
+            // },
         ]
     }
 });
@@ -245,6 +245,11 @@ var skills = new Vue({
             //     imgTitle: 'Wordpress'
             // },
             {
+                imgSrc: 'figma.svg',
+                imgAlt: 'Figma Logo',
+                imgTitle: 'Figma'
+            },
+            {
                 imgSrc: 'photoshop.svg',
                 imgAlt: 'Photoshop Logo',
                 imgTitle: 'Photoshop'
@@ -253,11 +258,6 @@ var skills = new Vue({
                 imgSrc: 'illustrator.svg',
                 imgAlt: 'Illustrator Logo',
                 imgTitle: 'Illustrator'
-            },
-            {
-                imgSrc: 'figma.svg',
-                imgAlt: 'Figma Logo',
-                imgTitle: 'Figma'
             },
         ]
     }
