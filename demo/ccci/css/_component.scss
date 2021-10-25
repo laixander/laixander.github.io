@@ -176,14 +176,15 @@
     bottom: 25px;
     right: 20px;
     display: none;
-    background-color: rgba($color: $mid-grad, $alpha: 0.85);
+    background-color: rgba($color: $base-color, $alpha: 0.85);
     border-radius: 0;
+    border: none;
     img {
         display: inline-block;
         width: 24px;
     }
     &:hover {
-        background-color: rgba($color: $mid-grad, $alpha: 0.95);
+        background-color: rgba($color: $base-color, $alpha: 0.95);
     }
 }
 
