@@ -31,18 +31,11 @@ header {
                         width: 110px;
                     }
                     &.navbar-shrink {
-                        background: $white-color !important;
+                        background: $base-color !important;
                         padding: .5rem 1rem;
                         box-shadow: 0 0 60px 0 rgba(45, 50, 62, 0.2);
                         .nav-link {
                             font-size: 0.9rem;
-                            color: rgba($color: $base-color, $alpha: 0.5);
-                            &.active {
-                                color: $base-color;
-                            }
-                            &:hover {
-                                color: rgba($color: $base-color, $alpha: 0.75);
-                            }
                         }
                         .btn {
                             padding: .75rem 1.75rem;
