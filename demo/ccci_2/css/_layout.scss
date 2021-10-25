@@ -37,24 +37,6 @@ header {
                         .nav-link {
                             font-size: 0.9rem;
                         }
-                        .btn {
-                            padding: .75rem 1.75rem;
-                            &.btn-outline-primary:not(:disabled):not(.disabled) {
-                                color: $base-color;
-                                border-radius: 0;
-                                border: 2px solid $base-color;
-                                font-size: 14px;
-                                font-weight: 700;
-                                text-transform: uppercase;
-                                &:hover,
-                                &:active,
-                                &:active:focus {
-                                    color: $white-color;
-                                    background-color: $base-color;
-                                    box-shadow: none;
-                                }
-                            }
-                        }
                     }
                 }
             }

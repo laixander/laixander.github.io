@@ -64,22 +64,6 @@ header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink {
 header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .nav-link {
   font-size: 0.9rem;
 }
-header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .btn {
-  padding: 0.75rem 1.75rem;
-}
-header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .btn.btn-outline-primary:not(:disabled):not(.disabled) {
-  color: #365595;
-  border-radius: 0;
-  border: 2px solid #365595;
-  font-size: 14px;
-  font-weight: 700;
-  text-transform: uppercase;
-}
-header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .btn.btn-outline-primary:not(:disabled):not(.disabled):hover, header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .btn.btn-outline-primary:not(:disabled):not(.disabled):active, header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .btn.btn-outline-primary:not(:disabled):not(.disabled):active:focus {
-  color: #FFFFFF;
-  background-color: #365595;
-  box-shadow: none;
-}
 header .nav-wrapper .hero {
   height: calc(100% - 200px);
   display: flex;
