@@ -29,7 +29,7 @@ header {
   color: #FFFFFF;
   width: 100%;
   height: calc(100% - 84px);
-  background: url(""), linear-gradient(70deg, #000000 0%, #063057 50%, #1A79D0 100%);
+  background: url(""), linear-gradient(70deg, #062157 0%, #073d7a 50%, #1A79D0 100%);
   background-size: cover;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -57,7 +57,7 @@ header .nav-wrapper nav.navbar.navbar-dark .navbar-brand {
   width: 110px;
 }
 header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink {
-  background: linear-gradient(70deg, #000000 0%, #063057 50%, #1A79D0 100%) !important;
+  background: linear-gradient(70deg, #062157 0%, #073d7a 50%, #1A79D0 100%) !important;
   padding: 0.5rem 1rem;
 }
 header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .nav-link {
@@ -182,7 +182,7 @@ main section.products-services .box-outline-group .box-outline h5:after {
   content: "";
   display: block;
   width: 100%;
-  border-bottom: 1px solid rgba(6, 48, 87, 0.25);
+  border-bottom: 1px solid rgba(7, 61, 122, 0.25);
   margin: 1.25rem auto;
 }
 main section.cta-box {
@@ -254,7 +254,7 @@ main section.message [class^=col]:last-of-type .form-group {
 footer {
   color: #FFFFFF;
   padding: 120px 0;
-  background: linear-gradient(70deg, #000000 0%, #063057 50%, #1A79D0 100%);
+  background: linear-gradient(70deg, #062157 0%, #073d7a 50%, #1A79D0 100%);
 }
 footer img {
   width: 215px;
@@ -501,7 +501,7 @@ footer .list-social .list-inline-item:not(:last-child) {
   bottom: 25px;
   right: 20px;
   display: none;
-  background-color: rgba(6, 48, 87, 0.85);
+  background-color: rgba(7, 61, 122, 0.85);
   border-radius: 0;
 }
 .back-to-top img {
@@ -509,7 +509,7 @@ footer .list-social .list-inline-item:not(:last-child) {
   width: 24px;
 }
 .back-to-top:hover {
-  background-color: rgba(6, 48, 87, 0.95);
+  background-color: rgba(7, 61, 122, 0.95);
 }
 
 .hidden-c .wowo {
