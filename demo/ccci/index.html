@@ -50,10 +50,10 @@
                             <a class="nav-link" href="#partners-clients">Partners & Clients</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#about">About</a>
+                            <a class="nav-link" href="#career">Career</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#career">Career</a>
+                            <a class="nav-link" href="#about">About</a>
                         </li>
                     </ul>
                     <a href="#message" class="btn btn-outline-primary d-lg-none grow_skew_backward got-to-msg" role="button">Talk to Our Expert</a>
@@ -93,13 +93,14 @@
     <main>
         <section class="container">
             <div class="row wowo fadeInUp">
-                <div class="col">
-                    <div class="accent-wrapper">
+                <div class="col-lg d-lg-flex align-items-center">
+                    <img src="img/accent-photo-01.png" alt="" class="img-fluid mb-5 mb-lg-0">
+                    <!-- <div class="accent-wrapper">
                         <img src="img/accent-photo-01.jpg" class="img-fluid" alt="">
                         <img src="img/photo-02.jpg" class="img-fluid" alt="">
-                    </div>
+                    </div> -->
                 </div>
-                <div class="col pl-5">
+                <div class="col-lg pl-lg-5">
                     <h5>Welcome to</h5>
                     <h2>Centralized Cloud Computing International</h2>
                     <div class="divider-blue"><div></div><span></span><span></span></div>
@@ -120,26 +121,26 @@
                     </div>
                 </div>
 
-                <div class="row mb-5 wowo fadeInUp">
+                <div class="row wowo fadeInUp">
                     <div class="col-lg">
                         <div class="blue-box h-100">
                             <img src="img/technical-support.png" alt="" class="mb-4">
                             <h5 class="text-center">I.T. Consultancy</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
                     <div class="col-lg">
                         <div class="blue-box h-100">
                             <img src="img/coding.png" alt="" class="mb-4">
                             <h5 class="text-center">Software Development</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
                     <div class="col-lg">
                         <div class="blue-box h-100">
                             <img src="img/cloud-storage.png" alt="" class="mb-4">
                             <h5 class="text-center">Managed Service</h5>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p>
+                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
                 </div>
@@ -351,35 +352,82 @@
             </div>
         </section>
 
-        <section class="about" id="about">
+        <section class="message" id="message">
             <div class="container">
                 <div class="row wowo fadeInUp">
                     <div class="col-lg">
-                        <h2>Who We Are</h2>
-                        <div class="divider-blue"><div></div><span></span><span></span></div>
-                        <p>Our team is composed of people from the leaders of the industry such as Accenture, Oracle, Sun Microsystems, INDRA and ePLDT. The Team or being in the Team means one or a combination of being a Consultant, Data Center Operations Manager, Software Developer, IT Architect, System and Database Administrator.</p>
+                        <h2>Send us a message</h2>
+                        <div class="divider-light"><div></div><span></span><span></span></div>
+                        <p>You can contact us with anything related to our Services. We'll get in touch with you as soon as possible.</p>
                     </div>
                     <div class="col-lg">
-                        ....
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name-msg">Your Name</label>
+                                <input type="text" class="form-control" id="name-msg">
+                            </div>
+                            <div class="form-group">
+                                <label for="email-msg">Your Email</label>
+                                <input type="email" class="form-control" id="email-msg">
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-no">Your Number</label>
+                                <input type="text" class="form-control" id="contact-no">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5"></textarea>
+                            </div>
+
+                            <button class="btn btn-outline-primary btn-blue" role="button">Submit</button>
+                        </form>
                     </div>
                 </div>
             </div>
-            <div class="office-photos">
-                <div class="photo" style="background-image: url(img/photo-01.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-02.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-03.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-04.jpg);">
-                </div>
-            </div>
-
-            <div class="mapouter wowo fadeInUp"><div class="gmap_canvas"><iframe width="100%" height="500" id="gmap_canvas" src="https://maps.google.com/maps?q=Cosmark%20Int'l.%20Inc.%20Ymc%20Bldg.&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div></div>
         </section>
 
         <section class="career" id="career">
-            <div class="container">
+            <div class="container-fluid px-0">
+                <div class="row no-gutters wowo fadeInUp">
+                    <div class="col-lg-6">
+                        <div id="map_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Cosmark%20Int'l.%20Inc.%20Ymc%20Bldg.&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
+                    </div>
+                    <div class="col-lg-6 bg-blue d-flex flex-column justify-content-center career-form">
+                        <h2>Are you the one?</h2>
+                        <div class="divider-light"><div></div><span></span><span></span><span></span></div>
+                        <p class="mb-5">Apply now and we will challenge you to do the best work of your life.<br>
+                        Jobs here become opportunities and careers.<br>
+                        At CCCI, we make IT happen!</p>
+                        <form action="">
+                            <div class="form-group">
+                                <label for="name-career">Your Name</label>
+                                <input type="text" class="form-control" id="name-career">
+                            </div>
+                            <div class="form-group">
+                                <label for="mail-career">Your Mail</label>
+                                <input type="text" class="form-control" id="mail-career">
+                            </div>
+                            <div class="form-group">
+                                <label for="specialization-career">Specialization</label>
+                                <select class="custom-select" id="specialization-career">
+                                    <option selected>---</option>
+                                    <option value="1">Fullstack</option>
+                                    <option value="2">Frontend Developer</option>
+                                    <option value="3">Backend Developer</option>
+                                    <option value="3">Android Developer</option>
+                                    <option value="3">IOS Developer</option>
+                                    <option value="3">Wordpress Developer</option>
+                                    <option value="3">UI/UX Designer</option>
+                                </select>
+                            </div>
+                            <div class="mt-5">
+                                <button class="btn btn-outline-primary" role="button">Join Us</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="container">
                 <div class="row wowo fadeInUp">
                     <div class="col">
                         <h2 class="text-center">Are you the one?</h2>
@@ -416,41 +464,32 @@
                         </div>
                     </div>
                 </form>
-            </div>
+            </div> -->
         </section>
 
-        <section class="message" id="message">
-            <div class="container">
+        <section class="about" id="about">
+            <div class="container mb-5">
                 <div class="row wowo fadeInUp">
-                    <div class="col-lg">
-                        <h2>Send us a message</h2>
-                        <div class="divider-light"><div></div><span></span><span></span></div>
-                        <p>You can contact us with anything related to our Services. We'll get in touch with you as soon as possible.</p>
+                    <div class="col-lg order-lg-1">
+                        <img src="img/accent-photo-02.png" alt="" class="img-fluid mb-5 mb-lg-0">
                     </div>
-                    <div class="col-lg">
-                        <form action="">
-                            <div class="form-group">
-                                <label for="name-msg">Your Name</label>
-                                <input type="text" class="form-control" id="name-msg">
-                            </div>
-                            <div class="form-group">
-                                <label for="email-msg">Your Email</label>
-                                <input type="email" class="form-control" id="email-msg">
-                            </div>
-                            <div class="form-group">
-                                <label for="contact-no">Your Number</label>
-                                <input type="text" class="form-control" id="contact-no">
-                            </div>
-                            <div class="form-group">
-                                <label for="message">Your Message</label>
-                                <textarea class="form-control" id="message" rows="5"></textarea>
-                            </div>
-
-                            <button class="btn btn-outline-primary btn-blue" role="button">Submit</button>
-                        </form>
+                    <div class="col-lg d-lg-flex flex-column justify-content-center pr-lg-5 order-lg-0">
+                        <h2>Who We Are</h2>
+                        <div class="divider-blue"><div></div><span></span><span></span></div>
+                        <p>Our team is composed of people from the leaders of the industry such as Accenture, Oracle, Sun Microsystems, INDRA and ePLDT. The Team or being in the Team means one or a combination of being a Consultant, Data Center Operations Manager, Software Developer, IT Architect, System and Database Administrator.</p>
                     </div>
                 </div>
             </div>
+            <!-- <div class="office-photos">
+                <div class="photo" style="background-image: url(img/photo-01.jpg);">
+                </div>
+                <div class="photo" style="background-image: url(img/photo-02.jpg);">
+                </div>
+                <div class="photo" style="background-image: url(img/photo-03.jpg);">
+                </div>
+                <div class="photo" style="background-image: url(img/photo-04.jpg);">
+                </div>
+            </div> -->
         </section>
     </main>
 
@@ -526,6 +565,20 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
+    <script>
+        var map;
+        $(function($) {
+            $(document).ready(function() {
+                // init Height
+                $('#map_canvas').height($('.career-form').innerHeight());
+            });
+                // On Resize
+            $(window).resize(function(){ 
+                $('#map_canvas').height($('.career-form').innerHeight());
+            });
+        });
+    </script>
 </body>
 
 </html>

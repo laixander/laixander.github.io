@@ -2,11 +2,11 @@ html, body {
   height: 100%;
 }
 
-h1, h2, h3, h4, h5, h6, a, button, input, .nav-item, .call-us {
+h1, h2, h3, h4, h5, h6, a, button, .nav-item, .call-us {
   font-family: "Montserrat", sans-serif;
 }
 
-p, li {
+p, li, label, input, select {
   font-family: "Poppins", sans-serif;
 }
 
@@ -20,9 +20,13 @@ p .highlight {
   color: #1756c0;
 }
 
-li {
+li, label {
   font-weight: 300;
   font-size: 18px;
+}
+
+.bg-blue {
+  background-color: #1756c0;
 }
 
 header {
@@ -137,6 +141,9 @@ main section .blue-box {
 main section .box-outline {
   border: 1px solid #1756c0;
 }
+main section.products-services .container .row:nth-child(2) {
+  margin-bottom: 35px;
+}
 main section.products-services .blue-box {
   flex-direction: column;
   align-items: center;
@@ -250,35 +257,36 @@ main section.cta-box h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
 }
-main section.about {
-  padding-bottom: 0;
-}
-main section.about .office-photos {
-  margin-top: 120px;
-}
-main section.about .mapouter {
-  position: relative;
-  text-align: right;
-  height: 500px;
-  width: 100%;
-}
-main section.about .mapouter .gmap_canvas {
-  overflow: hidden;
-  background: none !important;
-  height: 500px;
-  width: 100%;
-}
-main section.about .office-photos {
-  display: flex;
-}
-main section.about .office-photos .photo {
-  width: 25%;
-  height: 320px;
-  background-size: cover;
-  background-position: center;
-}
 main section.career {
-  padding: 240px 0;
+  color: #FFFFFF;
+}
+main section.career h2 {
+  font-weight: 700;
+}
+main section.career .career-form {
+  padding: 60px;
+}
+main section.career .career-form form {
+  width: 30vw;
+}
+main section.career .career-form form input {
+  border: none;
+}
+main section.career .career-form:after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/bg-photo-01.jpg);
+  background-size: cover;
+  filter: grayscale(100%);
+  opacity: 0.04;
+  z-index: 0;
 }
 main section.message [class^=col]:first-of-type {
   padding: 4rem;
