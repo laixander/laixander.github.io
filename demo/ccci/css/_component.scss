@@ -67,6 +67,9 @@
             background-color: $white-color;
             box-shadow: none;
         }
+        &:focus {
+            box-shadow: none;
+        }
     }
 }
 
@@ -84,6 +87,9 @@
         &:active:focus {
             color: $white-color;
             background-color: $base-color;
+            box-shadow: none;
+        }
+        &:focus {
             box-shadow: none;
         }
     }
@@ -162,6 +168,45 @@
             content: '';
             display: block;
             background-color: $white-color;
+            width: 10px;
+            height: 8px;
+            transform: skew(-35deg);
+            margin-left: 5px;
+        }
+    }
+}
+
+.divider-blue {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    div {
+        width: 200px;
+        height: 8px;
+        transform: skew(-35deg);
+        background: $base-color;
+        margin-left: 5px;
+    }
+    span:nth-child(2) {
+        display: flex;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            background-color: $base-color;
+            width: 10px;
+            height: 8px;
+            transform: skew(-35deg);
+            margin-left: 5px;
+        }
+    }
+    span:nth-child(3) {
+        display: flex;
+        &:before {
+            content: '';
+            display: block;
+            background-color: $base-color;
             width: 10px;
             height: 8px;
             transform: skew(-35deg);
