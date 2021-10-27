@@ -303,12 +303,13 @@ main {
         // }
         &.career {
             // padding: 240px 0;
+            padding: 0;
             color: $white-color;
             h2 {
                 font-weight: 700;
             }
             .career-form {
-                padding: 60px;
+                padding: 120px 60px;
                 form {
                     width: 30vw;
                     input {

@@ -258,13 +258,14 @@ main section.cta-box h3 {
   font-weight: 400;
 }
 main section.career {
+  padding: 0;
   color: #FFFFFF;
 }
 main section.career h2 {
   font-weight: 700;
 }
 main section.career .career-form {
-  padding: 60px;
+  padding: 120px 60px;
 }
 main section.career .career-form form {
   width: 30vw;
