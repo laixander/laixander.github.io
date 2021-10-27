@@ -273,22 +273,6 @@ main section.career .career-form form {
 main section.career .career-form form input {
   border: none;
 }
-main section.career .career-form:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/bg-photo-01.jpg);
-  background-size: cover;
-  filter: grayscale(100%);
-  opacity: 0.04;
-  z-index: 0;
-}
 main section.message [class^=col]:first-of-type {
   padding: 4rem;
   color: #FFFFFF;
