@@ -227,6 +227,23 @@ main section.products-services .accordion .card ul li {
   margin-bottom: 1rem;
   padding-left: 10px;
 }
+main section.products-services .accordion .card .product-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+}
+main section.products-services .accordion .card .product-wrapper .product-item {
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #1756c0;
+  border: 2px solid #1756c0;
+  padding: 0.8rem 1.2rem;
+  margin: 0.5rem;
+}
+main section.products-services .accordion .card .product-wrapper .product-item img {
+  margin-right: 10px;
+  width: 35px;
+}
 main section.partners-clients .logos {
   display: flex;
   flex-wrap: wrap;
@@ -281,22 +298,6 @@ main section.message [class^=col]:first-of-type {
   flex-direction: column;
   justify-content: center;
   position: relative;
-}
-main section.message [class^=col]:first-of-type:after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/products-services-bg.jpg);
-  background-size: cover;
-  filter: grayscale(100%);
-  opacity: 0.05;
-  z-index: 0;
 }
 main section.message [class^=col]:first-of-type:before {
   content: "";
