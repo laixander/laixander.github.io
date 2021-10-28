@@ -173,9 +173,9 @@ main {
                         margin: 1.25rem auto;
                     }
                 }
-                &:hover {
-                    transform: translateY(-20px);
-                }
+                // &:hover {
+                //     transform: translateY(-20px);
+                // }
             }
             .box-outline-group {
                 border: 1px solid $base-color;

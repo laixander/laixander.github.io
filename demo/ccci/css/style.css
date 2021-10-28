@@ -162,9 +162,6 @@ main section.products-services .blue-box h5:after {
   border-bottom: 1px solid rgba(255, 255, 255, 0.2);
   margin: 1.25rem auto;
 }
-main section.products-services .blue-box:hover {
-  transform: translateY(-20px);
-}
 main section.products-services .box-outline-group {
   border: 1px solid #1756c0;
   position: relative;
