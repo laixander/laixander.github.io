@@ -137,6 +137,48 @@
     }
 }
 
+.divider-center-light {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    div {
+        width: 200px;
+        height: 8px;
+        transform: skew(-35deg);
+        background: $white-color;
+        margin-left: 5px;
+    }
+    span:nth-child(2),
+    span:nth-child(4) {
+        display: flex;
+        &:before,
+        &:after {
+            content: '';
+            display: block;
+            background-color: $white-color;
+            width: 10px;
+            height: 8px;
+            transform: skew(-35deg);
+            margin-left: 5px;
+        }
+    }
+    span:nth-child(1),
+    span:nth-child(5) {
+        display: flex;
+        &:before {
+            content: '';
+            display: block;
+            background-color: $white-color;
+            width: 10px;
+            height: 8px;
+            transform: skew(-35deg);
+            margin-left: 5px;
+        }
+    }
+}
+
 .divider-light {
     display: flex;
     align-items: center;
