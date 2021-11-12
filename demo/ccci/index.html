@@ -36,7 +36,12 @@
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon">
+                        <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mx-lg-auto">
@@ -56,12 +61,17 @@
                             <a class="nav-link" href="#about">About</a>
                         </li>
                     </ul>
-                    <a href="#message" class="btn btn-outline-primary d-lg-none grow_skew_backward got-to-msg" role="button">Talk to Our Expert</a>
+                    <a href="#message" class="btn btn-outline-primary d-lg-none go-to-msg" role="button">Talk to Our Expert</a>
+                    <ul class="list-social list-inline text-center d-lg-none">
+                        <li class="list-inline-item"><a href=""><img src="img/icon-facebook.svg" alt=""></a></li>
+                        <li class="list-inline-item"><a href=""><img src="img/icon-instagram.svg" alt=""></a></li>
+                        <li class="list-inline-item"><a href=""><img src="img/icon-linkedin.svg" alt=""></a></li>
+                    </ul>
                 </div>
-                <a href="#message" class="btn btn-outline-primary d-none d-lg-inline grow_skew_backward got-to-msg" role="button">Talk to Our Expert</a>
+                <a href="#message" class="btn btn-outline-primary d-none d-lg-inline go-to-msg" role="button">Talk to Our Expert</a>
             </nav>
             <div class="hero wowo fadeInUp">
-                <div class="px-5">
+                <div class="px-4 px-md-5">
                     <div class="d-flex ml-4 mb-3">
                         <div class="skewbox">
                             <h4>Your New</h4>
@@ -79,11 +89,11 @@
 
     <section class="container cta-box-top wowo fadeInUp">
         <div class="row">
-            <div class="col">
+            <div class="col-md">
                 <h5>Looking for Real Digital Solution?</h5>
                 <h2 class="mb-0">Get a FREE Consultation Today!</h2>
             </div>
-            <div class="col-auto text-center">
+            <div class="col-md-auto text-md-center">
                 <div class="call-us mb-3">Call Us <span class="contact-no">+63(2) 1123-4567</span></div>
                 <a href="#message" class="btn btn-outline-primary got-to-msg" role="button">Talk to Our Expert</a>
             </div>
@@ -95,10 +105,6 @@
             <div class="row wowo fadeInUp">
                 <div class="col-lg d-lg-flex align-items-center">
                     <img src="img/accent-photo-01.png" alt="" class="img-fluid mb-5 mb-lg-0">
-                    <!-- <div class="accent-wrapper">
-                        <img src="img/accent-photo-01.jpg" class="img-fluid" alt="">
-                        <img src="img/photo-02.jpg" class="img-fluid" alt="">
-                    </div> -->
                 </div>
                 <div class="col-lg pl-lg-5">
                     <h5>Welcome to</h5>
@@ -111,21 +117,6 @@
             </div>
         </section>
 
-        <!-- <section class="bg-blue">
-            <div class="container">
-                <div class="row wowo fadeInUp">
-                    <div class="col">
-                        <h2 class="text-center">Products & Services</h2>
-                        <div class="divider-center-light"><span></span><span></span><div></div><span></span><span></span></div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col">...</div>
-                    <div class="col">...</div>
-                </div>
-            </div>
-        </section> -->
-
         <section class="products-services bg-blue" id="products-services">
             <div class="layer img-parallax" data-parallax-speed="0.5"></div>
             <div class="container">
@@ -137,25 +128,22 @@
                 </div>
 
                 <div class="row wowo fadeInUp">
-                    <div class="col-lg">
+                    <div class="col-lg mb-3 mb-lg-0">
                         <div class="blue-box h-100">
                             <img src="img/technical-support.png" alt="" class="mb-4">
                             <h5 class="text-center">I.T. Consultancy</h5>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg mb-3 mb-lg-0">
                         <div class="blue-box h-100">
                             <img src="img/coding.png" alt="" class="mb-4">
                             <h5 class="text-center">Software Development</h5>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg mb-3 mb-lg-0">
                         <div class="blue-box h-100">
                             <img src="img/cloud-storage.png" alt="" class="mb-4">
                             <h5 class="text-center">Managed Service</h5>
-                            <!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, quisquam?</p> -->
                         </div>
                     </div>
                 </div>
@@ -176,16 +164,6 @@
                         
                                 <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionProducts">
                                     <div class="card-body">
-                                        <!-- <ul>
-                                            <li>Business Permits</li>
-                                            <li>Real Property Tax</li>
-                                            <li>Community Management</li>
-                                            <li>Tourist Management</li>
-                                            <li>School Management</li>
-                                            <li>Public Market Administration</li>
-                                            <li>Hospital Management</li>
-                                            <li>Tax Preparation</li>
-                                        </ul> -->
                                         <div class="product-wrapper">
                                             <div class="product-item">
                                                 <img src="img/icon-certificate.png" alt=""> Business Permits
@@ -227,13 +205,6 @@
                                 </div>
                                 <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionProducts">
                                     <div class="card-body">
-                                        <!-- <ul>
-                                            <li>Product Catalog</li>
-                                            <li>Mobile Wallet</li>
-                                            <li>User Management</li>
-                                            <li>Drop Shipping</li>
-                                            <li>Sales Hierarchy and Compensation Management</li>
-                                        </ul> -->
                                         <div class="product-wrapper">
                                             <div class="product-item">
                                                 <img src="img/icon-brochure.png" alt=""> Product Catalog
@@ -266,16 +237,6 @@
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProducts">
                                     <div class="card-body">
-                                        <!-- <ul>
-                                            <li>Customer Service</li>
-                                            <li>Automotive Sales and Services</li>
-                                            <li>Public Figure</li>
-                                            <li>Public Administration</li>
-                                            <li>Movers</li>
-                                            <li>Lead Generation</li>
-                                            <li>Reservations and Bookings</li>
-                                            <li>Retail Banking Services</li>
-                                        </ul> -->
                                         <div class="product-wrapper">
                                             <div class="product-item">
                                                 <img src="img/icon-service.png" alt=""> Customer Service
@@ -317,15 +278,6 @@
                                 </div>
                                 <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionProducts">
                                     <div class="card-body">
-                                        <!-- <ul>
-                                            <li>Data Management</li>
-                                            <li>Application Programming Interfaces</li>
-                                            <li>Business Process Automation</li>
-                                            <li>Robotic Process Automation</li>
-                                            <li>Cloud-Native Applications</li>
-                                            <li>Microservices</li>
-                                            <li>iOS and Android Apps</li>
-                                        </ul> -->
                                         <div class="product-wrapper">
                                             <div class="product-item">
                                                 <img src="img/icon-data-management.png" alt=""> Data Management
@@ -355,65 +307,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="row row-cols-lg-2 no-gutters box-outline-group wowo fadeInUp">
-                    <div class="col-12">
-                        <div class="box-outline h-100">
-                            <h5>Digital One-Stop Shop for Local Government Units</h5>
-                            <ul>
-                                <li>Business Permits</li>
-                                <li>Real Property Tax</li>
-                                <li>Community Management</li>
-                                <li>Tourist Management</li>
-                                <li>School Management</li>
-                                <li>Public Market Administration</li>
-                                <li>Hospital Management</li>
-                                <li>Tax Preparation</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="box-outline h-100">
-                            <h5>Social Commerce</h5>
-                            <ul>
-                                <li>Product Catalog</li>
-                                <li>Mobile Wallet</li>
-                                <li>User Management</li>
-                                <li>Drop Shipping</li>
-                                <li>Sales Hierarchy and Compensation Management</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="box-outline h-100">
-                            <h5>Chatbot DevOps</h5>
-                            <ul>
-                                <li>Customer Service</li>
-                                <li>Automotive Sales and Services</li>
-                                <li>Public Figure</li>
-                                <li>Public Administration</li>
-                                <li>Movers</li>
-                                <li>Lead Generation</li>
-                                <li>Reservations and Bookings</li>
-                                <li>Retail Banking Services</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="box-outline h-100">
-                            <h5>Enterprise IT Scaffolding Services</h5>
-                            <ul>
-                                <li>Data Management</li>
-                                <li>Application Programming Interfaces</li>
-                                <li>Business Process Automation</li>
-                                <li>Robotic Process Automation</li>
-                                <li>Cloud-Native Applications</li>
-                                <li>Microservices</li>
-                                <li>iOS and Android Apps</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> -->
             </div>
         </section>
 
@@ -426,7 +319,6 @@
                         <p class="text-center mb-5">Be more productive, more profitable, more secure</p>
                     </div>
                 </div>
-
                 <div class="row wowo fadeInUp">
                     <div class="col">
                         <div class="logos">
@@ -448,17 +340,6 @@
                 </div>
             </div>
         </section>
-
-        <!-- <section class="container wowo fadeInUp cta-box">
-            <div class="row">
-                <div class="col-lg d-flex align-items-center">
-                    <h3 class="mb-0">Be more productive, more profitable, more secure</h3>
-                </div>
-                <div class="col-lg-auto">
-                    <a href="#message" class="btn btn-outline-primary got-to-msg" role="button">Talk to Our Expert</a>
-                </div>
-            </div>
-        </section> -->
 
         <section class="message" id="message">
             <div class="container">
@@ -494,13 +375,13 @@
             </div>
         </section>
 
-        <section class="career" id="career">
+        <section class="career">
             <div class="container-fluid px-0">
                 <div class="row no-gutters wowo fadeInUp">
                     <div class="col-lg-6">
                         <div id="map_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Cosmark%20Int'l.%20Inc.%20Ymc%20Bldg.&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
                     </div>
-                    <div class="col-lg-6 bg-blue d-flex flex-column justify-content-center career-form">
+                    <div id="career" class="col-lg-6 bg-blue d-flex flex-column justify-content-center career-form">
                         <h2>Are you the one?</h2>
                         <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                         <p class="mb-5">Apply now and we will challenge you to do the best work of your life.<br>
@@ -535,44 +416,6 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="container">
-                <div class="row wowo fadeInUp">
-                    <div class="col">
-                        <h2 class="text-center">Are you the one?</h2>
-                        <div class="divider"><span></span><span></span><div></div><span></span><span></span></div>
-                        <p class="text-center mb-5">Apply now and we will challenge you to do the best work of your life.<br>
-                        Jobs here become opportunities and careers.<br>
-                        At CCCI, we make IT happen!</p>
-                    </div>
-                </div>
-                <form class="wowo fadeInUp">
-                    <div class="form-row mb-4">
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Your Name">
-                        </div>
-                        <div class="col">
-                            <input type="text" class="form-control" placeholder="Your Mail">
-                        </div>
-                        <div class="col">
-                            <select class="custom-select">
-                                <option selected>Specialization</option>
-                                <option value="1">Fullstack</option>
-                                <option value="2">Frontend Developer</option>
-                                <option value="3">Backend Developer</option>
-                                <option value="3">Android Developer</option>
-                                <option value="3">IOS Developer</option>
-                                <option value="3">Wordpress Developer</option>
-                                <option value="3">UI/UX Designer</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col text-center">
-                            <button class="btn btn-outline-primary btn-blue" role="button">Join Us</button>
-                        </div>
-                    </div>
-                </form>
-            </div> -->
         </section>
 
         <section class="about" id="about">
@@ -588,49 +431,39 @@
                     </div>
                 </div>
             </div>
-            <!-- <div class="office-photos">
-                <div class="photo" style="background-image: url(img/photo-01.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-02.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-03.jpg);">
-                </div>
-                <div class="photo" style="background-image: url(img/photo-04.jpg);">
-                </div>
-            </div> -->
         </section>
     </main>
 
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-lg-4">
-                    <img src="img/ccci-logo-footer.png" alt="">
+                <div class="col-lg-4 mb-5 mb-lg-0 text-center text-lg-left">
+                    <img src="img/ccci-logo-footer.png" alt="CCCI | Centralized Cloud Computing Intl., Inc.">
                 </div>
-                <div class="col-lg-5">
-                    <div class="media mb-3">
-                        <img src="img/icon-environment.svg" alt="" class="icon">
+                <div class="col-lg-5 mb-5 mb-lg-0">
+                    <div class="media mb-3 flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-left">
+                        <img src="img/icon-environment.svg" alt="Location" class="icon mb-3 mb-lg-0">
                         <div class="media-body">
                             <h5 class="mt-0">Find us at the office</h5>
                             <p>2F YMC Bldg, 2320 Chino Roces Ave, Ext,<br> Makati, 1231 Metro Manila</p>
                         </div>
                     </div>
-                    <div class="media mb-3">
-                        <img src="img/icon-mail.svg" alt="" class="icon">
+                    <div class="media mb-3 flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-left">
+                        <img src="img/icon-mail.svg" alt="Email" class="icon mb-3 mb-lg-0">
                         <div class="media-body">
                             <h5 class="mt-0">Connect with us</h5>
                             <p>ccci@centralizedinc.com</p>
                         </div>
                     </div>
-                    <div class="media">
-                        <img src="img/icon-phone.svg" alt="" class="icon">
+                    <div class="media flex-column flex-lg-row align-items-center align-items-lg-start text-center text-lg-left">
+                        <img src="img/icon-phone.svg" alt="Phone Number" class="icon mb-3 mb-lg-0">
                         <div class="media-body">
                             <h5 class="mt-0">Give us a ring</h5>
-                            <p>+63(2) 1123-4567</p>
+                            <p><a href="tel:+63211234567">+63(2) 1123-4567</a></p>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg">
+                <div class="col-lg text-center text-lg-left">
                     <h4>Sitemap</h4>
                     <ul class="list-unstyled sitemap">
                         <li><a href="#top">Home</a></li>
@@ -643,11 +476,11 @@
             </div>
             <hr>
             <div class="row mt-4">
-                <div class="col">
+                <div class="col-lg mb-4 mb-lg-0 text-center">
                     <p class="mb-0">&copy;2021 CCCI Inc. All rights reserved.</p>
                 </div>
-                <div class="col">
-                    <ul class="list-social list-inline text-right">
+                <div class="col-lg">
+                    <ul class="list-social list-inline text-center text-lg-right">
                         <li class="list-inline-item"><a href=""><img src="img/icon-facebook.svg" alt=""></a></li>
                         <li class="list-inline-item"><a href=""><img src="img/icon-instagram.svg" alt=""></a></li>
                         <li class="list-inline-item"><a href=""><img src="img/icon-linkedin.svg" alt=""></a></li>
@@ -673,20 +506,6 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
-
-    <script>
-        var map;
-        $(function($) {
-            $(document).ready(function() {
-                // init Height
-                $('#map_canvas').height($('.career-form').innerHeight());
-            });
-                // On Resize
-            $(window).resize(function(){ 
-                $('#map_canvas').height($('.career-form').innerHeight());
-            });
-        });
-    </script>
 </body>
 
 </html>
