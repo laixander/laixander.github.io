@@ -350,22 +350,26 @@
                         <p>You can contact us with anything related to our Services. We'll get in touch with you as soon as possible.</p>
                     </div>
                     <div class="col-lg">
-                        <form action="">
+                        <form class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label for="name-msg">Your Name</label>
-                                <input type="text" class="form-control" id="name-msg">
+                                <input type="text" class="form-control" id="name-msg" required>
+                                <div class="invalid-feedback">Please provide your name.</div>
                             </div>
                             <div class="form-group">
                                 <label for="email-msg">Your Email</label>
-                                <input type="email" class="form-control" id="email-msg">
+                                <input type="email" class="form-control" id="email-msg" required>
+                                <div class="invalid-feedback">Please provide your email.</div>
                             </div>
                             <div class="form-group">
                                 <label for="contact-no">Your Number</label>
-                                <input type="text" class="form-control" id="contact-no">
+                                <input type="text" class="form-control" id="contact-no" required>
+                                <div class="invalid-feedback">Please provide your contact number.</div>
                             </div>
                             <div class="form-group">
                                 <label for="message">Your Message</label>
-                                <textarea class="form-control" id="message" rows="5"></textarea>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                                <div class="invalid-feedback">Please provide a message.</div>
                             </div>
 
                             <button class="btn btn-outline-primary btn-blue" role="button">Submit</button>
@@ -387,27 +391,30 @@
                         <p>Stay at home. Stay productive. Stay connected.</p>
                         <p>We stand behind you! We know great work doesn't only happen in a cubicle or office between 8:00 a.m. and 5:00 p.m. That's why we offer employees choices of when and where to work.</p>
                         <p class="mb-5">Join our team and we will challenge you to do the best work of your life. At CCCI, we make IT happen!</p>
-                        <form action="">
+                        <form class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label for="name-career">Your Name</label>
-                                <input type="text" class="form-control" id="name-career">
+                                <input type="text" class="form-control" id="name-career" required>
+                                <div class="invalid-feedback">Please provide your name.</div>
                             </div>
                             <div class="form-group">
-                                <label for="mail-career">Your Mail</label>
-                                <input type="text" class="form-control" id="mail-career">
+                                <label for="email-career">Your Mail</label>
+                                <input type="email" class="form-control" id="email-career" required>
+                                <div class="invalid-feedback">Please provide your email.</div>
                             </div>
                             <div class="form-group">
-                                <label for="specialization-career">Specialization</label>
-                                <select class="custom-select" id="specialization-career">
-                                    <option selected>---</option>
-                                    <option value="1">Fullstack</option>
-                                    <option value="2">Frontend Developer</option>
-                                    <option value="3">Backend Developer</option>
-                                    <option value="3">Android Developer</option>
-                                    <option value="3">IOS Developer</option>
-                                    <option value="3">Wordpress Developer</option>
-                                    <option value="3">UI/UX Designer</option>
+                                <label for="specialization">Specialization</label>
+                                <select class="custom-select" id="specialization" required>
+                                    <option selected disabled value="">---</option>
+                                    <option value="fullstack">Fullstack</option>
+                                    <option value="frontend">Frontend Developer</option>
+                                    <option value="backend">Backend Developer</option>
+                                    <option value="android">Android Developer</option>
+                                    <option value="ios">IOS Developer</option>
+                                    <option value="wordpress">Wordpress Developer</option>
+                                    <option value="designer">UI/UX Designer</option>
                                 </select>
+                                <div class="invalid-feedback">Please choose your specialization.</div>
                             </div>
                             <div class="mt-5">
                                 <button class="btn btn-outline-primary" role="button">Join Us</button>

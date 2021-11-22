@@ -47,7 +47,7 @@ var ccciFeature = {
         });
     },
 
-    backToTop: function(){
+    backToTop: function() {
         $('#back-to-top').click(function () {
             $('body,html').animate({
                 scrollTop: 0
@@ -69,7 +69,7 @@ var ccciFeature = {
         });
     },
 
-    wowo: function(){
+    wowo: function() {
         var wTop = $(window).scrollTop(),
             wHeight = $(window).height(),
             wBottom = wTop + wHeight;
@@ -89,7 +89,7 @@ var ccciFeature = {
         });
     },
 
-    accordionScrollTop: function(){
+    accordionScrollTop: function() {
         $('#accordionProducts').on('shown.bs.collapse', function () {
             $('html,body').animate({
                 scrollTop: $('#accordionProducts').offset().top -100
@@ -114,7 +114,7 @@ var ccciFeature = {
         });
     },
 
-    closedMenuOnScroll: function(){
+    closedMenuOnScroll: function() {
         $('.navbar-collapse').on('click', 'a', null, function() {
             $('.navbar-collapse').collapse('hide');
             $('.nav-icon').removeClass('open');
@@ -127,7 +127,7 @@ var ccciFeature = {
         });
     },
 
-    gMapHeight: function(){
+    gMapHeight: function() {
         $(document).ready(function() {
             // init Height
             $('#map_canvas').height($('.career-form').innerHeight());
@@ -138,7 +138,7 @@ var ccciFeature = {
         });
     },
 
-    fadeUpSection: function(){
+    fadeUpSection: function() {
         $(document).ready(function() {
             $('html').addClass("hidden-c");
             $(window).scroll(function() {
@@ -148,6 +148,22 @@ var ccciFeature = {
                 ccciFeature.wowo();
             })
         });
+    },
+
+    formValidation: function() {
+        'use strict';
+        window.addEventListener('load', function() {
+        var forms = document.getElementsByClassName('needs-validation');
+        var validation = Array.prototype.filter.call(forms, function(form) {
+            form.addEventListener('submit', function(event) {
+            if (form.checkValidity() === false) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+            }, false);
+        });
+        }, false);
     }
 }
 
@@ -161,6 +177,7 @@ ccciFeature.accordionScrollTop();
 ccciFeature.closedMenuOnScroll();
 ccciFeature.gMapHeight();
 ccciFeature.fadeUpSection();
+ccciFeature.formValidation();
 
 
 function debounce(func, wait, immediate) {

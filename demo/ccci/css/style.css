@@ -30,6 +30,10 @@ li, label {
   background-color: #1756c0;
 }
 
+.invalid-feedback {
+  font-family: "Poppins", sans-serif;
+}
+
 header {
   color: #FFFFFF;
   width: 100%;
@@ -417,9 +421,6 @@ main section.career .career-form {
   main section.career .career-form form {
     width: 30vw;
   }
-}
-main section.career .career-form form input {
-  border: none;
 }
 main section.message [class^=col]:first-of-type {
   padding: 3rem 2rem 1rem;
