@@ -158,7 +158,7 @@ header .nav-wrapper .hero {
   display: flex;
   align-items: center;
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   header .nav-wrapper .hero {
     height: calc(100% - 200px);
   }
@@ -173,7 +173,7 @@ header .nav-wrapper .hero h1 {
     font-size: 82px;
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1024px) {
   header .nav-wrapper .hero h1 {
     font-size: 96px;
   }
