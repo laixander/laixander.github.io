@@ -44,7 +44,7 @@ var ccciFeature = {
 
     scrollSpy: function() {
         $('body').scrollspy({ target: '.navbar', offset: 68 }); 
-        $('.nav-item a, .navbar-brand, .sitemap a, .go-to-msg').on('click', function(event) {
+        $('.nav-item a, .navbar-brand, .sitemap a, .go-to-msg, .address-map').on('click', function(event) {
             if (this.hash !== '') {
                 event.preventDefault();
                 var hash = this.hash;

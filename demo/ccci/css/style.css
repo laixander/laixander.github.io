@@ -621,9 +621,13 @@ section.bg-blue h2 {
   font-size: 36px;
   font-weight: 700;
 }
-.cta-box-top .call-us .contact-no {
+.cta-box-top .call-us a {
+  color: #FFFFFF;
   font-family: "Poppins", sans-serif;
   font-weight: 500;
+}
+.cta-box-top .call-us a:hover {
+  color: #FFFFFF;
 }
 
 .form-control,
