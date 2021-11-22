@@ -542,6 +542,29 @@ section.bg-blue h2 {
     opacity: 1;
   }
 }
+.cta-box {
+  background-color: #1756c0;
+  color: #FFFFFF;
+  display: flex;
+  justify-content: center;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+}
+.cta-box:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-width: 0 40px 40px 0;
+  border-style: solid;
+  border-color: #2c7eff #FFFFFF;
+}
+.cta-box h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+}
+
 .cta-box-top {
   padding: 1rem 3rem;
   position: relative;
