@@ -321,6 +321,9 @@ main {
                                 text-transform: uppercase;
                                 font-weight: 700;
                                 font-size: 18px;
+                                &:focus {
+                                    box-shadow: none;
+                                }
                             }
                             img {
                                 max-width: 20px;
