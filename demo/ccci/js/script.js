@@ -1,3 +1,7 @@
+// function preloader(){
+//     $('.loader-bg').fadeToggle();
+// }
+
 var ccciFeature = {
     slickSlider: function() {
         $(document).ready(function(){
