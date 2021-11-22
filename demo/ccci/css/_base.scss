@@ -15,8 +15,9 @@ p {
     font-size: 18px;
     line-height: 1.8em;
     .highlight {
-        font-weight: 600;
+        font-weight: 700;
         color: $base-color;
+        text-transform: uppercase;
     }
 }
 

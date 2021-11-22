@@ -254,7 +254,12 @@ main {
             // }
             .container {
                 .row:nth-child(2) {
-                    margin-bottom: 35px;
+                    @media (min-width: 768px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (min-width: 992px) {
+                        margin-bottom: 35px;
+                    }
                 }
             }
             .blue-box {
@@ -367,13 +372,15 @@ main {
         }
         &.partners-clients {
             .logos {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                div {
-                    max-width: 300px;
-                    @media (min-width: 992px) {
-                        max-width: 200px;
+                @media (min-width: 992px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    div {
+                        max-width: 300px;
+                        @media (min-width: 992px) {
+                            max-width: 200px;
+                        }
                     }
                 }
             }
@@ -477,6 +484,9 @@ main {
                 @media (min-width: 768px) {
                     padding: 4rem;
                 }
+                @media (max-width: 991px) {
+                    padding-bottom: 2rem;
+                }
                 // &:after {
                 //     content: "";
                 //     display: block;
@@ -512,6 +522,16 @@ main {
                 border: 2px solid $base-color;
                 @media (min-width: 768px) {
                     padding: 4rem;
+                }
+                @media (max-width: 991px) {
+                    padding-top: 0;
+                    color: $white-color;
+                    background-color: $base-color;
+                    .btn-blue {
+                        color: $white-color;
+                        background-color: transparent;
+                        border-color: $white-color;
+                    }
                 }
                 .form-group {
                     margin-bottom: 2rem;

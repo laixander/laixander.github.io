@@ -5,13 +5,27 @@
 var ccciFeature = {
     slickSlider: function() {
         $(document).ready(function(){
-            $('.your-class').slick({
+            $('.logos').slick({
                 infinite: true,
-                slidesToShow: 3,
+                slidesToShow: 2,
                 slidesToScroll: 1,
                 dots: true,
                 arrows: false,
-                autoplay: true
+                autoplay: true,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            infinite: true,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: 'unslick'
+                    }
+                ]
             });
         });
     },
@@ -137,7 +151,7 @@ var ccciFeature = {
     }
 }
 
-// ccciFeature.slickSlider();
+ccciFeature.slickSlider();
 ccciFeature.onScrollChange();
 // ccciFeature.backToTop();
 ccciFeature.scrollSpy();
@@ -147,3 +161,25 @@ ccciFeature.accordionScrollTop();
 ccciFeature.closedMenuOnScroll();
 ccciFeature.gMapHeight();
 ccciFeature.fadeUpSection();
+
+
+function debounce(func, wait, immediate) {
+	var timeout;
+	return function() {
+		var context = this, args = arguments;
+		var later = function() {
+			timeout = null;
+			if (!immediate) func.apply(context, args);
+		};
+		var callNow = immediate && !timeout;
+		clearTimeout(timeout);
+		timeout = setTimeout(later, wait);
+		if (callNow) func.apply(context, args);
+	};
+};
+
+var myEfficientFn = debounce(function() {
+	ccciFeature.slickSlider();
+}, 250);
+
+window.addEventListener('resize', myEfficientFn);
