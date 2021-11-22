@@ -164,11 +164,16 @@ header .nav-wrapper .hero {
   }
 }
 header .nav-wrapper .hero h1 {
-  font-size: 52px;
+  font-size: 44px;
   font-weight: 700;
   text-transform: uppercase;
 }
 @media (min-width: 768px) {
+  header .nav-wrapper .hero h1 {
+    font-size: 82px;
+  }
+}
+@media (min-width: 992px) {
   header .nav-wrapper .hero h1 {
     font-size: 96px;
   }

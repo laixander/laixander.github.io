@@ -135,10 +135,13 @@ header {
                 height: calc(100% - 200px);
             }
             h1 {
-                font-size: 52px;
+                font-size: 44px;
                 font-weight: 700;
                 text-transform: uppercase;
                 @media (min-width: 768px) {
+                    font-size: 82px;
+                }
+                @media (min-width: 992px) {
                     font-size: 96px;
                 }
             }
