@@ -353,15 +353,15 @@
                         <form class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label for="name-msg">Your Name</label>
-                                <input type="text" class="form-control" id="name-msg" required>
+                                <input type="text" class="form-control" id="name-msg" pattern="[A-Z\sa-z]{3,20}" required>
                             </div>
                             <div class="form-group">
                                 <label for="email-msg">Your Email</label>
-                                <input type="email" class="form-control" id="email-msg" required>
+                                <input type="email" class="form-control" id="email-msg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                             </div>
                             <div class="form-group">
                                 <label for="contact-no">Your Number</label>
-                                <input type="text" class="form-control" id="contact-no" required>
+                                <input type="text" class="form-control" id="contact-no" pattern="[0]{1}[0-9]{10}" required>
                             </div>
                             <div class="form-group">
                                 <label for="message">Your Message</label>
@@ -390,11 +390,11 @@
                         <form class="needs-validation" novalidate>
                             <div class="form-group">
                                 <label for="name-career">Your Name</label>
-                                <input type="text" class="form-control" id="name-career" required>
+                                <input type="text" class="form-control" id="name-career" pattern="[A-Z\sa-z]{3,20}" required>
                             </div>
                             <div class="form-group">
                                 <label for="email-career">Your Email</label>
-                                <input type="email" class="form-control" id="email-career" required>
+                                <input type="email" class="form-control" id="email-career" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
                             </div>
                             <div class="form-group">
                                 <label for="specialization">Specialization</label>

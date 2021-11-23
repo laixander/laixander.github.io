@@ -32,7 +32,7 @@ var ccciFeature = {
     
     onScrollChange: function() {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 180) {
+            if ($(this).scrollTop() > 120) {
                 $('.navbar').addClass('navbar-shrink');
                 // $('.navbar-brand').find('.colored-logo').removeClass('d-none').end().find('.white-logo').addClass('d-none');
                 $('#back-to-top').fadeIn();

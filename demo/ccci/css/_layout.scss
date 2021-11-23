@@ -332,14 +332,18 @@ main {
                                 text-transform: uppercase;
                                 font-weight: 700;
                                 font-size: 18px;
-
+                                padding: 0.6rem;
                                 display: flex;
                                 justify-content: space-between;
+                                align-items: center;
+                                @media (min-width: 768px) {
+                                    padding: 1rem;
+                                }
                                 &:focus {
                                     box-shadow: none;
                                 }
-
                                 img {
+                                    margin-left: 1rem;
                                     max-width: 20px;
                                     transform: rotate(-180deg);
                                     transform-origin: center;
@@ -379,8 +383,10 @@ main {
                             background-color: $base-color;
                             padding: 0.8rem 1.2rem;
                             margin: 0.5rem;
+                            display: flex;
+                            align-items: center;
                             img {
-                                margin-right: 10px;
+                                margin-right: 1.2rem;
                                 width: 40px;
                             }
                         }

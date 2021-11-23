@@ -326,13 +326,21 @@ main section.products-services .accordion .card .card-header h2 .btn-link {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
+  padding: 0.6rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+@media (min-width: 768px) {
+  main section.products-services .accordion .card .card-header h2 .btn-link {
+    padding: 1rem;
+  }
 }
 main section.products-services .accordion .card .card-header h2 .btn-link:focus {
   box-shadow: none;
 }
 main section.products-services .accordion .card .card-header h2 .btn-link img {
+  margin-left: 1rem;
   max-width: 20px;
   transform: rotate(-180deg);
   transform-origin: center;
@@ -361,9 +369,11 @@ main section.products-services .accordion .card .product-wrapper .product-item {
   background-color: #1756c0;
   padding: 0.8rem 1.2rem;
   margin: 0.5rem;
+  display: flex;
+  align-items: center;
 }
 main section.products-services .accordion .card .product-wrapper .product-item img {
-  margin-right: 10px;
+  margin-right: 1.2rem;
   width: 40px;
 }
 @media (min-width: 992px) {
