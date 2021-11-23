@@ -167,19 +167,6 @@ var ccciFeature = {
     }
 }
 
-ccciFeature.slickSlider();
-ccciFeature.onScrollChange();
-// ccciFeature.backToTop();
-ccciFeature.scrollSpy();
-ccciFeature.wowo();
-ccciFeature.accordionScrollTop();
-// ccciFeature.parallaxBG();
-ccciFeature.closedMenuOnScroll();
-ccciFeature.gMapHeight();
-ccciFeature.fadeUpSection();
-ccciFeature.formValidation();
-
-
 function debounce(func, wait, immediate) {
 	var timeout;
 	return function() {
@@ -200,3 +187,15 @@ var myEfficientFn = debounce(function() {
 }, 250);
 
 window.addEventListener('resize', myEfficientFn);
+
+ccciFeature.slickSlider();
+ccciFeature.backToTop();
+ccciFeature.accordionScrollTop();
+// ccciFeature.parallaxBG();
+ccciFeature.gMapHeight();
+ccciFeature.formValidation();
+ccciFeature.onScrollChange();
+ccciFeature.closedMenuOnScroll();
+ccciFeature.scrollSpy();
+ccciFeature.fadeUpSection();
+ccciFeature.wowo();

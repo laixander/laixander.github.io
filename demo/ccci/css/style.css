@@ -318,26 +318,24 @@ main section.products-services .accordion .card {
 main section.products-services .accordion .card .card-header {
   background-color: #1756c0;
 }
-main section.products-services .accordion .card .card-header h2 {
-  display: flex;
-}
 main section.products-services .accordion .card .card-header h2 .btn-link {
   color: #fff;
   text-transform: uppercase;
   font-weight: 700;
   font-size: 18px;
+  display: flex;
+  justify-content: space-between;
 }
 main section.products-services .accordion .card .card-header h2 .btn-link:focus {
   box-shadow: none;
 }
-main section.products-services .accordion .card .card-header h2 img {
+main section.products-services .accordion .card .card-header h2 .btn-link img {
   max-width: 20px;
-  margin-right: 1rem;
   transform: rotate(-180deg);
   transform-origin: center;
   transition: all 0.25s ease-in-out;
 }
-main section.products-services .accordion .card .card-header h2 .collapsed + img {
+main section.products-services .accordion .card .card-header h2 .btn-link.collapsed img {
   transform: rotate(0);
 }
 main section.products-services .accordion .card ul {
@@ -473,6 +471,11 @@ main section.message [class^=col]:last-of-type {
     color: #FFFFFF;
     background-color: transparent;
     border-color: #FFFFFF;
+  }
+  main section.message [class^=col]:last-of-type .btn-blue:hover, main section.message [class^=col]:last-of-type .btn-blue:active, main section.message [class^=col]:last-of-type .btn-blue:active:focus {
+    color: #1756c0;
+    background-color: #FFFFFF;
+    box-shadow: none;
   }
 }
 main section.message [class^=col]:last-of-type .form-group {
