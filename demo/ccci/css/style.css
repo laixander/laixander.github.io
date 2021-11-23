@@ -424,7 +424,7 @@ main section.career .career-form {
   }
 }
 main section.message [class^=col]:first-of-type {
-  padding: 3rem 2rem 1rem;
+  padding: 5rem 2rem 1rem;
   color: #FFFFFF;
   background-color: #1756c0;
   display: flex;
@@ -456,7 +456,7 @@ main section.message [class^=col]:first-of-type h2 {
   font-weight: 700;
 }
 main section.message [class^=col]:last-of-type {
-  padding: 2rem;
+  padding: 2rem 2rem 5rem;
   border: 2px solid #1756c0;
 }
 @media (min-width: 768px) {
