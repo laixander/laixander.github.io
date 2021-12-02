@@ -1,0 +1,150 @@
+html, body {
+  color: #fff;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: url(../img/laptop-bg.jpg) center center no-repeat;
+  background-size: cover;
+}
+
+.card-wrapper {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-wrapper .card {
+  background-color: rgba(0, 0, 0, 0.5);
+  border: 4px solid #fff;
+  border-radius: 0;
+  width: 100%;
+  max-width: 800px;
+  padding: 2rem;
+}
+.card-wrapper .card .card-body {
+  text-align: center;
+}
+.card-wrapper .card .card-body img {
+  width: 100%;
+  max-width: 200px;
+}
+.card-wrapper .card .card-body .divider {
+  width: 80px;
+  height: 2px;
+  background-color: #fff;
+  margin-left: auto;
+  margin-right: auto;
+}
+.card-wrapper .card .card-body h1 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  letter-spacing: 1.5rem;
+}
+.card-wrapper .card .card-body .text-wrapper {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 580px;
+}
+.card-wrapper .card .card-body .text-wrapper p {
+  font-weight: 300;
+}
+.card-wrapper .card .card-body .text-wrapper .input-group {
+  padding: 2px 2px 2px 8px;
+  background-color: #fff;
+  align-items: center;
+}
+.card-wrapper .card .card-body .text-wrapper .input-group .form-control {
+  border-radius: 0;
+  border-color: transparent;
+  font-size: 0.9rem;
+  margin-right: 8px;
+}
+.card-wrapper .card .card-body .text-wrapper .input-group .form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 186, 181, 0.25);
+}
+.card-wrapper .card .card-body .text-wrapper .input-group .btn {
+  border-radius: 0;
+  border: none;
+  background-color: #0ABAB5;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  padding: 0.75rem 2.85rem;
+}
+.card-wrapper .card .card-body .text-wrapper .input-group .btn:hover {
+  background-color: rgba(10, 186, 181, 0.8);
+}
+.card-wrapper .card .card-body .text-wrapper .input-group .btn.btn-outline-secondary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(10, 186, 181, 0.25);
+}
+
+:active, :hover, :focus {
+  outline: 0 !important;
+  outline-offset: 0;
+}
+
+::before,
+::after {
+  position: absolute;
+  content: "";
+}
+
+.btn-effect {
+  position: relative;
+  display: inline-block;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.btn-effect span {
+  position: relative;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px 20px;
+  transition: 0.3s;
+}
+
+/*--- btn-1 ---*/
+.btn-1::before {
+  background-color: #1c1f1e;
+  transition: 0.3s ease-out;
+}
+
+.btn-1 span {
+  color: white;
+  border: 1px solid #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+
+.btn-1 span:hover {
+  color: #1c1f1e;
+  transition: 0.2s 0.1s;
+}
+
+/* 4. hover-filled-slide-right */
+.btn-effect.hover-filled-slide-right::before {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+}
+
+.btn-effect.hover-filled-slide-right:hover::before {
+  width: 0%;
+}
+
+/*# sourceMappingURL=style.css.map */
