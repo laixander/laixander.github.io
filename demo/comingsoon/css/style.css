@@ -22,8 +22,15 @@ body {
   width: 100%;
   max-width: 800px;
   padding: 2rem;
+  margin: 0 1.5rem;
+}
+@media (min-width: 992px) {
+  .card-wrapper .card {
+    margin: 0;
+  }
 }
 .card-wrapper .card .card-body {
+  padding: 0;
   text-align: center;
 }
 .card-wrapper .card .card-body img {
@@ -42,7 +49,11 @@ body {
   font-weight: 700;
   text-transform: uppercase;
   font-size: 1.8rem;
-  letter-spacing: 1.5rem;
+}
+@media (min-width: 992px) {
+  .card-wrapper .card .card-body h1 {
+    letter-spacing: 1.5rem;
+  }
 }
 .card-wrapper .card .card-body .text-wrapper {
   margin: 0 auto;
@@ -52,99 +63,32 @@ body {
 .card-wrapper .card .card-body .text-wrapper p {
   font-weight: 300;
 }
-.card-wrapper .card .card-body .text-wrapper .input-group {
-  padding: 2px 2px 2px 8px;
-  background-color: #fff;
-  align-items: center;
-}
-.card-wrapper .card .card-body .text-wrapper .input-group .form-control {
+.card-wrapper .card .card-body .text-wrapper .btn {
   border-radius: 0;
-  border-color: transparent;
+  border-color: #0ABAB5;
+  background-color: transparent;
+  color: #0ABAB5;
+  text-transform: uppercase;
   font-size: 0.9rem;
-  margin-right: 8px;
+  padding: 10px 30px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  display: flex;
+  width: fit-content;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
-.card-wrapper .card .card-body .text-wrapper .input-group .form-control:focus {
-  box-shadow: 0 0 0 0.2rem rgba(10, 186, 181, 0.25);
-}
-.card-wrapper .card .card-body .text-wrapper .input-group .btn {
-  border-radius: 0;
-  border: none;
+.card-wrapper .card .card-body .text-wrapper .btn:hover {
   background-color: #0ABAB5;
   color: #fff;
-  text-transform: uppercase;
-  font-size: 0.9rem;
-  padding: 0.75rem 2.85rem;
 }
-.card-wrapper .card .card-body .text-wrapper .input-group .btn:hover {
-  background-color: rgba(10, 186, 181, 0.8);
-}
-.card-wrapper .card .card-body .text-wrapper .input-group .btn.btn-outline-secondary:focus {
+.card-wrapper .card .card-body .text-wrapper .btn.btn-outline-secondary:focus {
   box-shadow: 0 0 0 0.2rem rgba(10, 186, 181, 0.25);
 }
-
-:active, :hover, :focus {
-  outline: 0 !important;
-  outline-offset: 0;
-}
-
-::before,
-::after {
-  position: absolute;
-  content: "";
-}
-
-.btn-effect {
-  position: relative;
-  display: inline-block;
-  width: auto;
-  height: auto;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-}
-
-.btn-effect span {
-  position: relative;
-  display: inline-block;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  top: 0;
-  left: 0;
-  width: 100%;
-  padding: 15px 20px;
-  transition: 0.3s;
-}
-
-/*--- btn-1 ---*/
-.btn-1::before {
-  background-color: #1c1f1e;
-  transition: 0.3s ease-out;
-}
-
-.btn-1 span {
-  color: white;
-  border: 1px solid #1c1f1e;
-  transition: 0.2s 0.1s;
-}
-
-.btn-1 span:hover {
-  color: #1c1f1e;
-  transition: 0.2s 0.1s;
-}
-
-/* 4. hover-filled-slide-right */
-.btn-effect.hover-filled-slide-right::before {
-  top: 0;
-  bottom: 0;
-  right: 0;
-  height: 100%;
-  width: 100%;
-}
-
-.btn-effect.hover-filled-slide-right:hover::before {
-  width: 0%;
+.card-wrapper .card .card-body .text-wrapper .btn i {
+  font-size: 1.75rem;
+  margin-right: 1rem;
 }
 
 /*# sourceMappingURL=style.css.map */
