@@ -23,10 +23,21 @@
             background-size: cover;
             height: 1px;
         }
+        .mobile-only {
+            display: none;
+        }
+        @media (max-width: 428px) {
+            .desktop-only {
+                display: none;
+            }
+            .mobile-only {
+                display: block;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="your-class">
+    <div class="your-class desktop-only">
         <div style="background-image: url(img/1.jpg);"></div>
         <div style="background-image: url(img/5.jpg);"></div>
         <div style="background-image: url(img/9.jpg);"></div>
@@ -38,6 +49,20 @@
         <div style="background-image: url(img/3.jpg);"></div>
         <div style="background-image: url(img/4.jpg);"></div>
         <div style="background-image: url(img/8.jpg);"></div>
+    </div>
+
+    <div class="your-class mobile-only">
+        <div style="background-image: url(img/mob-1.jpg);"></div>
+        <div style="background-image: url(img/mob-5.jpg);"></div>
+        <div style="background-image: url(img/mob-9.jpg);"></div>
+
+        <div style="background-image: url(img/mob-2.jpg);"></div>
+        <div style="background-image: url(img/mob-6.jpg);"></div>
+        <div style="background-image: url(img/mob-7.jpg);"></div>
+
+        <div style="background-image: url(img/mob-3.jpg);"></div>
+        <div style="background-image: url(img/mob-4.jpg);"></div>
+        <div style="background-image: url(img/mob-8.jpg);"></div>
     </div>
 
     <!-- jQuery -->
