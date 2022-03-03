@@ -98,18 +98,18 @@ var ccciFeature = {
     },
 
     parallaxBG: function(){
-        $(window).scroll(function () {
-            var scroll = $(this).scrollTop();
-            $('.layer').each(function () {
-                var layer = $(this);
-                var dataSpeed = layer.data('parallax-speed');
-                var offsetY = scroll * dataSpeed;
-                var translate = 'translate3d(0, ' + offsetY + 'px, 0)';
-                layer.css('-webkit-transform', translate);
-                layer.css('-moz-transform', translate);
-                layer.css('-ms-transform', translate);
-                layer.css('-o-transform', translate);
-                layer.css('transform', translate);
+        /** change value here to adjust parallax level */
+        var parallax = -0.5;
+        var $bg_images = $(".img-parallax");
+        var offset_tops = [];
+        $bg_images.each(function(i, el) {
+            offset_tops.push($(el).offset().top);
+        });
+        $(window).scroll(function() {
+            var dy = $(this).scrollTop();
+            $bg_images.each(function(i, el) {
+            var ot = offset_tops[i];
+            $(el).css("background-position", "50% " + (dy - ot) * parallax + "px");
             });
         });
     },

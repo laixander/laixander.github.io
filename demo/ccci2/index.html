@@ -52,13 +52,13 @@
                             <a class="nav-link" href="#about">Who We Are</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#services">Our Services</a>
+                            <a class="nav-link" href="#services">Services</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#partners-clients">Our Projects</a>
+                            <a class="nav-link" href="#partners-clients">Projects</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#career">Career</a>
+                            <a class="nav-link" href="#career">Contact</a>
                         </li>
                     </ul>
                     <a href="#message" class="btn btn-outline-primary d-lg-none go-to-msg" role="button">Talk to Our Expert</a>
@@ -157,8 +157,7 @@
             </div> -->
         </section>
 
-        <section class="services bg-grey" id="services">
-            <!-- <div class="layer img-parallax" data-parallax-speed="0.5"></div> -->
+        <section class="services bg-grey img-parallax" id="services">
             <div class="container position-relative">
                 <div class="row wowo fadeInUp">
                     <div class="col">
@@ -169,48 +168,42 @@
 
                 <div class="row wowo fadeInUp">
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#techconsulting">
                             <img src="img/icon-it-consultancy2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">Technology Consulting</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#techconsulting">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#appdev">
                             <img src="img/icon-software-development2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">Application Development</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#appdev">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#qa">
                             <img src="img/icon-qa2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">QA and Testing</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#qa">Learn More</a>
                         </div>
                     </div>
                 </div>
 
                 <div class="row wowo fadeInUp">
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#mobappdev">
                             <img src="img/icon-mobile-development2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">Mobile Application Development</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#mobappdev">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#devsecop">
                             <img src="img/icon-devsecop2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">DevSecOps</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#devsecop">Learn More</a>
                         </div>
                     </div>
                     <div class="col-md-4 mb-3 mb-lg-0">
-                        <div class="blue-box h-100">
+                        <div class="blue-box h-100" data-toggle="modal" data-target="#sysinteg">
                             <img src="img/icon-managed-service2.png" alt="Icon" class="img-fluid mb-4">
                             <h5 class="text-center mb-3">System Integration</h5>
-                            <a class="btn btn-outline-primary" role="button" data-toggle="modal" data-target="#sysinteg">Learn More</a>
                         </div>
                     </div>
                 </div>
@@ -221,7 +214,7 @@
             <div class="container">
                 <div class="row wowo fadeInUp">
                     <div class="col">
-                        <h2 class="text-center">Partners, Client & Projects</h2>
+                        <h2 class="text-center">Partners, Clients & Projects</h2>
                         <div class="divider"><span></span><span></span><div></div><span></span><span></span></div>
                         <p class="text-center mb-5">Be more productive, more profitable, more secure</p>
                     </div>
@@ -260,7 +253,31 @@
                         <div id="map_canvas"><iframe width="100%" height="100%" id="gmap_canvas" src="https://maps.google.com/maps?q=Ecotower%2C%2032nd%20St%2C%20Taguig%2C%20Metro%20Manila&t=&z=17&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe></div>
                     </div>
                     <div id="career" class="col-lg-6 bg-blue d-flex flex-column justify-content-center career-form">
-                        <h2>Are you the one?</h2>
+                        <h2>Send us a message</h2>
+                        <div class="divider-light"><div></div><span></span><span></span></div>
+                        <p>You can contact us with anything related to our Services. We'll get in touch with you as soon as possible.</p>
+                        <form class="needs-validation" novalidate>
+                            <div class="form-group">
+                                <label for="name-msg">Your Name</label>
+                                <input type="text" class="form-control" id="name-msg" pattern="[A-Z\sa-z]{3,20}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email-msg">Your Email</label>
+                                <input type="email" class="form-control" id="email-msg" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-no">Your Number</label>
+                                <input type="text" class="form-control" id="contact-no" pattern="[0]{1}[0-9]{10}" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Your Message</label>
+                                <textarea class="form-control" id="message" rows="5" required></textarea>
+                            </div>
+
+                            <button class="btn btn-outline-primary" role="button">Submit</button>
+                        </form>
+
+                        <!-- <h2>Are you the one?</h2>
                         <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                         <p>Stay at home. Stay productive. Stay connected.</p>
                         <p>We stand behind you! We know great work doesn't only happen in a cubicle or office between 8:00 a.m. and 5:00 p.m. That's why we offer employees choices of when and where to work.</p>
@@ -290,13 +307,13 @@
                             <div class="mt-5">
                                 <button class="btn btn-outline-primary" role="button">Join Us</button>
                             </div>
-                        </form>
+                        </form> -->
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="message" id="message">
+        <!-- <section class="message" id="message">
             <div class="container">
                 <div class="row wowo fadeInUp">
                     <div class="col-lg">
@@ -328,7 +345,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
     </main>
 
     <footer>
@@ -365,9 +382,9 @@
                     <ul class="list-unstyled sitemap">
                         <li><a href="#top">Home</a></li>
                         <li><a href="#about">Who We Are</a></li>
-                        <li><a href="#services">Our Services</a></li>
-                        <li><a href="#products-services">Our Products</a></li>
-                        <li><a href="#career">Career</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#partners-clients">Project</a></li>
+                        <li><a href="#career">Contact</a></li>
                     </ul>
                 </div>
             </div>
@@ -390,7 +407,7 @@
     <a id="back-to-top" class="btn btn-light btn-lg back-to-top" role="button"><img src="img/icon-arrowup.svg" alt="Go to Top"></a>
 
     <!-- Modal -->
-    <div class="modal fade" id="techconsulting" tabindex="-1" aria-labelledby="techconsultingLabel" aria-hidden="true">
+    <div class="modal" id="techconsulting" tabindex="-1" aria-labelledby="techconsultingLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-purpleish">
                 <div class="modal-header border-0">
@@ -404,18 +421,21 @@
                             <img src="img/vector-consulting.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-8 pl-lg-5">
-                            <h3>Technology Consulting</h3>
+                            <h4>Technology Consulting</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“Be of service in accelerating growth in the modernization of the world”</em></p>
                             <p>Technology is the leading light in today’s economy, get to know our professionals to give you the most up to date expertise that will help you grow your network and transform your business. Our technology specialists will efficiently plan IT infrastructures, innovatively develop solutions, proficiently provide support in risk assessment and effectively organize your system portfolio.</p>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a class="btn-next" data-toggle="modal" data-target="#appdev" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-next.svg" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="appdev" tabindex="-1" aria-labelledby="appdevLabel" aria-hidden="true">
+    <div class="modal" id="appdev" tabindex="-1" aria-labelledby="appdevLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-blueish">
                 <div class="modal-header border-0">
@@ -426,7 +446,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8 pr-lg-5">
-                            <h3>Application Development</h3>
+                            <h4>Application Development</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“Shift from the past and enter the future”</em></p>
                             <p>Everything is just one tap and click away, don’t miss and out. Gain the upper hand in the advancement of the world get ahead of the curve in your niche. Dive In the pool of benefits, get an access in every type of online platform, build and utilize marketing channels and expand your enterprise to reach the global audience.</p>
@@ -436,11 +456,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a class="btn-back mr-3" role="button" data-toggle="modal" data-target="#techconsulting" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-back.svg" alt="Arrow Back"></a>
+                    <a class="btn-next" role="button" data-toggle="modal" data-target="#qa" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-next.svg" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="qa" tabindex="-1" aria-labelledby="qaLabel" aria-hidden="true">
+    <div class="modal" id="qa" tabindex="-1" aria-labelledby="qaLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-ponkanish">
                 <div class="modal-header border-0">
@@ -454,18 +478,22 @@
                             <img src="img/vector-qa.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-8 pl-lg-5">
-                            <h3>QA And Testing</h3>
+                            <h4>QA And Testing</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“Assessing Functionality to Alter Incompatibility”</em></p>
                             <p>The rise and fall of software can deeply affect a vast array in your company, Reputational damage and Shareholder value is at risk with just one glitch. Our standards and procedures are directly proportional to client’s desired result; we aim to deliver consistency and accuracy. We have caliber quality assurance personnel who will ensure to fix bugs and minimize defects to save you from real cost technical debts. Moreover, a prudent enterprise consequently means qualified software.</p>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a class="btn-back mr-3" role="button" data-toggle="modal" data-target="#appdev" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-back.svg" alt="Arrow Back"></a>
+                    <a class="btn-next" role="button" data-toggle="modal" data-target="#mobappdev" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-next.svg" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="mobappdev" tabindex="-1" aria-labelledby="mobappdevLabel" aria-hidden="true">
+    <div class="modal" id="mobappdev" tabindex="-1" aria-labelledby="mobappdevLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-pinkish">
                 <div class="modal-header border-0">
@@ -476,7 +504,7 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8 pr-lg-5">
-                            <h3>Mobile Application Development</h3>
+                            <h4>Mobile Application Development</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“With just one blink, you can link”</em></p>
                             <p>Convenience is the new trend; functional access to products is an asset in today’s age. Wide range of platforms are everywhere. E-commerce is dominating the world. Designing your business’ websites and applications should come upfront of your priority. Make your business known, invest in promotions, alleviate your clients’ hassle by providing straightforward sites to let them stay connected and be informed faster.</p>
@@ -486,11 +514,15 @@
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a class="btn-back mr-3" role="button" data-toggle="modal" data-target="#qa" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-back.svg" alt="Arrow Back"></a>
+                    <a class="btn-next" role="button" data-toggle="modal" data-target="#devsecop" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-next.svg" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="devsecop" tabindex="-1" aria-labelledby="devsecopLabel" aria-hidden="true">
+    <div class="modal" id="devsecop" tabindex="-1" aria-labelledby="devsecopLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-goldish">
                 <div class="modal-header border-0">
@@ -504,18 +536,22 @@
                             <img src="img/vector-devsecop.png" alt="" class="img-fluid">
                         </div>
                         <div class="col-md-8 pl-lg-5">
-                            <h3>DevSecOps</h3>
+                            <h4>DevSecOps</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“Building the world, securing the future”</em></p>
                             <p>Take the full advantage of your applications, our keen professionals ensure that aside from development and operation, we put security equally integrated. As the continuous demand rises for tools to modernizing the world we put the spotlight on the importance of building security while innovating systems and software, we make agility as a structure and put security as a layers for a speed- up and a cut above workflow.</p>
                         </div>
                     </div>
                 </div>
+                <div class="modal-footer">
+                    <a class="btn-back mr-3" role="button" data-toggle="modal" data-target="#mobappdev" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-back.svg" alt="Arrow Back"></a>
+                    <a class="btn-next" role="button" data-toggle="modal" data-target="#sysinteg" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-next.svg" alt="Arrow Next"></a>
+                </div>
             </div>
         </div>
     </div>
 
-    <div class="modal fade" id="sysinteg" tabindex="-1" aria-labelledby="sysintegLabel" aria-hidden="true">
+    <div class="modal" id="sysinteg" tabindex="-1" aria-labelledby="sysintegLabel" aria-hidden="true">
         <div class="modal-dialog modal-dialog-centered modal-xl">
             <div class="modal-content shadow-lg bg-greenish">
                 <div class="modal-header border-0">
@@ -526,15 +562,18 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col-md-8 pr-lg-5">
-                            <h3>System Integration</h3>
+                            <h4>System Integration</h4>
                             <div class="divider-light"><div></div><span></span><span></span><span></span></div>
                             <p><em>“Unifying systematically”</em></p>
-                            <p>In a fast-paced society the complexity to command data from various software and applications can cost an enterprise a lot. Creating a value is the key; hence seamlessly connecting data information to generate consistency is fundamental. Our System Integrators focus are providing quality business operations and smooth flow of information from sub-systems to sub- systems, anything from point-to-point connections to very complex many-to-many integrations both internally and with third parties.</p>
+                            <p>In a fast-paced society the complexity to command data from various software and applications can cost an enterprise a lot. Creating a value is the key; hence seamlessly connecting data information to generate consistency is fundamental. Our System Integrators focus are providing quality business operations and smooth flow of information from sub-systems to sub- systems, anything from point-to-point connections to very complex many-to-many integrations both internally and with third parties. Furthermore, reap the benefits of improving your customer service satisfaction and better internal workflow.</p>
                         </div>
                         <div class="col-md">
                             <img src="img/vector-sysinteg.png" alt="" class="img-fluid">
                         </div>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <a class="btn-back" role="button" data-toggle="modal" data-target="#devsecop" data-dismiss="modal" aria-label="Close"><img src="img/icon-arrow-back.svg" alt="Arrow Back"></a>
                 </div>
             </div>
         </div>
@@ -554,6 +593,7 @@
 
     <!-- Custom JS -->
     <script src="js/script.js"></script>
+
 </body>
 
 </html>

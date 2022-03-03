@@ -232,7 +232,7 @@ main {
             border: 1px solid $base-color;
         }
         &.services {
-            background: #F9FAFB url(../img/worldmap-bg.svg) center top no-repeat;
+            background: #f9fafb url(../img/worldmap-bg.svg) center top no-repeat;
             background-size: cover;
             background-attachment: fixed;
             // background-color: rgba($color: $grey-color, $alpha: 0.2);
@@ -281,6 +281,7 @@ main {
                 align-items: center;
                 text-align: center;
                 transition: all 0.25s ease-in-out;
+                cursor: pointer;
                 // border: 1px solid $white-color;
                 h5 {
                     margin-bottom: 0;
@@ -294,9 +295,15 @@ main {
                     //     margin: 1.25rem auto;
                     // }
                 }
+                img {
+                    transition: all 0.25s ease-in-out;
+                }
                 &:hover {
                     transform: translateY(-10px);
                     box-shadow: rgba(23, 86, 192, 0.8) 0px 1.5rem 3rem;
+                    img {
+                        transform: scale(1.2);
+                    }
                 }
                 img {
                     width: 80px;
@@ -588,8 +595,8 @@ main {
 footer {
     color: $white-color;
     padding: 120px 0;
-    // background-color: $dark-color;
-    background: linear-gradient(70deg, $dark-grad 0%, $mid-grad 50%, $light-grad 100%);
+    background-color: $dark-color;
+    // background: linear-gradient(70deg, $dark-grad 0%, $mid-grad 50%, $light-grad 100%);
     img {
         width: 272px;
         &.icon {

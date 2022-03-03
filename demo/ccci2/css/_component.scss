@@ -324,9 +324,13 @@
     img {
         display: inline-block;
         width: 24px;
+        transition: all 0.2s ease-in-out;
     }
     &:hover {
         background-color: rgba($color: $base-color, $alpha: 0.95);
+        img {
+            transform: translateY(-5px);
+        }
     }
 }
 
@@ -358,30 +362,41 @@
         .modal-body {
             padding-left: 3rem;
             padding-right: 3rem;
+            h4 {
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+        }
+        .modal-footer {
+            border: none;
+            padding-left: 3rem;
+            padding-right: 3rem;
             padding-bottom: 3rem;
+            .btn-next {
+                display: inline-block;
+                opacity: 0.5;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                    transform: translateX(5px);
+                }
+            }
+            .btn-back {
+                display: inline-block;
+                opacity: 0.5;
+                transition: all 0.2s ease-in-out;
+                &:hover {
+                    cursor: pointer;
+                    opacity: 1;
+                    transform: translateX(-5px);
+                }
+            }
         }
         .close {
             color: #fff;
             text-shadow: none;
             transition: all 0.2s ease-in-out;
-        }
-        &.bg-purpleish {
-            background: linear-gradient(96.18deg, #B139CF 0%, #6B2CD0 98.96%);
-        }
-        &.bg-blueish {
-            background: linear-gradient(96.18deg, #39C6CF 0%, #2C9FD0 98.96%);
-        }
-        &.bg-ponkanish {
-            background: linear-gradient(96.18deg, #FFB82E 0%, #F27027 98.96%);
-        }
-        &.bg-pinkish {
-            background: linear-gradient(96.18deg, #E83E5C 0%, #CF3993 98.96%);
-        }
-        &.bg-goldish {
-            background: linear-gradient(96.18deg, #D2A979 0%, #9A6141 98.96%);
-        }
-        &.bg-greenish {
-            background: linear-gradient(96.18deg, #4BDD48 0%, #31AA5A 98.96%);
         }
     }
 }
