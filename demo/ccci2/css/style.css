@@ -560,10 +560,24 @@ main section.products .accordion .card .card-header h2 .btn-link:focus {
 main section.products .accordion .card .card-body {
   padding-left: 0;
   padding-right: 0;
+  text-align: center;
+}
+@media (min-width: 992px) {
+  main section.products .accordion .card .card-body {
+    text-align: left;
+  }
 }
 main section.products .accordion .card .card-body .tagline {
   padding: 0.5rem 1rem;
   background-color: rgba(23, 86, 192, 0.03);
+}
+main section.products .accordion .card .card-body img {
+  width: 480px;
+}
+@media (min-width: 992px) {
+  main section.products .accordion .card .card-body img {
+    width: 100%;
+  }
 }
 @media (min-width: 992px) {
   main section.partners-clients .logos {
@@ -601,6 +615,9 @@ main section.cta-box:before {
 main section.cta-box h3 {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
+}
+main section.about .row:not(:last-child) {
+  margin-bottom: 6rem;
 }
 main section.career {
   padding: 0;
@@ -683,10 +700,40 @@ main section.message [class^=col]:last-of-type {
 main section.message [class^=col]:last-of-type .form-group {
   margin-bottom: 2rem;
 }
+main section.contact {
+  color: #FFFFFF;
+}
+main section.contact h5 {
+  font-weight: 700;
+}
+main section.contact .icon {
+  width: 35px;
+}
+main section.contact a {
+  color: #FFFFFF;
+}
+@media (min-width: 992px) {
+  main section .tech {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  main section .tech div {
+    max-width: 300px;
+  }
+}
+@media (min-width: 992px) and (min-width: 992px) {
+  main section .tech div {
+    max-width: 200px;
+  }
+}
+main #map_canvas {
+  height: 480px;
+}
 
 footer {
   color: #FFFFFF;
-  padding: 120px 0;
+  padding: 120px 0 80px;
   background-color: #131314;
 }
 footer img {

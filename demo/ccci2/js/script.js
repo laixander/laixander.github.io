@@ -27,6 +27,28 @@ var ccciFeature = {
                     }
                 ]
             });
+            $('.tech').slick({
+                infinite: true,
+                slidesToShow: 2,
+                slidesToScroll: 1,
+                dots: true,
+                arrows: false,
+                autoplay: true,
+                mobileFirst: true,
+                responsive: [
+                    {
+                        breakpoint: 767,
+                        settings: {
+                            infinite: true,
+                            slidesToShow: 3
+                        }
+                    },
+                    {
+                        breakpoint: 992,
+                        settings: 'unslick'
+                    }
+                ]
+            });
         });
     },
     
@@ -165,6 +187,11 @@ var ccciFeature = {
             }, false);
         });
         }, false);
+    },
+
+    currYear: function() {
+        var currYear = new Date().getFullYear();
+        $('.current-year').text(currYear);
     }
 }
 
@@ -193,13 +220,14 @@ ccciFeature.slickSlider();
 ccciFeature.backToTop();
 ccciFeature.accordionScrollTop();
 ccciFeature.parallaxBG();
-ccciFeature.gMapHeight();
+// ccciFeature.gMapHeight();
 ccciFeature.formValidation();
 ccciFeature.onScrollChange();
 ccciFeature.closedMenuOnScroll();
 ccciFeature.scrollSpy();
 ccciFeature.fadeUpSection();
 ccciFeature.wowo();
+ccciFeature.currYear();
 
 // override fixes
 $('.modal').on('shown.bs.modal', function (event) {
