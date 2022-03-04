@@ -366,6 +366,13 @@
                 text-transform: uppercase;
                 font-weight: 700;
             }
+            img {
+                max-width: 230px;
+                transition: all 0.2s ease-in-out;
+                @media (min-width: 992px) {
+                    max-width: 100%;
+                }
+            }
         }
         .modal-footer {
             border: none;

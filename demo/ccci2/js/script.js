@@ -91,8 +91,9 @@ var ccciFeature = {
 
     accordionScrollTop: function() {
         $('#accordionProducts').on('shown.bs.collapse', function () {
+            var active = $(this).find('.show')
             $('html,body').animate({
-                scrollTop: $('#accordionProducts').offset().top -100
+                scrollTop: active.offset().top - 155
             }, 500);
         });
     },
@@ -199,3 +200,8 @@ ccciFeature.closedMenuOnScroll();
 ccciFeature.scrollSpy();
 ccciFeature.fadeUpSection();
 ccciFeature.wowo();
+
+// override fixes
+$('.modal').on('shown.bs.modal', function (event) {
+    $('.modal').css('padding-right','0');
+})

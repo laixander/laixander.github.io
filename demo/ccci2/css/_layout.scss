@@ -31,8 +31,11 @@ header {
                         }
                     }
                     .navbar-brand {
-                        width: 172px;
+                        width: 60px;
                         transition: all 0.2s ease-in-out;
+                        @media (min-width: 992px) {
+                            width: 172px;
+                        }
                     }
                     &.navbar-shrink {
                         background: linear-gradient(70deg, $dark-grad 0%, $mid-grad 50%, $light-grad 100%) !important;
@@ -42,7 +45,10 @@ header {
                             font-size: 0.9rem;
                         }
                         .navbar-brand {
-                            width: 120px;
+                            width: 40px;
+                            @media (min-width: 992px) {
+                                width: 120px;
+                            }
                         }
                     }
                     .navbar-toggler {
@@ -408,6 +414,158 @@ main {
                                 margin-right: 1.2rem;
                                 width: 40px;
                             }
+                        }
+                    }
+                }
+            }
+        }
+        &.products {
+            .container-fluid {
+                .row:first-child {
+                    @media (min-width: 768px) {
+                        margin-bottom: 20px;
+                    }
+                    @media (min-width: 992px) {
+                        margin-bottom: 35px;
+                    }
+                }
+            }
+            .content-wpr {
+                padding: 3rem;
+                cursor: pointer;
+                h5 {
+                    font-weight: 700;
+                    line-height: 1.5em;
+                }
+                a {
+                    color: $base-color;
+                    img {
+                        transition: all 0.2s ease-in-out;
+                    }
+                    &:hover {
+                        img {
+                            transform: translateX(10px);
+                        }
+                    }
+                }
+                .number-item {
+                    font-size: 72px; 
+                    color: rgba(0, 0, 0, 25%);
+                    transition: all 0.2s ease-in-out;
+                }
+                &:hover {
+                    .number-item {
+                        transform: translateY(-20px);
+                    }
+                }
+            }
+            .overlay {
+                &:before {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    width: 100%;
+                    height: 100%;
+                    background-color: rgba(23, 86, 191, 75%);
+                }
+            }
+            .bg-blue {
+                .content-wpr {
+                    color: #fff;
+                    a {
+                        color: #fff;
+                        img {
+                            transition: all 0.2s ease-in-out;
+                        }
+                        &:hover {
+                            img {
+                                transform: translateX(10px);
+                            }
+                        }
+                    }
+                    .number-item {
+                        font-size: 72px; 
+                        color: rgba(255, 255, 255, 0.25);
+                    }
+                }
+            }
+            .accordion {
+                .card {
+                    border: none;
+                    border-bottom: 1px solid rgba($color: $base-color, $alpha: 0.15);
+                    border-radius: 0;
+                    // margin-bottom: 1rem;
+                    .card-header {
+                        border: none;
+                        background-color: $white-color;
+                        padding: 0;
+                        // padding-bottom: 1.75rem;
+                        h2 {
+                            // display: flex;
+                            .btn-link {
+                                color: $base-color;
+                                text-transform: uppercase;
+                                font-weight: 700;
+                                font-size: 18px;
+                                padding: 0;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                padding: 1.75rem 0;
+                                transition: all 0.25s ease-in-out;
+                                span {
+                                    margin-left: -35px;
+                                    padding-left: 35px;
+                                    background: url(../img/icon-arrow-link.svg) center left no-repeat;
+                                    background-size: 20px;
+                                    transition: all 0.25s ease-in-out;
+                                }
+                                // @media (min-width: 768px) {
+                                //     padding: 1rem;
+                                // }
+                                img {
+                                    opacity: 0.35;
+                                    margin-left: 1rem;
+                                    max-width: 20px;
+                                    transform: rotate(225deg);
+                                    transform-origin: center;
+                                    transition: all 0.25s ease-in-out;
+                                }
+                                &.collapsed {
+                                    img {
+                                        transform: rotate(0);
+                                    }
+                                }
+                                &:hover {
+                                    background-color: rgba($color: $base-color, $alpha: 0.05);
+                                    text-decoration: none;
+                                    padding-left: 20px;
+                                    padding-right: 20px;
+                                    span {
+                                        transform: translateX(35px);
+                                    }
+                                    img {
+                                        opacity: 1;
+                                        transform: rotate(180deg);
+                                    }
+                                }
+                                &:focus {
+                                    box-shadow: none;
+                                    text-decoration: none;
+                                }
+                            }
+                        }
+                    }
+                    .card-body {
+                        padding-left: 0;
+                        padding-right: 0;
+                        .tagline {
+                            padding: 0.5rem 1rem;
+                            background-color: rgba($color: $base-color, $alpha: 0.03);
                         }
                     }
                 }
