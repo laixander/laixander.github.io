@@ -582,6 +582,9 @@ main {
             }
         }
         &.partners-clients {
+            @media (min-width:992px) {
+                min-height: 100vh;
+            }
             .logos {
                 @media (min-width: 992px) {
                     display: flex;
@@ -774,15 +777,20 @@ main {
                 color: $white-color;
             }
         }
-        .tech {
-            @media (min-width: 992px) {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
-                div {
-                    max-width: 300px;
-                    @media (min-width: 992px) {
-                        max-width: 200px;
+        &.technologies {
+            @media (min-width:992px) {
+                min-height: 100vh;
+            }
+            .tech {
+                @media (min-width: 992px) {
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    div {
+                        max-width: 300px;
+                        @media (min-width: 992px) {
+                            max-width: 200px;
+                        }
                     }
                 }
             }
