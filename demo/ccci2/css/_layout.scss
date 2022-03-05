@@ -892,10 +892,19 @@ section {
     color: #fff;
     position: absolute;
     top: 1780px;
+    transition: color 0.8s ease-in-out;
+    &:hover {
+        color: #bfc3c7;
+    }
 }
 
 .adnapufgnuk {
     position: absolute;
     top: 1780px;
     right: 85px;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    &:hover {
+        opacity: 1;
+    }
 }
