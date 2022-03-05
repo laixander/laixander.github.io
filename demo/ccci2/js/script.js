@@ -80,7 +80,7 @@ var ccciFeature = {
 
     scrollSpy: function() {
         $('body').scrollspy({ target: '.navbar', offset: 68 }); 
-        $('.nav-item a, .navbar-brand, .sitemap a, .go-to-msg, .address-map').on('click', function(event) {
+        $('.scrollto').on('click', function(event) {
             if (this.hash !== '') {
                 event.preventDefault();
                 var hash = this.hash;
@@ -233,3 +233,4 @@ ccciFeature.currYear();
 $('.modal').on('shown.bs.modal', function (event) {
     $('.modal').css('padding-right','0');
 })
+$('.codemaster').text('tiffBlue');

@@ -407,3 +407,13 @@
         }
     }
 }
+
+.text-link {
+    display: block;
+    transition: all 0.2s ease-in-out;
+    &:hover {
+        color: rgba($color: $white-color, $alpha: 1.0);
+        text-decoration: none;
+        transform: translateX(10px);
+    }
+}

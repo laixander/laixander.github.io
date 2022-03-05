@@ -525,7 +525,7 @@ main section.products .accordion .card .card-header h2 .btn-link {
 main section.products .accordion .card .card-header h2 .btn-link span {
   margin-left: -35px;
   padding-left: 35px;
-  background: url(../img/icon-arrow-link.svg) center left no-repeat;
+  background: url(../img/icon-check-blue.svg) center left no-repeat;
   background-size: 20px;
   transition: all 0.25s ease-in-out;
 }
@@ -815,6 +815,18 @@ section.bg-blue h2 {
 }
 section.bg-grey {
   background-color: #F9FAFB;
+}
+
+.codemaster {
+  color: #fff;
+  position: absolute;
+  top: 1780px;
+}
+
+.adnapufgnuk {
+  position: absolute;
+  top: 1780px;
+  right: 85px;
 }
 
 @-webkit-keyframes fadeInUp {
@@ -1251,6 +1263,16 @@ section.bg-grey {
   color: #fff;
   text-shadow: none;
   transition: all 0.2s ease-in-out;
+}
+
+.text-link {
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+.text-link:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateX(10px);
 }
 
 .slick-dots li button:before {
