@@ -1,0 +1,277 @@
+.login {
+  font-family: "Poppins", sans-serif;
+}
+.login > div {
+  padding: 0;
+}
+.login .ads {
+  background-color: #F0F2F5;
+  min-height: 100vh;
+  position: relative;
+}
+.login .ads::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/halftone-tl.png) left top no-repeat;
+  background-size: 45%;
+}
+.login .ads::after {
+  content: "";
+  opacity: 0.15;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  background: url(../img/blurb-bg.jpg) center no-repeat;
+  background-size: cover;
+  filter: grayscale(100%);
+}
+.login .ads .blurb {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.login .ads .blurb .card {
+  max-width: 460px;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.45s ease-in-out;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+.login .ads .blurb .card .card-body {
+  padding: 1.25rem 1.85rem;
+}
+.login .ads .blurb .card .card-body p {
+  font-size: 14px;
+}
+.login .ads .copyright {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #989A9D;
+  font-size: 14px;
+  text-align: center;
+}
+.login .login-form {
+  background: linear-gradient(180deg, #0ABAB5 -12.92%, rgba(10, 186, 181, 0.5) 100%);
+  min-height: 100vh;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+}
+.login .login-form::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/halftone-tl.png) left top no-repeat;
+  background-size: 45%;
+  opacity: 0.3;
+}
+@media (min-width: 992px) {
+  .login .login-form::after {
+    display: none;
+  }
+}
+.login .login-form::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url(../img/halftone-br.png) right bottom no-repeat;
+  background-size: 45%;
+}
+.login .login-form .card {
+  width: 460px;
+  border-radius: 35px;
+  border: none;
+  transition: all 0.45s ease-in-out;
+  box-shadow: 0 1rem 3rem rgba(10, 186, 181, 0.675) !important;
+}
+.login .login-form .card .card-body {
+  padding: 4rem 2.85rem;
+}
+.login .login-form .card .card-body h2 {
+  font-family: "Fredoka", sans-serif;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  opacity: 0.85;
+}
+@media (max-width: 991px) {
+  .login .login-form .card .card-body h2 {
+    font-size: 24px;
+  }
+}
+.login .login-form .card .card-body .btn {
+  width: 100%;
+  border-radius: 100px;
+  padding: 0.575rem 0.75rem;
+}
+.login .login-form .card .card-body .btn.btn-primary {
+  background-color: #FFA800;
+  border-color: #FFA800;
+}
+.login .login-form .card .card-body .container {
+  padding-left: 0;
+  padding-right: 0;
+}
+.login .login-form .card .card-body .form-group {
+  margin-bottom: 1.75rem;
+}
+.login .login-form .card .card-body .form-group #username {
+  background: url(../img/icon-username-input.svg) 10px center no-repeat;
+  background-size: 18px;
+  padding-left: 2.25rem;
+}
+.login .login-form .card .card-body .form-group #password {
+  background: url(../img/icon-password-input.svg) 10px center no-repeat;
+  background-size: 18px;
+  padding-left: 2.25rem;
+}
+.login .login-form .card .card-body a {
+  color: #0ABAB5;
+}
+.login .login-form .card .card-body .text-divider {
+  display: flex;
+  align-items: center;
+}
+.login .login-form .card .card-body .text-divider span {
+  margin: 0 10px;
+  white-space: nowrap;
+  opacity: 0.45;
+}
+.login .login-form .card .card-body .text-divider::before, .login .login-form .card .card-body .text-divider::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1px;
+  background-color: rgba(28, 30, 33, 0.2);
+}
+.login .login-form .card .card-body .btn-outline-primary {
+  border-width: 2px;
+  border-color: #0ABAB5;
+}
+.login .login-form .card .card-body .btn-outline-primary:hover {
+  background-color: #0ABAB5;
+  color: #fff;
+}
+.login .login-form .card .card-body .form-check {
+  display: flex;
+  align-items: center;
+}
+.login .login-form .card .card-body .custom-checkbox {
+  margin-right: 8px;
+}
+.login .login-form .card .card-body .custom-checkbox {
+  display: inline-block;
+  font-size: 0;
+}
+.login .login-form .card .card-body .custom-checkbox-input {
+  display: none;
+}
+.login .login-form .card .card-body .custom-checkbox-input:checked + .custom-checkbox-label:after {
+  opacity: 1;
+}
+.login .login-form .card .card-body .custom-checkbox-label {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  position: relative;
+  cursor: pointer;
+}
+.login .login-form .card .card-body .custom-checkbox-label:before {
+  content: "";
+  width: 16px;
+  height: 16px;
+  border: 2px solid;
+  box-sizing: border-box;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 2px;
+}
+.login .login-form .card .card-body .custom-checkbox-label:after {
+  content: "done";
+  font-family: "Material Icons";
+  font-size: 14px;
+  line-height: 16px;
+  text-align: center;
+  width: 16px;
+  height: 16px;
+  display: block;
+  border-radius: 2px;
+  overflow: hidden;
+  text-align: center;
+  opacity: 0;
+  transition: 0.2s opacity;
+}
+.login .login-form .card .card-body .custom-checkbox-label-tiffblue:before {
+  border-color: #0ABAB5;
+}
+.login .login-form .card .card-body .custom-checkbox-label-tiffblue:after {
+  background-color: #0ABAB5;
+  color: #fff;
+}
+.login .login-form .card .card-body .custom-checkbox-label-red:before {
+  border-color: #ef5350;
+}
+.login .login-form .card .card-body .custom-checkbox-label-red:after {
+  background-color: #ef5350;
+  color: #fff;
+}
+.login .login-form .card .card-body .custom-checkbox-label-blue:before {
+  border-color: #5c6Bc0;
+}
+.login .login-form .card .card-body .custom-checkbox-label-blue:after {
+  background-color: #5c6Bc0;
+  color: #fff;
+}
+.login .login-form .card .card-body .custom-checkbox-label-orange:before {
+  border-color: #ffa726;
+}
+.login .login-form .card .card-body .custom-checkbox-label-orange:after {
+  background-color: #ffa726;
+  color: #fff;
+}
+.login .login-form .copyright {
+  margin-top: 1.5rem;
+  color: #fff;
+  font-size: 14px;
+}
+@media (min-width: 992px) {
+  .login .login-form .copyright {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
