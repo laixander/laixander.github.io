@@ -338,7 +338,7 @@ main section.services .blue-box img {
 }
 main section.services .blue-box:hover {
   transform: translateY(-10px);
-  box-shadow: rgba(23, 86, 192, 0.8) 0px 1.5rem 3rem;
+  box-shadow: rgba(23, 86, 192, 0.65) 0px 1.5rem 3rem;
 }
 main section.services .blue-box:hover img {
   transform: scale(1.2);
@@ -579,10 +579,34 @@ main section.products .accordion .card .card-body img {
     width: 100%;
   }
 }
+main section.products .accordion .card .card-body .text-link {
+  display: block;
+  text-transform: uppercase;
+  font-weight: 700;
+  transition: all 0.2s ease-in-out;
+  transform: translateX(-35px);
+}
+main section.products .accordion .card .card-body .text-link img {
+  max-width: 20px;
+  margin-right: 12px;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+}
+main section.products .accordion .card .card-body .text-link:hover {
+  color: #1756c0;
+  text-decoration: none;
+  transform: translateX(0);
+}
+main section.products .accordion .card .card-body .text-link:hover img {
+  opacity: 1;
+}
 @media (min-width: 992px) {
   main section.partners-clients {
     min-height: 100vh;
   }
+}
+main section.partners-clients h2 {
+  margin-bottom: 120px;
 }
 @media (min-width: 992px) {
   main section.partners-clients .logos {
@@ -722,6 +746,9 @@ main section.contact a {
     min-height: 100vh;
   }
 }
+main section.technologies h2 {
+  margin-bottom: 120px;
+}
 @media (min-width: 992px) {
   main section.technologies .tech {
     display: flex;
@@ -807,6 +834,15 @@ footer .list-social a:hover img {
 }
 footer .list-social .list-inline-item:not(:last-child) {
   margin-right: 1rem;
+}
+footer .text-link {
+  display: block;
+  transition: all 0.2s ease-in-out;
+}
+footer .text-link:hover {
+  color: white;
+  text-decoration: none;
+  transform: translateX(10px);
 }
 
 section.bg-blue h2 {
@@ -1253,14 +1289,17 @@ section.bg-grey {
   transition: all 0.2s ease-in-out;
 }
 
-.text-link {
-  display: block;
-  transition: all 0.2s ease-in-out;
+.heading-divider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.text-link:hover {
-  color: white;
-  text-decoration: none;
-  transform: translateX(10px);
+.heading-divider::after {
+  content: "";
+  width: 80px;
+  height: 5px;
+  background-color: #1756c0;
+  margin-top: 20px;
 }
 
 .slick-dots li button:before {

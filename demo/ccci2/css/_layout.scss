@@ -306,7 +306,7 @@ main {
                 }
                 &:hover {
                     transform: translateY(-10px);
-                    box-shadow: rgba(23, 86, 192, 0.8) 0px 1.5rem 3rem;
+                    box-shadow: rgba(23, 86, 192, 0.65) 0px 1.5rem 3rem;
                     img {
                         transform: scale(1.2);
                     }
@@ -577,6 +577,27 @@ main {
                                 width: 100%;
                             }
                         }
+                        .text-link {
+                            display: block;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            transition: all 0.2s ease-in-out;
+                            transform: translateX(-35px);
+                            img {
+                                max-width: 20px;
+                                margin-right: 12px;
+                                opacity: 0;
+                                transition: all 0.2s ease-in-out;
+                            }
+                            &:hover {
+                                color: rgba($color: $base-color, $alpha: 1.0);
+                                text-decoration: none;
+                                transform: translateX(0);
+                                img {
+                                    opacity: 1;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -584,6 +605,9 @@ main {
         &.partners-clients {
             @media (min-width:992px) {
                 min-height: 100vh;
+            }
+            h2 {
+                margin-bottom: 120px;
             }
             .logos {
                 @media (min-width: 992px) {
@@ -781,6 +805,9 @@ main {
             @media (min-width:992px) {
                 min-height: 100vh;
             }
+            h2 {
+                margin-bottom: 120px;
+            }
             .tech {
                 @media (min-width: 992px) {
                     display: flex;
@@ -872,6 +899,15 @@ footer {
         }
         .list-inline-item:not(:last-child) {
             margin-right: 1rem;
+        }
+    }
+    .text-link {
+        display: block;
+        transition: all 0.2s ease-in-out;
+        &:hover {
+            color: rgba($color: $white-color, $alpha: 1.0);
+            text-decoration: none;
+            transform: translateX(10px);
         }
     }
 }

@@ -408,12 +408,15 @@
     }
 }
 
-.text-link {
-    display: block;
-    transition: all 0.2s ease-in-out;
-    &:hover {
-        color: rgba($color: $white-color, $alpha: 1.0);
-        text-decoration: none;
-        transform: translateX(10px);
+.heading-divider {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &::after {
+        content: '';
+        width: 80px;
+        height: 5px;
+        background-color: $base-color;
+        margin-top: 20px;
     }
 }
