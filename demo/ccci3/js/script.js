@@ -192,6 +192,21 @@ var ccciFeature = {
     currYear: function() {
         var currYear = new Date().getFullYear();
         $('.current-year').text(currYear);
+    },
+
+    productsContent: function() {
+        $('.product-content').on('click','a',function(e){
+            $('.product-def').css('top','100%');
+            $(this)
+                .parent()
+                .parent()
+                .find('.product-def')
+                .css('top',0)
+                .on('click',function(){
+                    $(this).css('top','100%')
+                });
+            e.preventDefault
+        })
     }
 }
 
@@ -228,6 +243,7 @@ ccciFeature.scrollSpy();
 ccciFeature.fadeUpSection();
 ccciFeature.wowo();
 ccciFeature.currYear();
+ccciFeature.productsContent();
 
 // override fixes
 $('.modal').on('shown.bs.modal', function (event) {

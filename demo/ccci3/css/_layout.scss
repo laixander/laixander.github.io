@@ -420,13 +420,110 @@ main {
             }
         }
         &.products {
+            margin-top: -281px;
             .container-fluid {
-                .row:first-child {
-                    @media (min-width: 768px) {
-                        margin-bottom: 20px;
+                // .row:first-child {
+                //     @media (min-width: 768px) {
+                //         margin-bottom: 20px;
+                //     }
+                //     @media (min-width: 992px) {
+                //         margin-bottom: 35px;
+                //     }
+                // }
+                .product-item {
+                    background-repeat: no-repeat;
+                    background-position: center;
+                    background-size: cover; 
+                    color: #fff; 
+                    position: relative;
+                    overflow: hidden;
+                    &::before {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 100%;
+                        position: absolute;
+                        top: 0;
+                        bottom: 0;
+                        left: 0;
+                        right: 0;
+                        z-index: 0;
+                        background: linear-gradient(90deg, rgba(23, 86, 192, 0.9) 0%, rgba(23, 86, 192, 0) 75%);
                     }
-                    @media (min-width: 992px) {
-                        margin-bottom: 35px;
+                    .product-content {
+                        padding: 120px 60px;
+                        position: relative;
+                        z-index: 1;
+                        h4 {
+                            font-size: 18px;
+                        }
+                        h3 {
+                            & > span {
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                        }
+                        .tagline {
+                            font-family: 'Georgia', serif;
+                            font-style: oblique;
+                            background: linear-gradient(90deg, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0) 55%);
+                            padding: 0.5rem 1rem;
+                        }
+                    }
+                    .product-def {
+                        overflow: auto;
+                        background-color: rgba(23, 86, 192, 0.95);
+                        width: 100%;
+                        height: 100%;
+                        padding: 40px;
+                        position: absolute;
+                        z-index: 2;
+                        top: 100%;
+                        transition: all 0.2s ease-in-out;
+                        h4 {
+                            font-size: 18px;
+                        }
+                        h3 {
+                            & > span {
+                                font-size: 18px;
+                                font-weight: 600;
+                            }
+                            &.heading-divider-white {
+                                display: flex;
+                                flex-direction: column;
+                                align-items: flex-start;
+                                &::after {
+                                    content: '';
+                                    width: 60px;
+                                    height: 3px;
+                                    background-color: $white-color;
+                                    margin-top: 20px;
+                                    margin-bottom: 20px;
+                                }
+                            }
+                        }
+                        .text-link {
+                            display: block;
+                            text-transform: uppercase;
+                            font-weight: 700;
+                            transition: all 0.2s ease-in-out;
+                            transform: translateX(-35px);
+                            color: rgba($color: $white-color, $alpha: 0.8);
+                            img {
+                                max-width: 20px;
+                                margin-right: 12px;
+                                opacity: 0;
+                                transition: all 0.2s ease-in-out;
+                            }
+                            &:hover {
+                                color: rgba($color: $white-color, $alpha: 1);
+                                text-decoration: none;
+                                transform: translateX(0);
+                                img {
+                                    opacity: 1;
+                                }
+                            }
+                        }
                     }
                 }
             }
@@ -691,9 +788,23 @@ main {
             // }
         // }
         &.about {
+            .row:first-child {
+                p {
+                    font-size: 24px;
+                    font-weight: 300;
+                    .highlight {
+                        font-family: 'Georgia', serif;
+                        text-transform: lowercase;
+                        font-style: italic;
+                    }
+                }
+            }
             .row:not(:last-child) {
                 margin-bottom: 6rem;
             }
+        }
+        .about-main {
+            padding: 120px 60px;
         }
         &.career {
             // padding: 240px 0;
@@ -846,6 +957,25 @@ main {
                             background-color: #fff;
                         }
                     }
+                }
+            }
+        }
+        .approach {
+            .approach-item {
+                color: $white-color;
+                background-color: #1756c0;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                &:nth-child(3) {
+                    background-color: rgba(23, 85, 192, 0.95);
+                }
+                &:last-child {
+                    background-color: rgba(23, 85, 192, 0.9);
+                }
+                img {
+                    width: 80px;
                 }
             }
         }
