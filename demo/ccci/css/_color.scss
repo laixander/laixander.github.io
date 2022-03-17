@@ -1,17 +1,37 @@
 // $base-color: #1B79D0;
-$base-color: #1756c0;
+$base-color: #313FC0;
 // $base-color: #4469c9;
 // $base-color: #3d59b5;
 $white-color: #FFFFFF;
 $dark-color: #131314;
 $grey-color: #5572a3;
+$lightGrey-color:#F9FAFB;
 // $grey-color: #d6dbe1;
 // $lightBlue-color: #40A0F9;
 $lightBlue-color: #2c7eff;
 
-$dark-grad: #062157;
-$mid-grad: #073d7a;
-$light-grad: #1A79D0;
+$dark-grad: #313FC0;
+$mid-grad: #4254F4;
+$light-grad: #4285F4;
 
 // $dark-grad: #3C6CB4;
 // $light-grad: #56CAEF;
+
+.bg-purpleish {
+    background: linear-gradient(96.18deg, #39cfcf 0%, #6B2CD0 98.96%);
+}
+.bg-blueish {
+    background: linear-gradient(96.18deg, #8c39cf 0%, #2C9FD0 98.96%);
+}
+.bg-ponkanish {
+    background: linear-gradient(96.18deg, #ff2ed2 0%, #39cacf 98.96%);
+}
+.bg-pinkish {
+    background: linear-gradient(96.18deg, #3ea4e8 0%, #CF3993 98.96%);
+}
+.bg-goldish {
+    background: linear-gradient(96.18deg, #39cacf 0%, #6E7FF3 98.96%);
+}
+.bg-greenish {
+    background: linear-gradient(96.18deg, #d93961 0%, #4285F4 98.96%);
+}
