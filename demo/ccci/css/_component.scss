@@ -486,13 +486,16 @@
 .heading-divider-left {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     &::after {
         content: '';
         width: 80px;
         height: 5px;
         background-color: $base-color;
         margin-top: 20px;
+    }
+    @media (min-width: 991px) {
+        align-items: flex-start;
     }
 }
 .heading-divider-right {

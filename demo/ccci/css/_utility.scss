@@ -8,3 +8,9 @@
 .pb-360 {
     padding-bottom: 360px;
 }
+.py-120 {
+    @media (min-width: 991px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}

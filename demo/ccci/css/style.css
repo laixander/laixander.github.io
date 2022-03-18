@@ -287,7 +287,12 @@ main h2 {
   }
 }
 main section {
-  padding: 120px 0;
+  padding: 60px 0;
+}
+@media (min-width: 991px) {
+  main section {
+    padding: 120px 0;
+  }
 }
 main section .accent-wrapper {
   position: relative;
@@ -607,7 +612,6 @@ main section.products .container-fluid .product-item .product-def {
   background-color: rgba(49, 63, 192, 0.75);
   width: 100%;
   height: 100%;
-  padding: 60px;
   position: absolute;
   z-index: 2;
   top: 100%;
@@ -615,6 +619,12 @@ main section.products .container-fluid .product-item .product-def {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px 15px;
+}
+@media (min-width: 991px) {
+  main section.products .container-fluid .product-item .product-def {
+    padding: 60px;
+  }
 }
 main section.products .container-fluid .product-item .product-def h4 {
   font-size: 22px;
@@ -914,7 +924,12 @@ main section.about::before {
   background-size: 30%;
 }
 main section .about-main {
-  padding: 120px 60px;
+  padding: 60px 15px;
+}
+@media (min-width: 991px) {
+  main section .about-main {
+    padding: 120px 60px;
+  }
 }
 main section.career {
   padding: 0;
@@ -1746,7 +1761,7 @@ section.bg-grey {
 .heading-divider-left {
   display: flex;
   flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
 }
 .heading-divider-left::after {
   content: "";
@@ -1754,6 +1769,11 @@ section.bg-grey {
   height: 5px;
   background-color: #313FC0;
   margin-top: 20px;
+}
+@media (min-width: 991px) {
+  .heading-divider-left {
+    align-items: flex-start;
+  }
 }
 
 .heading-divider-right {
@@ -1930,6 +1950,13 @@ section.bg-grey {
 
 .pb-360 {
   padding-bottom: 360px;
+}
+
+@media (min-width: 991px) {
+  .py-120 {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
