@@ -2,13 +2,6 @@ function preloader(){
     $('.loader-bg').fadeToggle();
 }
 
-window.onscroll = function() {
-    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    var scrolled = (winScroll / height) * 100;
-    document.getElementById("myBar").style.width = scrolled + "%";
-}
-
 var ccciFeature = {
     slickSlider: function() {
         $(document).ready(function(){
@@ -57,6 +50,15 @@ var ccciFeature = {
                 ]
             });
         });
+    },
+
+    progressBar: function() {
+        window.onscroll = function() {
+            var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            var scrolled = (winScroll / height) * 100;
+            document.getElementById("progress-bar").style.width = scrolled + "%";
+        }
     },
     
     onScrollChange: function() {
@@ -242,7 +244,6 @@ ccciFeature.slickSlider();
 ccciFeature.backToTop();
 ccciFeature.accordionScrollTop();
 ccciFeature.parallaxBG();
-// ccciFeature.gMapHeight();
 ccciFeature.formValidation();
 ccciFeature.onScrollChange();
 ccciFeature.closedMenuOnScroll();
@@ -251,6 +252,8 @@ ccciFeature.fadeUpSection();
 ccciFeature.wowo();
 ccciFeature.currYear();
 ccciFeature.productsContent();
+ccciFeature.progressBar();
+// ccciFeature.gMapHeight();
 
 // override fixes
 $('.modal').on('shown.bs.modal', function (event) {
