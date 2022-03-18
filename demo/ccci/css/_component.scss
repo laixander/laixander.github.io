@@ -334,7 +334,7 @@
     z-index: 9999;
     .back-to-top {
         padding: 1.05rem 1.125rem;
-        background-color: rgba($color: $base-color, $alpha: 0.85);
+        background-color: rgba($color: $mid-grad, $alpha: 0.45);
         border-radius: 0;
         border: none;
         display: flex;
@@ -344,7 +344,7 @@
             transition: all 0.2s ease-in-out;
         }
         &:hover {
-            background-color: rgba($color: $base-color, $alpha: 0.95);
+            background-color: rgba($color: $mid-grad, $alpha: 0.85);
             img {
                 transform: scale(1.25);
             }

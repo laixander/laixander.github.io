@@ -1600,7 +1600,7 @@ section.bg-grey {
 }
 #back-to-top .back-to-top {
   padding: 1.05rem 1.125rem;
-  background-color: rgba(49, 63, 192, 0.85);
+  background-color: rgba(66, 84, 244, 0.45);
   border-radius: 0;
   border: none;
   display: flex;
@@ -1611,7 +1611,7 @@ section.bg-grey {
   transition: all 0.2s ease-in-out;
 }
 #back-to-top .back-to-top:hover {
-  background-color: rgba(49, 63, 192, 0.95);
+  background-color: rgba(66, 84, 244, 0.85);
 }
 #back-to-top .back-to-top:hover img {
   transform: scale(1.25);
