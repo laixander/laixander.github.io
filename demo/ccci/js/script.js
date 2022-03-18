@@ -2,6 +2,13 @@ function preloader(){
     $('.loader-bg').fadeToggle();
 }
 
+window.onscroll = function() {
+    var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById("myBar").style.width = scrolled + "%";
+}
+
 var ccciFeature = {
     slickSlider: function() {
         $(document).ready(function(){
@@ -249,4 +256,3 @@ ccciFeature.productsContent();
 $('.modal').on('shown.bs.modal', function (event) {
     $('.modal').css('padding-right','0');
 })
-$('.codemaster').text('tiffBlue');
