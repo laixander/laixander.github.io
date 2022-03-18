@@ -908,9 +908,9 @@ main section.about::before {
   bottom: 0;
   left: 0;
   right: 0;
-  background: #FFFFFF url(../img/ccci-colored.svg) no-repeat;
+  background: #FFFFFF url(../img/ccci-grey.svg) no-repeat;
   background-position: right -7% bottom -105%;
-  opacity: 0.05;
+  opacity: 1;
   background-size: 30%;
 }
 main section .about-main {
