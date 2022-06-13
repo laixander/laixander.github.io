@@ -63,6 +63,29 @@ $(function() {
     $('.nav-icon').click(function() {
         $(this).toggleClass('open');
     });
+
+    // $(".collapse.show").each(function () {
+    //     $(this)
+    //       .prev(".card-header")
+    //       .find(".fa")
+    //       .addClass("fa-minus")
+    //       .removeClass("fa-plus");
+    //   });
+    //   $(".collapse")
+    //     .on("show.bs.collapse", function () {
+    //       $(this)
+    //         .prev(".card-header")
+    //         .find(".fa")
+    //         .removeClass("fa-plus")
+    //         .addClass("fa-minus");
+    //     })
+    //     .on("hide.bs.collapse", function () {
+    //       $(this)
+    //         .prev(".card-header")
+    //         .find(".fa")
+    //         .removeClass("fa-minus")
+    //         .addClass("fa-plus");
+    //     });
 });
 
 AOS.init();
@@ -82,3 +105,4 @@ $('.slider-nav').slick({
     centerMode: true,
     focusOnSelect: true
 });
+
