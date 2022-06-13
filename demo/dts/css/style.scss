@@ -61,7 +61,7 @@ footer {
 .parallax-window {
     height: 100vh;
     &.inner-page {
-        height: 45vh;
+        height: 520px;
         background-color: #0F1112;
     }
     h2 {
@@ -73,6 +73,8 @@ footer {
     }
     h3 {
         font-size: 3rem;
+        margin-bottom: 0 !important;
+        margin-top: 2rem;
     }
 }
 
@@ -544,3 +546,25 @@ nav {
 //     align-items: center;
 //     justify-content: space-between;
 //   }
+
+
+header {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+    h4 {
+        display: flex;
+        align-items: center;
+        &:before, &:after {
+            content: "";
+            display: inline-block;
+            background-color: #0F1112;
+            width: 100px;
+            height: 4px;
+        }
+        span {
+            display: block;
+            margin: 0 15px;
+        }
+    }
+}

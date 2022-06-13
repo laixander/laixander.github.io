@@ -58,7 +58,7 @@ footer {
   height: 100vh;
 }
 .parallax-window.inner-page {
-  height: 45vh;
+  height: 520px;
   background-color: #0F1112;
 }
 .parallax-window h2 {
@@ -72,6 +72,8 @@ footer {
 }
 .parallax-window h3 {
   font-size: 3rem;
+  margin-bottom: 0 !important;
+  margin-top: 2rem;
 }
 
 #navWrapper {
@@ -472,6 +474,27 @@ nav .shift a:after {
   display: block;
   margin: 0 auto;
   width: 100%;
+}
+
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+header h4 {
+  display: flex;
+  align-items: center;
+}
+header h4:before, header h4:after {
+  content: "";
+  display: inline-block;
+  background-color: #0F1112;
+  width: 100px;
+  height: 4px;
+}
+header h4 span {
+  display: block;
+  margin: 0 15px;
 }
 
 /*# sourceMappingURL=style.css.map */
