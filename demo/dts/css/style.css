@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, .navbar-brand, .copyright {
   color: #fff;
 }
 
-p, section > a, li, button, label, input, .nav-item {
+p, section > a, li, button, label, input, figcaption, .nav-item {
   font-family: "Merriweather", serif;
   line-height: 1.8;
   color: #9FA0A0;
@@ -20,10 +20,6 @@ p, section > a, li, button, label, input, .nav-item {
 
 section {
   padding: 90px 0;
-}
-
-footer {
-  padding: 70px 0 30px;
 }
 
 .para-heading {
@@ -41,6 +37,9 @@ footer {
 .bg-yellow p, .bg-yellow li {
   color: #514010;
 }
+.bg-yellow p strong, .bg-yellow li strong {
+  color: #0F1112;
+}
 .bg-yellow .card {
   border-color: #0F1112;
 }
@@ -52,6 +51,18 @@ footer {
 
 .text-dark {
   color: #000 !important;
+}
+
+@media (min-width: 768px) {
+  .width-50 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .width-75 {
+    width: 75%;
+  }
 }
 
 .parallax-window {
@@ -86,8 +97,13 @@ footer {
   transition: 0.4s;
 }
 #navWrapper .navbar-brand img {
-  width: 100%;
+  width: 65%;
   transition: 0.4s;
+}
+@media (min-width: 768px) {
+  #navWrapper .navbar-brand img {
+    width: 100%;
+  }
 }
 #navWrapper.navbar-shrink {
   padding: 10px 20px;
@@ -96,7 +112,12 @@ footer {
   font-size: 22px;
 }
 #navWrapper.navbar-shrink .navbar-brand img {
-  width: 70%;
+  width: 55%;
+}
+@media (min-width: 768px) {
+  #navWrapper.navbar-shrink .navbar-brand img {
+    width: 70%;
+  }
 }
 #navWrapper.navbar-expand-md .navbar-nav .nav-link {
   margin: 5px 10px;
@@ -108,14 +129,20 @@ footer {
 }
 #navWrapper.navbar-expand-md .navbar-nav .nav-link {
   font-size: 1rem;
-  text-transform: uppercase;
   padding-right: 1.2rem;
   padding-left: 1.2rem;
   transition: 0.4s;
 }
 #navWrapper.bg-transparent {
   transition: 0.4s;
-  background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
+  backdrop-filter: blur(10px);
+}
+@media (min-width: 768px) {
+  #navWrapper.bg-transparent {
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0) 100%);
+    backdrop-filter: blur(0);
+  }
 }
 #navWrapper.bg-transparent.navbar-shrink {
   background: linear-gradient(180deg, rgba(0, 0, 0, 0.5) 0%, rgba(0, 0, 0, 0.5) 100%);
@@ -123,7 +150,6 @@ footer {
 }
 #navWrapper.navbar-dark .navbar-nav .nav-link.active {
   color: #EAAB09;
-  border-radius: 4px;
 }
 
 .card {
@@ -178,6 +204,7 @@ section ul.col-list-2 {
 }
 
 footer {
+  padding: 70px 0 30px;
   background-color: #0A0A0A;
 }
 footer .footer-li-link {
@@ -197,6 +224,9 @@ footer ul.nav {
 }
 footer ul.nav a {
   color: #9FA0A0;
+}
+footer ul.nav a.active {
+  color: #EAAB09;
 }
 
 .scroll-top {
@@ -257,10 +287,9 @@ footer ul.nav a {
 .nav-icon span {
   display: block;
   position: absolute;
-  height: 5px;
+  height: 2px;
   width: 100%;
   background: #fff;
-  border-radius: 100px;
   opacity: 1;
   left: 0;
   -webkit-transform: rotate(0deg);
@@ -324,20 +353,19 @@ section, footer {
 nav a, nav a:after, nav a:before {
   transition: all 0.5s;
 }
-nav .shift a {
+nav .shift a:not(.active) {
   position: relative;
   z-index: 1;
 }
-nav .shift a:hover {
+nav .shift a:not(.active):hover {
   color: #fff;
 }
-nav .shift a:hover:after {
+nav .shift a:not(.active):hover:after {
   opacity: 1;
   visibility: visible;
   height: 100%;
-  border-radius: 4px;
 }
-nav .shift a:after {
+nav .shift a:not(.active):after {
   display: block;
   position: absolute;
   top: 0;
@@ -460,7 +488,6 @@ nav .shift a:after {
 
 .carousel-cell {
   width: 100%;
-  height: 504px;
   margin-right: 8px;
   border-radius: 5px;
 }
