@@ -8,7 +8,7 @@ h1, h2, h3, h4, h5, .navbar-brand, .copyright {
   color: #fff;
 }
 
-p, section > a, li, button, label, input, figcaption, .nav-item {
+p, a, section > a, li, button, label, input, figcaption, .nav-item {
   font-family: "Merriweather", serif;
   line-height: 1.8;
   color: #9FA0A0;
@@ -228,6 +228,9 @@ footer ul.nav a {
 footer ul.nav a.active {
   color: #EAAB09;
 }
+footer ul.nav a:not(.active):hover {
+  text-decoration: underline;
+}
 
 .scroll-top {
   width: 50px;
@@ -432,7 +435,7 @@ nav .shift a:not(.active):after {
 
 .flickity-prev-next-button {
   position: absolute;
-  top: 50%;
+  top: 30%;
   width: 44px;
   height: 44px;
   border: none;
@@ -440,8 +443,15 @@ nav .shift a:not(.active):after {
   background: white;
   background: hsla(0deg, 0%, 100%, 0.75);
   cursor: pointer;
-  -webkit-transform: translateY(-50%);
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-30%);
+  transform: translateY(-30%);
+}
+@media (min-width: 992px) {
+  .flickity-prev-next-button {
+    top: 40%;
+    -webkit-transform: translateY(-40%);
+    transform: translateY(-40%);
+  }
 }
 
 .flickity-prev-next-button:hover {
@@ -503,6 +513,26 @@ nav .shift a:not(.active):after {
   width: 100%;
 }
 
+.video-container {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+}
+@media (min-width: 992px) {
+  .video-container {
+    padding-bottom: 34%;
+  }
+}
+.video-container iframe, .video-container object, .video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -522,6 +552,10 @@ header h4:before, header h4:after {
 header h4 span {
   display: block;
   margin: 0 15px;
+}
+
+a.view-all-videos:hover {
+  color: #9FA0A0;
 }
 
 /*# sourceMappingURL=style.css.map */
