@@ -3,7 +3,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, .navbar-brand, .copyright {
-  font-family: "Cinzel", serif;
+  font-family: "copperplate_gothic_boldRg", serif;
   font-weight: 700;
   color: #fff;
 }
@@ -29,19 +29,38 @@ section {
 }
 
 .bg-yellow {
-  background-color: #EAAB09;
+  position: relative;
+  background: linear-gradient(24.24deg, #EDA80A 4.74%, #FFD240 100.68%);
+}
+.bg-yellow:before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: url(../img/dts-bg-yellow.jpg);
+  background-position: center center;
+  background-size: cover;
+  opacity: 0.35;
 }
 .bg-yellow h1, .bg-yellow h2, .bg-yellow h3, .bg-yellow h4, .bg-yellow h5 {
-  color: #0F1112;
+  color: #7A5011;
 }
 .bg-yellow p, .bg-yellow li {
-  color: #514010;
+  color: rgba(122, 80, 17, 0.8);
 }
 .bg-yellow p strong, .bg-yellow li strong {
-  color: #0F1112;
+  color: #7A5011;
+}
+.bg-yellow .para-heading {
+  color: #7A5011;
 }
 .bg-yellow .card {
-  border-color: #0F1112;
+  border-color: rgba(122, 80, 17, 0.8);
 }
 
 #overlay {
@@ -253,16 +272,19 @@ footer ul.nav a:not(.active):hover {
 }
 
 .accordion .card {
+  background-color: #EAAB09;
   margin-bottom: 1rem;
-  border-bottom: 2px solid #EAAB09 !important;
+  border: 0;
+  border: 2px solid #EAAB09 !important;
 }
 .accordion .card .card-header {
-  background-color: #EAAB09;
+  border-radius: 0;
+  background-color: transparent;
 }
 .accordion .card .card-header .btn-link {
-  font-family: "Cinzel", serif;
+  font-family: "copperplate_gothic_boldRg", serif;
   font-weight: 800;
-  color: #0F1112;
+  color: #7A5011;
   font-size: 1.4rem;
 }
 .accordion .card .card-body {
@@ -270,6 +292,7 @@ footer ul.nav a:not(.active):hover {
   font-size: 1rem !important;
   line-height: 1.8;
   color: #9FA0A0;
+  background-color: #0F1112;
 }
 
 .nav-icon {
@@ -545,9 +568,9 @@ header h4 {
 header h4:before, header h4:after {
   content: "";
   display: inline-block;
-  background-color: #0F1112;
+  background-color: rgba(122, 80, 17, 0.8);
   width: 100px;
-  height: 4px;
+  height: 2px;
 }
 header h4 span {
   display: block;

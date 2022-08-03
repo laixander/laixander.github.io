@@ -4,7 +4,7 @@ body {
 }
 
 h1, h2, h3, h4, h5, .navbar-brand, .copyright {
-    font-family: 'Cinzel', serif;
+    font-family: 'copperplate_gothic_boldRg', serif;
     font-weight: 700;
     color: #fff;
 }
@@ -31,18 +31,38 @@ section {
 }
 
 .bg-yellow {
-    background-color: #EAAB09;
+    position: relative;
+    background: linear-gradient(24.24deg, #EDA80A 4.74%, #FFD240 100.68%);
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: url(../img/dts-bg-yellow.jpg);
+        background-position: center center;
+        background-size: cover;
+        opacity: 0.35;
+        // mix-blend-mode: screen;
+    }
     h1, h2, h3, h4, h5 {
-        color: #0F1112;
+        color: #7A5011;
     }
     p, li {
-        color: #514010;
+        color: rgba(122, 80, 17, 0.8);
         strong {
-            color: #0F1112;
+            color: #7A5011;
         }
     }
+    .para-heading {
+        color: #7A5011;
+    }
     .card {
-        border-color: #0F1112;
+        border-color: rgba(122, 80, 17, 0.8);
     }
 }
 
@@ -283,14 +303,17 @@ footer {
 
 .accordion {
     .card {
+        background-color: #EAAB09;
         margin-bottom: 1rem;
-        border-bottom: 2px solid #EAAB09 !important;
+        border: 0;
+        border: 2px solid #EAAB09 !important;
         .card-header {
-            background-color: #EAAB09;
+            border-radius: 0;
+            background-color: transparent;
             .btn-link {
-                font-family: 'Cinzel', serif;
+                font-family: 'copperplate_gothic_boldRg', serif;
                 font-weight: 800;
-                color: #0F1112;
+                color: #7A5011;
                 font-size: 1.4rem;
             }
         }
@@ -299,6 +322,7 @@ footer {
             font-size: 1rem !important;
             line-height: 1.8;
             color: #9FA0A0;
+            background-color: #0F1112;
         }
     }
 }
@@ -610,9 +634,9 @@ header {
         &:before, &:after {
             content: "";
             display: inline-block;
-            background-color: #0F1112;
+            background-color: rgba(122, 80, 17, 0.8);
             width: 100px;
-            height: 4px;
+            height: 2px;
         }
         span {
             display: block;
