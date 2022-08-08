@@ -120,7 +120,7 @@ header .nav-wrapper nav.navbar.navbar-dark .navbar-nav .nav-item .nav-link {
   }
 }
 header .nav-wrapper nav.navbar.navbar-dark .navbar-brand {
-  width: 60px;
+  width: 195px;
   transition: all 0.2s ease-in-out;
 }
 header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink {
@@ -132,7 +132,7 @@ header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .nav-link {
   font-size: 0.9rem;
 }
 header .nav-wrapper nav.navbar.navbar-dark.navbar-shrink .navbar-brand {
-  width: 40px;
+  width: 110px;
 }
 header .nav-wrapper nav.navbar.navbar-dark .navbar-toggler {
   border: none;
@@ -150,10 +150,8 @@ header .nav-wrapper nav.navbar.navbar-dark .navbar-toggler .navbar-toggler-icon 
   height: 32px;
   position: absolute;
   cursor: pointer;
-  opacity: 0;
-  /* hide this */
-  z-index: 2;
-  /* and place it over the hamburger */
+  opacity: 0; /* hide this */
+  z-index: 2; /* and place it over the hamburger */
   -webkit-touch-callout: none;
 }
 header .nav-wrapper nav.navbar.navbar-dark .navbar-toggler .navbar-toggler-icon input:checked ~ span {
@@ -919,7 +917,7 @@ main section.about::before {
   left: 0;
   right: 0;
   background: #FFFFFF url(../img/ccci-grey.svg) no-repeat;
-  background-position: right -7% bottom -105%;
+  background-position: right bottom;
   opacity: 1;
   background-size: 30%;
 }

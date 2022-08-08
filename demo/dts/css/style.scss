@@ -69,6 +69,11 @@ section {
 #overlay {
     background-color: rgba(0,0,0,0.5);
     z-index: 2;
+    // & > div {
+    //     background-image: url(../img/dts-bg-heading.png);
+    //     background-size: cover;
+        
+    // }
 }
 
 .text-dark {

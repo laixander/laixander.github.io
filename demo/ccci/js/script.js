@@ -63,13 +63,13 @@ var ccciFeature = {
     
     onScrollChange: function() {
         $(window).scroll(function () {
-            if ($(this).scrollTop() > 120) {
+            if ($(this).scrollTop() > 80) {
                 $('.navbar').addClass('navbar-shrink');
-                // $('.navbar-brand').find('.logo-only').removeClass('d-none').end().find('.white-logo').addClass('d-none');
+                $('.navbar-brand').find('.logo-only').removeClass('d-none').end().find('.white-logo').addClass('d-none');
                 $('#back-to-top').fadeIn();
             } else {
                 $('.navbar').removeClass('navbar-shrink');
-                // $('.navbar-brand').find('.logo-only').addClass('d-none').end().find('.white-logo').removeClass('d-none');
+                $('.navbar-brand').find('.logo-only').addClass('d-none').end().find('.white-logo').removeClass('d-none');
                 $('#back-to-top').fadeOut();
             }
             $('.navbar-collapse').collapse('hide');

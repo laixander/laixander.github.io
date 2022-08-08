@@ -78,7 +78,8 @@ header {
                         }
                     }
                     .navbar-brand {
-                        width: 60px;
+                        // width: 60px;
+                        width: 195px;
                         transition: all 0.2s ease-in-out;
                         // @media (min-width: 992px) {
                         //     width: 172px;
@@ -92,7 +93,7 @@ header {
                             font-size: 0.9rem;
                         }
                         .navbar-brand {
-                            width: 40px;
+                            width: 110px;
                             // @media (min-width: 992px) {
                             //     width: 120px;
                             // }
@@ -1010,7 +1011,7 @@ main {
                 left: 0;
                 right: 0;
                 background: $white-color url(../img/ccci-grey.svg) no-repeat;
-                background-position: right -7% bottom -105%;
+                background-position: right bottom;
                 opacity: 1;
                 background-size: 30%;
             }
