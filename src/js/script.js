@@ -132,13 +132,13 @@ var samples = new Vue({
                 imgAlt: 'Sample 01',
                 visit: '01'
             },
-            // {
-            //     targetID: 'portfolio02Modal',
-            //     imgSrc: '02.jpg',
-            //     imgSrcFull: '02-full.jpg',
-            //     imgAlt: 'Sample 02',
-            //     visit: '02'
-            // },
+            {
+                targetID: 'portfolio02Modal',
+                imgSrc: '02.jpg',
+                imgSrcFull: '02-full.jpg',
+                imgAlt: 'Sample 02',
+                visit: '02'
+            },
             {
                 targetID: 'portfolio03Modal',
                 imgSrc: '03.jpg',
