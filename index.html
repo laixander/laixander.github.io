@@ -42,8 +42,8 @@
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-12 col-lg order-1 order-lg-0 text-white text-center text-lg-left">
-                        <h1 class="display-4 text-uppercase">I'm a Web Designer</h1>
-                        <p class="lead mb-5">Welcome to My Website! I'm glad you stopped by. Take a moment to browse through my works. If you like what you see and think that I may be a good match for your project, feel free to contact me.</p>
+                        <h1 class="display-4 text-uppercase type-wrap">I'm a <span id="element"></span></h1>
+                        <p class="lead mb-5">Hello! I'm glad you stopped by. Take a moment to browse through my works. If you like what you see and think that I may be a good match for your project, feel free to contact me.</p>
                         <a href="#contact" class="btn btn-xl btn-outline-light cta">Contact Me</a>
                     </div>
                     <div class="col-6 col-lg-4 d-none d-md-block mx-auto mb-5 mb-lg-0 order-0 order-lg-1">
@@ -96,7 +96,7 @@
                                         </div>
                                         <div class="modal-footer justify-content-center border-0">
                                             <!-- <button type="button" class="btn btn-md btn-outline-dark" data-dismiss="modal">Close</button> -->
-                                            <a :href="'sample/' + sample.visit" class="btn btn-md btn-outline-dark btn-visit" target="_blank">Visit</a>
+                                            <a :href="'sample/' + sample.visit" class="btn btn-xl btn-outline-dark btn-visit" target="_blank">Live View</a>
                                         </div>
                                     </div>
                                 </div>
@@ -134,7 +134,7 @@
                                         </div>
                                         <div class="modal-footer justify-content-center border-0">
                                             <!-- <button type="button" class="btn btn-md btn-outline-dark" data-dismiss="modal">Close</button> -->
-                                            <a :href="'sample/email/' + email.visit" class="btn btn-md btn-outline-dark btn-visit" target="_blank">Visit</a>
+                                            <a :href="'sample/email/' + email.visit" class="btn btn-xl btn-outline-dark btn-visit" target="_blank">Live View</a>
                                         </div>
                                     </div>
                                 </div>
@@ -149,7 +149,7 @@
         <section id="about" class="spacing">
             <div class="container">
                 <h2 class="text-center text-uppercase mb-5">About</h2>
-                <div class="row mb-5">
+                <div class="row mb-5 pb-5">
                     <div class="col-md">
                         <img src="src/img/user.svg" alt="info" class="mb-4">
                         <p>Hi! I'm Laixander. I'm a Web Designer based in the Philippines. I specialize in web mainly designing clean, accessible and intuitive websites using the latest web standards and technology.</p>
@@ -166,9 +166,10 @@
                 </div>
 
                 <!-- Vue : Skills -->
-                <div id="skills" class="row justify-content-center mb-5 skills">
+                <div id="skills" class="row justify-content-center mb-5 position-relative skills">
+                    <img src="src/img/skills/skill-set.svg" alt="My Skills" class="skills-text position-absolute d-none d-xl-block">
                     <div v-for="skill in skills" class="col-4 col-md-3 col-lg-2 col-xl text-center">
-                        <img :src="'src/img/skills/' + skill.imgSrc" :alt="skill.imgAlt" class="img-fluid" loading="lazy"
+                        <img :src="'src/img/skills/' + skill.imgSrc" :alt="skill.imgAlt" class="skills-logo img-fluid" loading="lazy"
                             data-toggle="tooltip" data-placement="top" :title="skill.imgTitle">
                     </div>
                 </div>
@@ -260,6 +261,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jqBootstrapValidation/1.3.7/jqBootstrapValidation.min.js"
         integrity="sha512-JHVzEjx3zsh0SY+F9jc0VlW7VBXeDIJNXR0xcYySu1QLhf+Du8Zx9p28zP5MjIW7onsVy0qMsVls0YO6GTg2Aw=="
         crossorigin="anonymous"></script>

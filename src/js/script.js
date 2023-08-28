@@ -121,6 +121,14 @@ $(function () {
 //     });
 // });
 
+var typed = new Typed('#element', {
+    strings: ['Graphic Designer', 'UI/UX Designer', 'Web Developer'],
+    typeSpeed: 80,
+    backSpeed: 20,
+    backDelay: 2000,
+    loop: true
+});
+
 var samples = new Vue({
     el: '#samples',
     data: {

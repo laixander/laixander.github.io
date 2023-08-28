@@ -4,9 +4,11 @@
             color: $color-dark;
             opacity: 0.75;
             text-transform: uppercase;
+            letter-spacing: .125rem;
             border-width: 1px 1px 4px 1px;
             border-color: none;
             &.active {
+                font-weight: bold;
                 color: $color-primary;
                 border: none;
                 border-bottom: 4px solid $color-primary;

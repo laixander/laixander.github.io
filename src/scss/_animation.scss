@@ -10,11 +10,11 @@
 @keyframes fadeIt {
     0% { 
         width: 0;
-        background-color: #FFFFFF; 
+        background-color: $color-white; 
     }
     100% { 
         width: 100%;
-        background-color: #23C985; 
+        background-color: $color-primary; 
     }
 }
 

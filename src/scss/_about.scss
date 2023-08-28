@@ -1,18 +1,27 @@
 #about {
-    background-color: #f8f8f8;
-    .skills img {
-        opacity: 0.3;
-        transition: all 0.2s ease-in-out;
-        &:hover {
-            transform: translateY(0.4rem);
-            opacity: 1;
+    background-color: $color-neutral;
+    .skills {
+        img.skills-logo {
+            opacity: 0.3;
+            transition: all 0.2s ease-in-out;
+            filter: grayscale(100%);
+            &:hover {
+                transform: translateY(0.4rem);
+                opacity: 1;
+                filter: grayscale(0%);
+            }
+            @include mq(desktop-small, max) {
+                @include box(80%);
+            }
+            @include mq(tablet, max) {
+                margin-bottom: 2rem;
+                @include box(100%);
+            }
         }
-        @include mq(desktop-small, max) {
-            @include box(80%);
-        }
-        @include mq(tablet, max) {
-            margin-bottom: 2rem;
-            @include box(100%);
+        img.skills-text {
+            top: -60px;
+            left: -160px;
+            opacity: 0.8;
         }
     }
 }
