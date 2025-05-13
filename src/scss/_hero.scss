@@ -1,0 +1,14 @@
+.jumbotron {
+    min-height: 100vh;
+    background-color: $color-primary;
+}
+
+@media (max-width: 61.998em) {
+    .jumbotron {
+        padding: 6rem 2rem 4rem;
+        .display-4 {
+            // font-size: 2.4rem;
+            font-size: 3.5rem;
+        }
+    }
+}

@@ -1,0 +1,16 @@
+// Slick Slider Equal Height
+.slick-track {
+    display: flex !important;
+    .slick-slide {
+        height: auto !important;
+    }
+}
+.client-slides {
+    .card-img-top {
+        border-radius: 20rem;
+        width: 100px;
+    }
+    .slick-dots {
+        bottom: -50px;
+    }
+}

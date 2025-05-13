@@ -1,0 +1,262 @@
+$mapColor: 
+    ('tiffblue', #0ABAB5, #fff),
+    ('red', #ef5350, #fff),
+    ('blue', #5c6Bc0, #fff),
+    ('orange', #ffa726, #fff);
+
+.login {
+    font-family: 'Poppins', sans-serif;
+    & > div {
+        padding: 0;
+    }
+    .ads {
+        background-color: #F0F2F5;
+        min-height: 100vh;
+        position: relative;
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../img/halftone-tl.png) left top no-repeat;
+            background-size: 45%;
+        }
+        &::after {
+            content: '';
+            opacity: 0.15;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+            position: absolute;
+            background: url(../img/blurb-bg.jpg) center no-repeat;
+            background-size: cover;
+            filter: grayscale(100%);
+        }
+        .blurb {
+            width: 100%; 
+            height: 100%; 
+            position: absolute; 
+            z-index: 1; 
+            display: flex; 
+            flex-direction: column; 
+            align-items: center; 
+            justify-content: center;
+            padding: 2rem;
+            .card {
+                max-width: 460px;
+                border-radius: 20px;
+                border: none;
+                transition: all 0.45s ease-in-out;
+                box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
+                .card-body {
+                    padding: 1.25rem 1.85rem;
+                    p {
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+        .copyright {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #989A9D;
+            font-size: 14px;
+            text-align: center;
+        }
+    }
+    .login-form {
+        background: linear-gradient(180deg, #0ABAB5 -12.92%, rgba(10, 186, 181, 0.5) 100%);
+        min-height: 100vh;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem;
+        &::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../img/halftone-tl.png) left top no-repeat;
+            background-size: 45%;
+            opacity: 0.3;
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+        &::before {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: url(../img/halftone-br.png) right bottom no-repeat;
+            background-size: 45%;
+        }
+        .card {
+            width: 460px;
+            border-radius: 35px;
+            border: none;
+            transition: all 0.45s ease-in-out;
+            box-shadow: 0 1rem 3rem rgba(10, 186, 181, 0.675)!important;
+            .card-body {
+                padding: 4rem 2.85rem;
+                h2 {
+                    font-family: 'Fredoka', sans-serif;
+                    font-weight: 600;
+                    text-align: center;
+                    margin-bottom: 2.5rem;
+                    opacity: 0.85;
+                    @media (max-width: 991px) {
+                        font-size: 24px;
+                    }
+                }
+                .btn {
+                    width: 100%;
+                    border-radius: 100px;
+                    padding: 0.575rem 0.75rem;
+                    &.btn-primary {
+                        background-color: #FFA800;
+                        border-color: #FFA800;
+                    }
+                }
+                .container {
+                    padding-left: 0;
+                    padding-right: 0;
+                }
+                .form-group {
+                    margin-bottom: 1.75rem;
+                    #username {
+                        background: url(../img/icon-username-input.svg) 10px center no-repeat;
+                        background-size: 18px;
+                        padding-left: 2.25rem;
+                    }
+                    #password {
+                        background: url(../img/icon-password-input.svg) 10px center no-repeat;
+                        background-size: 18px;
+                        padding-left: 2.25rem;
+                    }
+                }
+                a {
+                    color: #0ABAB5;
+                }
+                .text-divider {
+                    display: flex;
+                    align-items: center;
+                    span {
+                        margin: 0 10px;
+                        white-space: nowrap;
+                        opacity: 0.45;
+                    }
+                    &::before, &::after {
+                        content: '';
+                        display: block;
+                        width: 100%;
+                        height: 1px;
+                        background-color: rgba($color: #1C1E21, $alpha: 0.2);
+                    }
+                }
+                .btn-outline-primary {
+                    border-width: 2px;
+                    border-color: #0ABAB5;
+                    &:hover {
+                        background-color: #0ABAB5;
+                        color: #fff;
+                    }
+                }
+                .form-check {
+                    display: flex;
+                    align-items: center;
+                }
+                .custom-checkbox {
+                    margin-right: 8px;
+                }
+                .custom-checkbox {
+                    display: inline-block;
+                    font-size: 0;
+                        &-input {
+                            display: none;
+                            &:checked {
+                                + .custom-checkbox-label {
+                                    &:after {
+                                        opacity: 1;
+                                    }
+                                }
+                            }
+                        }
+                    &-label {
+                        display: inline-block;
+                        width: 16px;
+                        height: 16px;
+                        position: relative;
+                        cursor: pointer;
+                        &:before {
+                            content: '';
+                            width: 16px;
+                            height: 16px;
+                            border: 2px solid;
+                            box-sizing: border-box;
+                            display: inline-block;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            border-radius: 2px;
+                        }
+                        &:after {
+                            content: 'done';
+                            font-family: 'Material Icons';
+                            font-size: 14px;
+                            line-height: 16px;
+                            text-align: center;
+                            width: 16px;
+                            height: 16px;
+                            display: block;
+                            border-radius: 2px;
+                            overflow: hidden;
+                            text-align: center;
+                            opacity: 0;
+                            transition: .2s opacity;
+                        }
+                        @each $class, $color1, $color2 in $mapColor {
+                            &-#{$class} {
+                                &:before {
+                                    border-color: $color1;
+                                }
+                                &:after {
+                                    background-color: $color1;
+                                    color: $color2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .copyright {
+            margin-top: 1.5rem;
+            color: #fff;
+            font-size: 14px;
+            @media (min-width: 992px) {
+                display: none;
+            }
+        }
+    }
+}

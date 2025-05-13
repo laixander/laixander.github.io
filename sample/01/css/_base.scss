@@ -1,0 +1,45 @@
+/* Show it is fixed to the top */
+// body {
+//     min-height: 75rem;
+//     padding-top: 4.5rem;
+// }
+
+// .bg-light {
+//     background-color: #d6efc7!important;
+// }
+
+// Override default font size
+html, body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Bodoni Moda', serif;
+    font-weight: bold;
+    color: #184d47;
+}
+
+h5, h6 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    color: #184d47;
+}
+
+h2 {
+    font-size: 2.8rem;
+}
+
+h3 {
+    font-size: 1.9rem;
+}
+
+::selection {
+    background-color: #75c32c;
+    color: #000;
+}
+
+.display-4 {
+    @include font-size(4rem);
+}

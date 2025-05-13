@@ -1,0 +1,22 @@
+.pt-100 {
+    padding-top: 60px;
+    @media (min-width: 991px) {
+        padding-top: 100px;
+    }
+}
+.pb-60 {
+    padding-bottom: 10px;
+    @media (min-width: 991px) {
+        padding-bottom: 60px;
+    }
+}
+
+.pb-360 {
+    padding-bottom: 360px;
+}
+.py-120 {
+    @media (min-width: 991px) {
+        padding-top: 120px;
+        padding-bottom: 120px;
+    }
+}
